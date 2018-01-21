@@ -1,0 +1,31 @@
+---
+layout: layout
+title: Steven J Hicks
+metaDescription: Ramblings on development, life, and the development life. By Milwaukee developer Steven J Hicks.
+---
+mixin date(input)
+    - var date = new Date(input)
+    - var months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
+
+    time(datetime=JSON.parse(JSON.stringify(date)))&attributes(attributes)=months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear()
+
+.hero
+    div.headline
+        h1 Steven J Hicks
+        h2 MKE web development generalist and  speaker. Husband/dad/pack-mule, fake rock climber, and mediocre triathlete.
+        h3 If you ain't falling, you ain't learning.
+    img(src='/static/img/avatar.jpg' alt='Steven J Hicks')
+    
+h3 Recent Stuff
+    
+each article in collections.postsReversed
+    article.content-article
+        header
+            h2
+                a(href='/' + article.url)= article.data.title
+            h3
+                +date(article.isoDate)
+            p !{article.data.snippet}
+            p
+            a(href='/' + article.url) Read about it!
+            //p #{JSON.stringify(article.data)}

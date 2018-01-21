@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title></title>
+	<subtitle></subtitle>
+	<link href="" rel="self"/>
+	<link href=""/>
+	<updated>2018-01-20T06:00:00-06:00</updated>
+	<id></id>
+	<author>
+		<name></name>
+		<email></email>
+	</author>
+	
+	<entry>
+		<title>first blog</title>
+		<link href="blog/first/"/>
+		<updated>2018-01-01T06:00:00-06:00</updated>
+		<id>blog/first/</id>
+		<content type="html">&lt;h1&gt;hello!&lt;/h1&gt;
+&lt;h2&gt;this is a blog post&lt;/h2&gt;
+&lt;p&gt;and it talks about monkeys&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Chekhov&#39;s Gun And Better Unit Tests</title>
+		<link href="blog/2018/01/chekhovs-gun-and-better-unit-tests/"/>
+		<updated>2018-01-20T06:00:00-06:00</updated>
+		<id>blog/2018/01/chekhovs-gun-and-better-unit-tests/</id>
+		<content type="html">&lt;h2&gt;Chekhov&#39;s Gun&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Anton_Chekhov&quot;&gt;Anton Chekhov&lt;/a&gt; was a Russian playwright who died in 1904. He wrote several hundred stories by the time he was 26, many of them highly regarded. Chekhov is often credited with being a major influence on the modern short story.&lt;/p&gt;
+&lt;p&gt;One of his most famous contributions is something called Chekhov&#39;s Gun. This is a principle in dramatic writing that suggests that all elements in a story must be relevant in some way. If an element doesn&#39;t have relevance, it should be removed. Irrelevant elements might distract the audience from the intended story.&lt;/p&gt;
+&lt;p&gt;The origin of Chekhov&#39;s Gun comes from several related quotes from his writings. One example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remove everything that has no relevance to the story. If you say in the first chapter that there is a rifle hanging on the wall, in the second or third chapter it absolutely must go off. If it&#39;s not going to be fired, it shouldn&#39;t be hanging there.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;What does this have to do with unit tests?&lt;/h2&gt;
+&lt;p&gt;Full disclosure - I don&#39;t actually know anything about dramatic writing, or about Anton Chekhov.&lt;/p&gt;
+&lt;p&gt;I do know things about writing unit tests, though, especially in JavaScript. Someone recently described Chekhov&#39;s Gun to me, and I thought &amp;quot;that is exactly how I feel about writing unit tests.&amp;quot; Especially when it comes to test setup: if a line of setup code isn&#39;t important to describe a specific test, then I don&#39;t want it to distract me from what is important about the test.&lt;/p&gt;
+&lt;p&gt;Imagine I have an app where users can submit new beers to a curated list of &amp;quot;the best beers ever.&amp;quot; Here&#39;s a test that I might write for a function that validates that the user submitted the ABV (alcohol by volume) for a beer. We&#39;ll call it Test A.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&amp;quot;validateBeer&amp;quot;, () =&amp;gt; {
+    it(&amp;quot;returns invalid for beers with no abv&amp;quot;, () =&amp;gt; {
+        const beer = {
+            id: 87983,
+            brewery: {
+                id: 12332,
+                name: &amp;quot;Central Waters&amp;quot;,
+                location: &amp;quot;Amherst, WI&amp;quot;,
+                overallRating: 5,
+            },
+            name: &amp;quot;Mudpuppy Porter&amp;quot;,
+            beerStyle: &amp;quot;Porter&amp;quot;,
+            abv: undefined,
+        };
+
+        const result = validateBeer(beer);
+
+        expect(result).toEqual(false);
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Test A&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This test is pretty decent. I like that the name of the test tells me exactly what it is testing. I like that there aren&#39;t a ton of assertions, and it&#39;s pretty clearly testing only one thing.&lt;/p&gt;
+&lt;p&gt;What I don&#39;t like about it is the distracting setup code. This test verifies that a beer with no ABV is considered invalid. It doesn&#39;t specify &lt;code&gt;abv: undefined&lt;/code&gt; until the 11th line of the test. This means that I have to read through 10 lines of irrelevant setup code before I get to what actually makes this test unique - that the submitted beer doesn&#39;t have an ABV. This is a violation of Chekhov&#39;s Gun, in unit test form.&lt;/p&gt;
+&lt;p&gt;What I&#39;d rather see is something like this - we&#39;ll call it Test B:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&amp;quot;validateBeer&amp;quot;, () =&amp;gt; {
+    it(&amp;quot;returns invalid for beers with no abv (less setup)&amp;quot;, () =&amp;gt; {
+        const beer = makeMeABeer();
+        beer.abv = undefined;
+
+        const result = validateBeer(beer);
+
+        expect(result).toEqual(false);
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Test B&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Here, I get a beer from an extracted function named &lt;code&gt;makeMeABeer&lt;/code&gt;. This function would generate a typical beer, with values that are usual and not edge-cases. I then change just the values that are unique to this test - in this case, setting &lt;code&gt;beer.abv = undefined&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Extracting my setup of a beer, as in the second example, improves my signal to noise ratio for this test. The signal is &amp;quot;what am I trying to test?&amp;quot; The noise, in the first example, is &amp;quot;setup code that doesn&#39;t impact this test.&amp;quot; The better I can do to provide more signal, and less noise, the easier it is for a reader of my test to understand my intentions.&lt;/p&gt;
+&lt;h2&gt;Why do I care about the reader of this test?&lt;/h2&gt;
+&lt;p&gt;A question: who do we write our unit tests for? It&#39;s ourselves, right?&lt;/p&gt;
+&lt;p&gt;If we&#39;re doing TDD, yes, we get a lot of value out of the tests we&#39;re writing, in the moment.&lt;/p&gt;
+&lt;p&gt;But aside from TDD, who benefits the most from our tests? It&#39;s not you, when you write the test. You&#39;ve got all the context about the test being written. You most likely know what the code does that you are writing. If you&#39;d just finished writing the &lt;code&gt;validateBeer&lt;/code&gt; function, and I asked you what the system was supposed to do with a beer that didn&#39;t have an ABV, you&#39;d likely be able to tell me the answer - without looking at any tests.&lt;/p&gt;
+&lt;p&gt;But if a teammate makes a change a few months from now and this test suddenly starts failing, that teammate will have no context. They won&#39;t know why this test was written in the first place, and they will not know details of how the test was made to pass. They might not even know that ABV is a thing.&lt;/p&gt;
+&lt;p&gt;Test A, a test that is filled with irrelevant setup code, will distract them from discovering why this test exists. It will take them a good amount of time to determine what makes this test unique compared to the others. They might have to compare it to several other tests to see what the difference is.&lt;/p&gt;
+&lt;p&gt;Test B, on the other hand, removes the irrelevant setup details. This will allow them to determine more quickly what makes this test unique. They might not know quickly why it is failing, but at least they&#39;ll know why this test exists, and how it is different.&lt;/p&gt;
+&lt;p&gt;???I need some kind of conclusion but I haven&#39;t figured it out yet.???&lt;/p&gt;
+</content>
+	</entry>
+	
+</feed>

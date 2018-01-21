@@ -1,0 +1,10 @@
+extends /layout
+
+block title
+    title= title
+        |  - Steven J Hicks
+
+block content
+    h1= title
+    h3.by-line Published #{prettyDate(date)} by Steven Hicks
+    article!= _layoutContent
