@@ -18,7 +18,15 @@ module.exports = function(eleventyConfig) {
                 isoDate: dateToISO(item.date),
             }));
     });
-
+    eleventyConfig.addCollection("engagementsReversed", function(collection) {
+        return collection
+            .getFilteredByTag("engagements")
+            .reverse()
+            .map(item => ({
+                ...item,
+                isoDate: dateToISO(item.date),
+            }));
+    });
     return {
         templateFormats: ["md", "pug", "njk", "png", "jpg", "gif", "css"],
         passthroughFileCopy: true,

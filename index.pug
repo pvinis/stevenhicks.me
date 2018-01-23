@@ -3,11 +3,7 @@ layout: layout
 title: Steven J Hicks
 metaDescription: Ramblings on development, life, and the development life. By Milwaukee developer Steven J Hicks.
 ---
-mixin date(input)
-    - var date = new Date(input)
-    - var months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
-
-    time(datetime=JSON.parse(JSON.stringify(date)))&attributes(attributes)=months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear()
+include /mixins.pug
 
 .hero
     div.headline
@@ -23,9 +19,7 @@ each article in collections.postsReversed
         header
             h2
                 a(href='/' + article.url)= article.data.title
-            h3
-                +date(article.isoDate)
-            p !{article.data.snippet}
-            p
-            a(href='/' + article.url) Read about it!
-            //p #{JSON.stringify(article.data)}
+            h3 #{formatDate(article.isoDate)}
+        p !{article.data.snippet}
+        a(href='/' + article.url) Read about it!
+        //p #{JSON.stringify(article.data)}

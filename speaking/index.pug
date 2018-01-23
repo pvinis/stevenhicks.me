@@ -1,0 +1,19 @@
+---
+title: Speaking - Steven J Hicks
+date: 2018-01-14
+layout: layout
+---
+include /mixins.pug
+
+each engagement in collections.engagementsReversed
+    article.engagement
+        h4 #{engagement.data.talk}
+        if engagement.data.link
+            h5
+                a(href=engagement.data.link) #{engagement.data.event}
+        else
+            h5 #{engagement.data.event}
+        h6 #{engagement.data.location} - #{formatDate(engagement.data.date)}
+        if engagement.data.slides
+            h6
+                a(href=engagement.data.slides) Slides
