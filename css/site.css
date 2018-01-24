@@ -220,6 +220,7 @@ article {
     text-align: center; }
     .about .profile img {
       width: 250px;
+      height: 250px;
       max-width: unset;
       border-radius: 50%; }
     .about .profile a:not(:last-child) {

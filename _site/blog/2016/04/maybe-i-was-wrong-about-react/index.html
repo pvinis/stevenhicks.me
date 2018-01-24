@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><title>Maybe I was wrong about React - Steven J Hicks</title><meta name="description" content="undefined"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/css/site.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/foundation.min.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald|Merriweather"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></head><body><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-75007713-1', 'auto');
+ga('send', 'pageview');</script><div class="site"><div class="box header"><a class="navbar-brand" href="/">Steven J Hicks</a><a class="navbar-brand" href="/about">About</a><a class="navbar-brand" href="/speaking">Speaking</a></div><div class="content"><h1>Maybe I was wrong about React</h1><h3 class="by-line">Published April 7, 2016 by Steven Hicks</h3><article><h2>So many places to start</h2>
+<p>There are a lot of examples of how to set up a project with React, and very little direction on the best route. The first time I tried to do this, I ended up with a whole lot of analysis paralysis, and couldn't figure out where to even start.</p>
+<h2>It depends on how you learn</h2>
+<p>A lot of the advice you get on how to learn React and its ecosystem is to learn each individual piece, one thing at a time. Definitely DO NOT start with a &quot;starter kit&quot;, they say. That isn't going to teach you anything, they say.</p>
+<p>But suddenly in retrospect I'm realizing, that is why I struggled so much the first time I tried to learn React. I am not that kind of learner. I am a &quot;give me a real live working example and I will tweak things until they break and learn from all the mistakes I make&quot; kind of learner.</p>
+<p>And what is the best way to fire up a working example of something? Yeoman. Find a generator that fits your tech stack, and start there.</p>
+<h2>Yo let's do this</h2>
+<p>So off to <a href="http://yeoman.io/generators">yeoman.io/generators</a> we go...where we search for 'react', and get....tons....and tons....of results.</p>
+<p><img src="/static/img/yeoman-react.gif" alt="Yeoman React search"></p>
+<p>Looking through some of the results, I see one that has the things I'm looking for - <a href="https://github.com/stylesuxx/generator-react-webpack-redux">react-webpack-redux</a>, which is really an extension of another generator, <a href="https://github.com/newtriks/generator-react-webpack">react-webpack</a>. The things I want out of the box, and the things this generator offers out of the box, are...</p>
+<ul>
+<li>Redux</li>
+<li>ES2015</li>
+<li>Unit testing</li>
+<li>Sass or Less</li>
+</ul>
+<h2>The moment of truth</h2>
+<p>So following the directions, we install the generator via npm, then generate a new site with yeoman.</p>
+<p><code>yo react-webpack-redux</code></p>
+<p>After answering a few questions for setup, comes the moment of truth. If all goes according to plan, I should be able to just start the app with</p>
+<p><code>pre npm start</code></p>
+<p>and HOLY CRAP I CAN AND IT JUST WORKS OH MY GEEZ HOW MUCH TIME DID I WASTE TRYING TO DO THIS THE LAST TIME!!!</p>
+<img src="/static/img/dancing_banana.gif" style="width:200px">
+<h2>The verdict - Oh my goodness this actually is kind of easy!</h2>
+<p>Well, jeez. This was so much easier than the first time I tried to set up a React project. I am very pleased. I am beyond very pleased. I am actually in complete disbelief and wish I had realized it could be this easy this the first time. This makes learning React a much more tolerable proposition.</p>
+</article></div><div class="footer"><a href="//twitter.com/pepopowitz"><i class="fa fa-twitter-square" aria-hidden="true"></i><span class="sr-only">@pepopowitz on Twitter</span></a><a href="/atom.xml"><i class="fa fa-rss-square" aria-hidden="true"></i><span class="sr-only">Atom Feed</span></a><h6>&copy; Steven J Hicks 2018</h6></div></div><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script></body></html>

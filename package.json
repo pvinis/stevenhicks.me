@@ -1,7 +1,7 @@
 {
-    "name": "eleventy-blog-starter",
+    "name": "stevenhicks.me",
     "version": "1.0.0",
-    "description": "A starter kit for building a blog with eleventy.",
+    "description": "Website for Steven Hicks.",
     "main": "index.js",
     "scripts": {
         "build": "eleventy",
@@ -9,7 +9,7 @@
             "concurrently \"npm run sass\" \"eleventy --watch \" \"live-server ./_site\" -n SASS,ELEVENTY,SERVE -c bgBlue,bgGreen,bgYellow",
         "sass": "gulp"
     },
-    "keywords": ["Eleventy", "blog", "starter"],
+    "keywords": ["stevenhicks.me"],
     "author": "Steven J Hicks",
     "license": "ISC",
     "devDependencies": {

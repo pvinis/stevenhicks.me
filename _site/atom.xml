@@ -12,13 +12,502 @@
 	</author>
 	
 	<entry>
-		<title>first blog</title>
-		<link href="blog/first/"/>
-		<updated>2018-01-01T06:00:00-06:00</updated>
-		<id>blog/first/</id>
-		<content type="html">&lt;h1&gt;hello!&lt;/h1&gt;
-&lt;h2&gt;this is a blog post&lt;/h2&gt;
-&lt;p&gt;and it talks about monkeys&lt;/p&gt;
+		<title>Static Site Generators Are The New WordPress</title>
+		<link href="blog/2016/03/staticgen/"/>
+		<updated>2016-03-10T06:00:00-06:00</updated>
+		<id>blog/2016/03/staticgen/</id>
+		<content type="html">&lt;h2&gt;Static Site Generators Are The New WordPress&lt;/h2&gt;
+&lt;p&gt;I recently presented at the MKE Web Pros meetup group, about static site generators, and how you can build stupid simple websites with them.&lt;/p&gt;
+&lt;h3&gt;Summary&lt;/h3&gt;
+&lt;p&gt;The dynamic CMS like WordPress is no longer the defacto answer to the statement &amp;quot;I need a website&amp;quot;. Static site generation can easily handle the needs of simple sites with infrequently changing content. Services are becoming more prevalent for adding interactive functionality to an otherwise static site - for example, Disqus for comments. And in many cases, where services can&#39;t be dropped directly onto your static site, a little technical courage and some javascript can get you what you need.&lt;/p&gt;
+&lt;p&gt;Statically generated sites are much more performant and secure than a site run on a dynamic CMS. There are fewer moving parts, and since your content is literally served as static html files, fewer ways your site can be attacked.&lt;/p&gt;
+&lt;p&gt;I would love to say static site generation is the answer for all sites. But it&#39;s not quite ready for your non-technical relative&#39;s site. Until content editing is more user-friendly, static site generation is probably only for your simplest sites or your most technical friends&#39; websites. As a general rule, if the content editor is not capable or ready to write content using a language like Markdown, static site generation might not be the answer.&lt;/p&gt;
+&lt;p&gt;The good news is, we&#39;re headed toward a future where even your non-technical relative can publish content on a statically generated site. Services like Contentful and CloudCannon and plugins like Netlify-CMS are pushing in that direction. I don&#39;t think we&#39;re too far from a future where your non-technical relative can edit content in a WYSIWYG editor, click a button, and push changes to their statically generated site.&lt;/p&gt;
+&lt;p&gt;Check out &lt;a href=&quot;http://www.staticgen.com&quot;&gt;staticgen.com&lt;/a&gt; to get started with static site generation. There are way too many generators for me to recommend &amp;quot;the perfect one&amp;quot;. It is up to you to determine which generator works best for your scenario. For me, the answer is either HarpJs or Metalsmith. For you, the answer could be anything. Find the static generator for you, and let&#39;s start moving the web to a more performant and less vulnerable place.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Ember looks neat</title>
+		<link href="blog/2016/03/emberLooksNeat/"/>
+		<updated>2016-03-24T07:00:00-05:00</updated>
+		<id>blog/2016/03/emberLooksNeat/</id>
+		<content type="html">&lt;h2&gt;I got 99 problems and 98 of them are javascript MV* frameworks&lt;/h2&gt;
+&lt;p&gt;I am in the market for a new MV* framework in Javascript. I&#39;ve done Angular 1, many times. There are things I like about it - dependency injection is easy, meaning unit testing is easy; there is &lt;a href=&quot;https://github.com/johnpapa/angular-styleguide&quot;&gt;good guidance&lt;/a&gt; on style and best practices; documentation is pretty great. There are also things I don&#39;t like about it - it can be slow; the digest cycle can make me want to rip my hair out at times; writing directives can be confusing and sometimes feels a little like throwing darts at a dartboard to see what sticks. But that ship has sailed, and there are too many other frameworks to stick with Angular 1 for life. I am a breadth of knowledge guy, not depth of knowledge - and the longer I stick with one framework, the more I feel like I&#39;m falling behind.&lt;/p&gt;
+&lt;h3&gt;Angular 2&lt;/h3&gt;
+&lt;p&gt;The logical framework for me is Angular 2, right? I have all that Angular 1 experience. They&#39;ve now provided good &lt;a href=&quot;https://angular.io/docs/ts/latest/guide/upgrade.html&quot;&gt;guidance on migration&lt;/a&gt;,which is way better than when it was announced, and we all thought we&#39;d be rewriting apps from scratch. But to be honest, I haven&#39;t looked into Angular 2 a whole lot, because when I look at the examples, the views look atrocious.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;li *ngFor=&amp;quot;#hero of heroes&amp;quot; (click)=&amp;quot;onSelect(hero)&amp;quot;&amp;gt;
+    &amp;lt;span class=&amp;quot;badge&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; 
+&amp;lt;/li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;some-component [prop]=&amp;quot;someExp&amp;quot; (event)=&amp;quot;someEvent()&amp;quot; [(twoWayProp)]=&amp;quot;someExp&amp;quot;&amp;gt;&amp;lt;/show-title&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Good gracious, look at all those symbols. Maybe I&#39;m being a crybaby, but I can&#39;t imagine myself staring at views like that all day without (a) needing a cheat-sheet to tell me which symbol to use when, and (b) throwing up. I despise Markdown for its use of semantic symbols; the symbols in Angular 2 seem just as confusing to me.&lt;/p&gt;
+&lt;h3&gt;That React, it&#39;s so hot right now!&lt;/h3&gt;
+&lt;p&gt;First of all, most of what I&#39;ve learned so far about React, I&#39;ve learned from &lt;a href=&quot;https://medium.com/@housecor&quot;&gt;Cory House&lt;/a&gt; - &lt;a href=&quot;https://www.pluralsight.com/courses/react-flux-building-applications&quot;&gt;his Pluralsight course&lt;/a&gt; is a great place to start. This dude is an amazing speaker, and I highly recommend checking him out if you get a chance.&lt;/p&gt;
+&lt;p&gt;I really like a lot of things about React.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The virtualDom diffing is cool. Better performance is nothing to complain about.&lt;/li&gt;
+&lt;li&gt;I like the concept of uni-directional flow. I&#39;ve played with both Flux and Redux, and before you get lawyery on me I know that&#39;s not technically part of React, but it is part of the ecosystem - and if you&#39;re going to build something with React, you&#39;re going to use either Flux or Redux because all of the examples do too. Flux is okay, but has too much boilerplate repetition for my tastes. Redux I find to be pretty neat - I like the &lt;a href=&quot;http://redux.js.org/docs/introduction/ThreePrinciples.html&quot;&gt;guiding principles&lt;/a&gt; - a single source of truth, read-only state, and the use of pure functions.&lt;/li&gt;
+&lt;li&gt;The language is simple, and it&#39;s pretty easy to figure out what&#39;s going on in a component.&lt;/li&gt;
+&lt;li&gt;Jsx is awesome. I love the fact that you get a compile error when you typo something in a component - as opposed to something silently failing in most other frameworks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The dislikes list is much shorter....but the one item on the list is huge. Javascript tools fatigue is a real thing, and React is the ultimate example of it. I hope you like to have opinions about everything - cuz you&#39;re gonna need to. Setting up a project in React is a painful experience. React embraces the micro-library culture of npm - so you need to pick your own libraries for pretty much everything. If you&#39;re the kind of person who wants control over every..single..feature when you buy a new car, then React is going to make you happy. I am not one of those people. I am pretty happy to have three packages to choose from. I don&#39;t want to fill out a form for two hours choosing between 2 cupholders and 3. I want a car, and I want to drive it, and I don&#39;t much care for the details. Getting up and running with React can be a challenge, and one that makes me not want to use React.&lt;/p&gt;
+&lt;h3&gt;Ember&lt;/h3&gt;
+&lt;p&gt;Which brings me to Ember. I don&#39;t know a whole lot about Ember. In fact, most of what I know, I learned from &lt;a href=&quot;http://hanselminutes.com/516/ambitious-ux-and-ambitious-apps-with-ember-and-lauren-tan&quot;&gt;one episode of HanselMinutes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What I think I like the most about Ember is that it provides opinions for you. This is my biggest issue right now with JavaScript development - you need to have an opinion about everything. I am a breadth of knowledge guy, rather than depth of knowledge - as a result, I have more interest in learning the opinions prescribed by a framework than in forcing my own opinions onto a framework. I want my MV* framework to have opinions for me so that I can focus on building something.&lt;/p&gt;
+&lt;p&gt;Heck, &lt;a href=&quot;http://emberjs.com/&quot;&gt;the slogan on their site&lt;/a&gt; is &amp;quot;more productive out of the box&amp;quot;. That is a slogan I can get behind.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Maybe I was wrong about React</title>
+		<link href="blog/2016/04/maybe-i-was-wrong-about-react/"/>
+		<updated>2016-04-07T07:00:00-05:00</updated>
+		<id>blog/2016/04/maybe-i-was-wrong-about-react/</id>
+		<content type="html">&lt;h2&gt;So many places to start&lt;/h2&gt;
+&lt;p&gt;There are a lot of examples of how to set up a project with React, and very little direction on the best route. The first time I tried to do this, I ended up with a whole lot of analysis paralysis, and couldn&#39;t figure out where to even start.&lt;/p&gt;
+&lt;h2&gt;It depends on how you learn&lt;/h2&gt;
+&lt;p&gt;A lot of the advice you get on how to learn React and its ecosystem is to learn each individual piece, one thing at a time. Definitely DO NOT start with a &amp;quot;starter kit&amp;quot;, they say. That isn&#39;t going to teach you anything, they say.&lt;/p&gt;
+&lt;p&gt;But suddenly in retrospect I&#39;m realizing, that is why I struggled so much the first time I tried to learn React. I am not that kind of learner. I am a &amp;quot;give me a real live working example and I will tweak things until they break and learn from all the mistakes I make&amp;quot; kind of learner.&lt;/p&gt;
+&lt;p&gt;And what is the best way to fire up a working example of something? Yeoman. Find a generator that fits your tech stack, and start there.&lt;/p&gt;
+&lt;h2&gt;Yo let&#39;s do this&lt;/h2&gt;
+&lt;p&gt;So off to &lt;a href=&quot;http://yeoman.io/generators&quot;&gt;yeoman.io/generators&lt;/a&gt; we go...where we search for &#39;react&#39;, and get....tons....and tons....of results.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/yeoman-react.gif&quot; alt=&quot;Yeoman React search&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Looking through some of the results, I see one that has the things I&#39;m looking for - &lt;a href=&quot;https://github.com/stylesuxx/generator-react-webpack-redux&quot;&gt;react-webpack-redux&lt;/a&gt;, which is really an extension of another generator, &lt;a href=&quot;https://github.com/newtriks/generator-react-webpack&quot;&gt;react-webpack&lt;/a&gt;. The things I want out of the box, and the things this generator offers out of the box, are...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Redux&lt;/li&gt;
+&lt;li&gt;ES2015&lt;/li&gt;
+&lt;li&gt;Unit testing&lt;/li&gt;
+&lt;li&gt;Sass or Less&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;The moment of truth&lt;/h2&gt;
+&lt;p&gt;So following the directions, we install the generator via npm, then generate a new site with yeoman.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;yo react-webpack-redux&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;After answering a few questions for setup, comes the moment of truth. If all goes according to plan, I should be able to just start the app with&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pre npm start&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and HOLY CRAP I CAN AND IT JUST WORKS OH MY GEEZ HOW MUCH TIME DID I WASTE TRYING TO DO THIS THE LAST TIME!!!&lt;/p&gt;
+&lt;img src=&quot;/static/img/dancing_banana.gif&quot; style=&quot;width:200px&quot;&gt;
+&lt;h2&gt;The verdict - Oh my goodness this actually is kind of easy!&lt;/h2&gt;
+&lt;p&gt;Well, jeez. This was so much easier than the first time I tried to set up a React project. I am very pleased. I am beyond very pleased. I am actually in complete disbelief and wish I had realized it could be this easy this the first time. This makes learning React a much more tolerable proposition.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Back-ends? Where we&#39;re going, we don&#39;t need...back-ends.....</title>
+		<link href="blog/2016/06/chicago-coder-conference/"/>
+		<updated>2016-06-10T07:00:00-05:00</updated>
+		<id>blog/2016/06/chicago-coder-conference/</id>
+		<content type="html">&lt;p&gt;I got to present at this year&#39;s Chicago Coder Conference, about static site generators and the &amp;quot;JAM stack.&amp;quot; This is a talk I&#39;ve been doing variations of here and there for about six months. It was the first time I&#39;ve been lucky enough to present at a conference.&lt;/p&gt;
+&lt;p&gt;I had a great time! I was a bit disheartened by the fact that I&#39;d been time-slotted up against Uncle Bob, and I even told everyone I met the first day of the conference that they should go listen to him instead of me. It was an honor to be speaking at the same venue as him, he is an amazing speaker and a role model for me. I just wish I hadn&#39;t had to compete with him for listeners....&lt;/p&gt;
+&lt;p&gt;Still, I had about 15 people come hang out and listen to me. I had great conversation with several of them before and after my talk. I&#39;ve been going into these things with the thought that if I get two people to legitimately listen to what I have to say, and I can legitimately help them, it is a win. In this case, I think I definitely met that goal, and I am pretty hungry to speak again soon.&lt;/p&gt;
+&lt;p&gt;As much as I hate taking selfies, I did convince myself to take one on my way out of town. The squatty looking building in the background, the Gleacher Center, is where I spoke.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/chicagocoderconf.jpg&quot; alt=&quot;Steven Hicks at Chicago Coder Conference&quot;&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>My TDD Sales Pitch</title>
+		<link href="blog/2016/08/my-tdd-sales-pitch/"/>
+		<updated>2016-08-18T07:00:00-05:00</updated>
+		<id>blog/2016/08/my-tdd-sales-pitch/</id>
+		<content type="html">&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;Recently, a coworker asked me to send him some good resources for introducing a team to TDD. Rather than hoarding the info, this seemed like something I should probably put somewhere for the next person that asks. Much of this is information that I talked about in my &amp;quot;You down with TDD? Yeah you know me&amp;quot; talk that I wish I could give more often.&lt;/p&gt;
+&lt;p&gt;There is entirely too much information to fit into one place, so I&#39;ve broken the info down a bit.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/2016/08/my-tdd-sales-pitch&quot;&gt;My TDD sales pitch (this post!)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/2016/08/getting-started-with-tdd&quot;&gt;Getting started with TDD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Intro to TDD&lt;/h2&gt;
+&lt;p&gt;First off, &lt;a href=&quot;https://en.wikipedia.org/wiki/Test-driven_development&quot;&gt;the wikipedia article&lt;/a&gt; has a good summary of what TDD is. A summary -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Every system change that you make requires a failing test first.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;This is often boiled down to the slogan &lt;strong&gt;&amp;quot;Red/Green/Refactor&amp;quot;&lt;/strong&gt;. Red = write a failing test, Green = make the test pass by writing &amp;quot;just enough&amp;quot; code, and Refactor &amp;quot;just enough&amp;quot; that you are happy with the result.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TDD encourages simplicity.&lt;/strong&gt; &amp;quot;Just enough&amp;quot; is in that last bullet point twice. TDD wants to prevent you from over-designing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TDD is a discipline.&lt;/strong&gt; It is not easy to learn, and it is easy to fall out of habit. It takes practice. I worked on incorporating TDD into my dev flow for probably 2 years before it finally stuck.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Why use TDD?&lt;/h2&gt;
+&lt;p&gt;Some of the reasons I like TDD are found in the code.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TDD can lead to simpler designs.&lt;/strong&gt; Emphasis on &amp;gt;&amp;gt;&amp;gt;&lt;strong&gt;CAN&lt;/strong&gt;&amp;lt;&amp;lt;&amp;lt;. Not will. It is kind of a chicken vs egg situation - if you do TDD, your designs can be simpler...if you simplify your designs, it makes TDD easier. You can still do TDD with complex designs but that is often the type of scenario that causes a person to stop doing TDD.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TDD can lead to smaller units of code/looser coupling/cleaner interfaces.&lt;/strong&gt; Similar to the previous point, this is not a guaranteed result.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TDD can improve your code coverage.&lt;/strong&gt; You are writing tests before each line of system code - so you are usually getting pretty close to 100% coverage on anything you are using TDD for. I will not get into the discussion of whether 100% coverage is valuable....but if a high coverage number is important to you, TDD can help.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My favorite reasons that I like TDD are found beyond the code.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TDD questions your understandings of the requirements.&lt;/strong&gt; The moment in TDD when you are deciding what tests to write for your component is a great moment to reflect on what you do and don&#39;t know about the system. It is also a great moment for you and your team to talk, to figure out how to handle the things you don&#39;t know about the system.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TDD documents the requirements.&lt;/strong&gt; TDD gives you thorough tests, which tell the next person looking at the code what you expected the system to do. They are also great for when a Quality Engineer asks you what should happen in a specific scenario, and you can&#39;t exactly remember.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TDD is a good guide for code reviews.&lt;/strong&gt; Without TDD, code reviews that I&#39;ve done are generally aimless and we end up meandering through the code. When I am using TDD to write something, I start with the tests to guide me through the code review. We can talk about all the things that were and weren&#39;t covered by my changes easily, by following the tests.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TDD gives you confidence&lt;/strong&gt; that your code works as you expected it to. If I make a change, I know I will have a broken test telling me if an unintended side-effect occurred.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TDD reduces mental clutter.&lt;/strong&gt; This is my favorite. When my wife sends me to the store for a couple things, there is like a 90% chance that I will screw it up. If I&#39;m supposed to get milk, eggs, and butter, I will come home with milk, eggs, bacon, and beer....but no butter. My brain can&#39;t be trusted to remember a list of three groceries. It &lt;strong&gt;definitely&lt;/strong&gt; can&#39;t be trusted to remember hundreds of different test scenarios for the code I&#39;m working on. TDD gets me the confidence to know when I broke something that I didn&#39;t think I would break, rather than having to fumble manually through some scenarios that I half remember.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Why not use TDD?&lt;/h2&gt;
+&lt;p&gt;There are lots of arguments people, including myself, have made to not use TDD.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;It is hard.&lt;/strong&gt; Yeah...at first. Like any skill, it takes practice, and eventually it becomes easier. The benefits outweigh the learning curve.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;It is slow.&lt;/strong&gt; Yeah...at first. Again, you eventually get faster. Plus, bugs are generally easier to figure out because you&#39;re writing simpler code, so you spend way less time in a debugger.&lt;/li&gt;
+&lt;li&gt;I have tried and &lt;strong&gt;my tests were just breaking any time I wanted to change anything&lt;/strong&gt;. Again, you get better at this over time, too. When I started out, my tests were big. They had a lot of setup, and a lot of assertions...because I wasn&#39;t writing very small units. Over time, you learn to write smaller units of code, which require less test setup. When small tests for small units of code break, they are easier to fix, so it&#39;s not that big of a deal that you broke a test.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;I don&#39;t need all that test coverage.&lt;/strong&gt; Maybe. I agree that 100% coverage is unreasonable. There definitely seems to be diminishing returns after about 80%. But sometimes I think we convince ourselves that we don&#39;t need coverage on something because we just aren&#39;t sure how to test it. As you get better at writing simpler units of code, it&#39;s hard to convince yourself not to cover stuff, because it&#39;s a lot easier than it used to be.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;I test after.&lt;/strong&gt; First off, good for you. I know I have a tendency to pass on testing if I am doing it after, and I suspect you may be similar. Also - when you&#39;re testing after, it is often at a point in the current sprint/iteration/whatever that you don&#39;t really want to be making changes to the underlying code, because you don&#39;t want to break anything that&#39;s already been tested. So you write your tests around what is easy to test. Or #yolo, you refactor the code to be more testable, and don&#39;t tell anyone you made the changes, because there&#39;s no time to test them. (Guilty.) In either case....wouldn&#39;t it be cool if you could refactor while covered by tests, instead of refactoring to write tests?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;All that stuff &lt;a href=&quot;http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html&quot;&gt;that DHH said&lt;/a&gt;&lt;/strong&gt;. The phrase I have best heard to describe DHH&#39;s post is &amp;quot;test-induced damage&amp;quot;. Abstractions just for the sake of testing, for example. To me, I see it more as &amp;quot;test-induced compromise&amp;quot; than damage. I can write unit tests for all my things just by making a few small design changes? Sign me up.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TDD is not a silver bullet.&lt;/strong&gt; Yeah, it&#39;s not. Nothing is. But that doesn&#39;t mean it doesn&#39;t have value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&#39;s my sales pitch. Next up I&#39;ll list &lt;a href=&quot;/blog/2016/08/getting-started-with-tdd&quot;&gt;a few good resources for getting started with TDD&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Getting Started With TDD</title>
+		<link href="blog/2016/08/getting-started-with-tdd/"/>
+		<updated>2016-08-19T07:00:00-05:00</updated>
+		<id>blog/2016/08/getting-started-with-tdd/</id>
+		<content type="html">&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;Recently, a coworker asked me to send him some good resources for introducing a team to TDD. Rather than hoarding the info, this seemed like something I should probably put somewhere for the next person that asks. Much of this is information that I talked about in my &amp;quot;You down with TDD? Yeah you know me&amp;quot; talk that I wish I could give more often.&lt;/p&gt;
+&lt;p&gt;There is entirely too much information to fit into one place, so I&#39;ve broken the info down a bit.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/2016/08/my-tdd-sales-pitch&quot;&gt;My TDD sales pitch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/2016/08/getting-started-with-tdd&quot;&gt;Getting started with TDD (this post!)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;Right, so there are a couple different ways to handle this.&lt;/p&gt;
+&lt;h3&gt;Cold Turkey&lt;/h3&gt;
+&lt;p&gt;There are many who will say that cold turkey is the way to go to learn TDD. TDD all the things, on all the projects, all the time! The only way to truly learn it is to be thrown into the fire, with no way to escape but a fireman&#39;s axe labelled &amp;quot;TDD&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Maybe this works for you. If it does...I apologize, I don&#39;t have any advice, because this would never work for me.&lt;/p&gt;
+&lt;h3&gt;Baby Steps&lt;/h3&gt;
+&lt;p&gt;Things generally work better for me if I dip my toes in the water first. TDD for me took a couple years of biting off a little more each time. It went something like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Consume resources&lt;/strong&gt;. Watch videos. Read blogs. Learn what TDD is all about.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Practice.&lt;/strong&gt; Start messing around with some meaningless code, just to see what TDD feels like. &lt;a href=&quot;http://codekata.com/&quot;&gt;Code katas&lt;/a&gt; are a great medium for this.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Introduce TDD into one project, in one feature.&lt;/strong&gt; Sometimes there is a task on a project that just feels perfectly made for TDD. Something where you need to do some calculations, for example. The test scenarios practically write themselves. It is here that you can start to introduce TDD into your development flow.&lt;/p&gt;
+&lt;p&gt;Sometimes the features will end up being more difficult to TDD than you expected - that&#39;s okay. If you need to stop, you can stop. You also might find yourself feeling like you are taking to long to get things done, the TDD learning curve is just fighting you. Again - I stopped here many times myself, and abandoned TDD until I felt like I was back on schedule. &lt;strong&gt;It&#39;s okay to introduce the practice a little bit at a time.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Introduce TDD into one project, in many features.&lt;/strong&gt; Alright, so now you&#39;re starting to build momentum and confidence. Start TDD&#39;ing more!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;TDD all the things!&lt;/strong&gt; Okay, not really. There are things that are just not worth testing or TDD&#39;ing, in my opinion. The cost is just too high for the value you get. But now you can go into a project saying &amp;quot;yeah, we&#39;re going to TDD the snot out of this thing.&amp;quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;h3&gt;The man himself&lt;/h3&gt;
+&lt;p&gt;If there&#39;s anyone who knows anything about TDD, it&#39;s &lt;a href=&quot;https://twitter.com/KentBeck&quot;&gt;Kent Beck&lt;/a&gt;. These resources would be a good place to start if you would like to learn from &amp;quot;the source&amp;quot; of TDD.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530/ref=sr_1_1&quot;&gt;&lt;strong&gt;He wrote a book.&lt;/strong&gt;&lt;/a&gt; I would be lying if I said I read it but I would like to.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://pragprog.com/screencasts/v-kbtdd/test-driven-development&quot;&gt;&lt;strong&gt;He made some videos.&lt;/strong&gt;&lt;/a&gt; I would be lying if I said I&#39;ve watched them but I would like to.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Mark Seemann&lt;/h3&gt;
+&lt;p&gt;I&#39;ll talk about this more in another post, but the most significant way to improve your ability to TDD is to improve your ability to write tests. &lt;a href=&quot;http://blog.ploeh.dk/about/&quot;&gt;Mark Seemann&lt;/a&gt; is full of good tips on writing autonomous tests that follow principles of clean software design.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://app.pluralsight.com/library/courses/advanced-unit-testing/table-of-contents&quot;&gt;&lt;strong&gt;He has a really good Pluralsight video on Advanced Unit Testing&lt;/strong&gt;&lt;/a&gt;. I have watched this and it has significantly improved my test code.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://app.pluralsight.com/library/courses/outside-in-tdd/table-of-contents&quot;&gt;&lt;strong&gt;He has another Pluralsight video called Outside-In TDD.&lt;/strong&gt;&lt;/a&gt; I have not watched this but I want to. There are a couple strategies to TDD - outside-in, and then I guess obviously inside-out. Inside-out seems to be more natural for people new to TDD. You build the inner-most components (i.e. data-access) first, then work your way out. Outside-in is, in my opinion, the correct way to TDD. Build the outer-most component (i.e. the UI) first, then work your way in. The big advantage to outside-in is that it allows you to shape the interfaces between components as the caller would want to use them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Chess TDD series&lt;/h3&gt;
+&lt;p&gt;I would be lying if I said I watched all 60-some episodes, but Erik Dietrich put together a really nice &lt;a href=&quot;href=&#39;http://www.daedtech.com/tag/chesstdd/&#39;&quot;&gt;series of screencasts&lt;/a&gt;, which captured him using TDD to build a chess game. It is neat to see it in action.&lt;/p&gt;
+&lt;h3&gt;A good testing checklist&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://dzone.com/articles/unit-testing-checklist&quot;&gt;This is a checklist&lt;/a&gt; that helps you write good tests. Your tests are as important as your system code, so you should put effort into writing good, clean test code.&lt;/p&gt;
+&lt;h2&gt;TDD is an investment&lt;/h2&gt;
+&lt;p&gt;Hopefully the above resources can help you get started with TDD. Like any other skill, TDD takes practice and patience. It took me years to get from TDD newb to feeling totally comfortable with it, so don&#39;t feel discouraged if it feels difficult at first.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>October Recap</title>
+		<link href="blog/2016/11/october-recap/"/>
+		<updated>2016-11-12T06:00:00-06:00</updated>
+		<id>blog/2016/11/october-recap/</id>
+		<content type="html">&lt;p&gt;October was a crazy month! Aside from being peak soccer season for my kids, I spoke at Milwaukee Code Camp on the 15th, and MKE DOT NET at the end of the month.&lt;/p&gt;
+&lt;p&gt;First off, thanks to everyone who attended my sessions! I had a great time. I really enjoy the storytelling part of speaking. It is quickly becoming clear to me that stories are how you draw people in.&lt;/p&gt;
+&lt;h2&gt;Milwaukee Code Camp&lt;/h2&gt;
+&lt;p&gt;At Milwaukee Code Camp, I presented my static site/JAM stack talk, in the &amp;quot;Backends? Where we&#39;re going we don&#39;t need...backends...&amp;quot; iteration. This talk has undergone constant revision since I first gave it, as I&#39;ve been learning how to do technical speaking. It will change before the next time, too. I had some great feedback from people, and I also noticed some things on my own that I am looking forward to improving.&lt;/p&gt;
+&lt;p&gt;I battled some issues with the projector right as my talk was about to start. While I was waiting for help to arrive, I decided that I could get started without slides - and realized before help arrived that I could probably do this talk entirely without a projector. This was an encouraging feeling.&lt;/p&gt;
+&lt;h2&gt;MKE DOT NET&lt;/h2&gt;
+&lt;p&gt;After Milwaukee Code Camp, the crazy ramped even higher. Aside from speaking at MKE DOT NET, I was also fairly involved in helping organize the conference. The end of October was a crazy busy time. Thankfully, I work with a ton of really great people who volunteered to make the event run silky smooth, given some scheduling challenges from the venue.&lt;/p&gt;
+&lt;p&gt;My talk at MKE DOT NET almost couldn&#39;t have gone better. I had a great crowd, including some old friends. Everyone seemed really engaged - at one point I wanted to take a picture of literally the entire crowd looking up at a code sample, but the moment had passed by the time I got my phone out.&lt;/p&gt;
+&lt;p&gt;Slides for this talk can be found &lt;a href=&quot;https://steven-j-hicks-speaking.netlify.com/code-is-communication/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One experiment from this talk that went really well was the use of a JavaScript-based presentation framework, instead of PowerPoint. I find that I spend a lot of time moving things around in PowerPoint, and I really wanted something where I could use CSS to keep my slides consistent. I also wanted to be able to keep my slides in a git repo. I did a little research and found that &lt;a href=&quot;https://remarkjs.com&quot;&gt;remark&lt;/a&gt; most closely met the vision in my head.&lt;/p&gt;
+&lt;p&gt;It worked great! My plan moving forward is to use remark to build all my decks. I am not the biggest fan of markdown but I love being able to outline my talk in code, and build it out from there.&lt;/p&gt;
+&lt;p&gt;There are a lot of great conversations I got out of these two events, but right up near the top was an opportunity to work with Scott Hanselman to prepare the A/V equipment for his keynote. I got some great tips from him on speaking, as well as making MKE DOT NET more diverse next year.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/mkedotnet.jpg&quot; alt=&quot;Steven Hicks and Scott Hanselman&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Up Next&lt;/h2&gt;
+&lt;p&gt;My next scheduled talk will be at QA Camp in Milwaukee, on December 8th. I&#39;ll be speaking with a colleague on tightening the feedback loop with TDD and DevOps.&lt;/p&gt;
+&lt;p&gt;I&#39;ve also got a couple proposals that I&#39;m awaiting responses from, and I&#39;m looking forward to submitting to as many CFPs as I can in the near future.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>SSIS Is Annoying</title>
+		<link href="blog/2016/12/ssis-is-annoying/"/>
+		<updated>2016-12-01T06:00:00-06:00</updated>
+		<id>blog/2016/12/ssis-is-annoying/</id>
+		<content type="html">&lt;p&gt;The project I&#39;m currently working on requires a spreadsheet to be imported into the database. SSIS seemed like the logical solution to this.&lt;/p&gt;
+&lt;p&gt;But one month after dealing with SSIS, I am done with it. SSIS is like 85% awesome - but 15% &amp;quot;OMG I hate you&amp;quot;. &lt;a href=&quot;https://www.youtube.com/watch?v=QfzDUpB88x4&amp;amp;t=0m24s&quot;&gt;I wrote a song about it, like to hear it here it goes&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;SSIS doesn&#39;t work consistently across machines&lt;/h2&gt;
+&lt;p&gt;The gist of the package we are building is that it takes an Excel spreadsheet, sanitizes the data, and upserts it into a database.&lt;/p&gt;
+&lt;p&gt;Some of the data was a little bit long. We built some columns to handle 512 characters in the database. Everything seemed like it was working fine.&lt;/p&gt;
+&lt;p&gt;But then one of the team members said it was failing for him, complaining about having to truncate data. We were all using the same spreadsheet, so this didn&#39;t make sense.&lt;/p&gt;
+&lt;p&gt;After some investigation, it turns out all of the columns coming from the spreadsheet were capped at 255 characters. That is strange in itself, but we&#39;ll get to that. But why was it not failing for me?&lt;/p&gt;
+&lt;p&gt;I still don&#39;t know the answer. Because everything in the package said that any value over 255 characters long should have been failing with an error. And that&#39;s what it was doing for my coworker - but not for me!&lt;/p&gt;
+&lt;p&gt;My bigger concern was this 255 character limit.&lt;/p&gt;
+&lt;h2&gt;SSIS and Excel are just the worst&lt;/h2&gt;
+&lt;p&gt;SSIS thinks it is soooo smart. It can predict the widths of your columns for you, so you don&#39;t have to define them! Hooray!&lt;/p&gt;
+&lt;p&gt;Except it only predicts the widths based on the first 8 rows of data. And if there is nothing very long in a column, it will set its max length to 255.&lt;/p&gt;
+&lt;p&gt;This wouldn&#39;t be the worst thing, if you could change the columns it got wrong. But you can&#39;t! You can try...but it will just blow away your changes when it re-samples the spreadsheet.&lt;/p&gt;
+&lt;h3&gt;But you can change the default sample size from 8 rows to something else!&lt;/h3&gt;
+&lt;p&gt;Um...&lt;a href=&quot;http://stackoverflow.com/a/8629065/1585069&quot;&gt;in your registry&lt;/a&gt;. That&#39;s a super fun way to make things fail differently for you than the rest of your team! And not a solution I plan on ever using.&lt;/p&gt;
+&lt;h3&gt;Hey, didn&#39;t you read the rest of that answer? You can put a dummy row with long values in it, to trick SSIS!&lt;/h3&gt;
+&lt;p&gt;Yup, you can. Then you have to alter your package to ignore it...and hope that no one accidentally deletes that row one day. This is the least bad option...but still bad.&lt;/p&gt;
+&lt;p&gt;One side-effect of adding the dummy row is that now every column that is more than 255 characters long goes from a &lt;code&gt;DT_WSTR(255)&lt;/code&gt; type to a &lt;code&gt;DT_NTEXT&lt;/code&gt; type. That makes sense.&lt;/p&gt;
+&lt;h2&gt;But SSIS is bad at determining the length of text&lt;/h2&gt;
+&lt;p&gt;For all of those columns that were fine as a &lt;code&gt;DT_WSTR(255)&lt;/code&gt; type, the &lt;code&gt;LEN(x)&lt;/code&gt; function is gravy.&lt;/p&gt;
+&lt;p&gt;But for all of those columns that became &lt;code&gt;DT_NTEXT&lt;/code&gt;, SSIS will suddenly start doubling the column lengths. After the crazy pills wear off, you might find &lt;a href=&quot;https://technet.microsoft.com/en-us/library/ms141797(v=sql.130).aspx&quot;&gt;this&lt;/a&gt; -&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the argument passed to the LEN function has a Binary Large Object Block (BLOB) data type, such as DT_TEXT, DT_NTEXT, or DT_IMAGE, the function returns a byte count.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ugh. I could see the argument for that with &lt;code&gt;DT_IMAGE&lt;/code&gt;. But &lt;code&gt;DT_TEXT&lt;/code&gt; and &lt;code&gt;DT_NTEXT&lt;/code&gt;? They have &amp;quot;text&amp;quot; in the name! Why wouldn&#39;t I want the length of the text?&lt;/p&gt;
+&lt;p&gt;Turns out you have to do the conversion yourself. &lt;code&gt;LEN( (DT_WSTR, 600) X)&lt;/code&gt; Thanks, SSIS!&lt;/p&gt;
+&lt;h2&gt;SSIS sucks for other reasons, too&lt;/h2&gt;
+&lt;p&gt;Deployment is bad. Our timebox ended before we could figure out if we could run this all off of a server.&lt;/p&gt;
+&lt;p&gt;It crashes often - at least with Visual Studio 2015. Especially when you pull latest on the repo and it has to reload the project.&lt;/p&gt;
+&lt;p&gt;When it crashes, it leaves a process running (SSIS Debug Host) that you have to kill before you can run it again.&lt;/p&gt;
+&lt;p&gt;You can only have one Data Flow task open at one time. This is incredibly frustrating when you want to &amp;quot;copy&amp;quot; functionality across tasks.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;SSIS, consider me unimpressed.&lt;/p&gt;
+&lt;p&gt;My advice for someone who needs to import data from a spreadsheet:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Build a command-line project.&lt;/li&gt;
+&lt;li&gt;Have that command-line project use SqlBulkCopy to move all excel rows into a working table in your database.&lt;/li&gt;
+&lt;li&gt;Have that command-line project then execute a bunch of T-SQL that does all your ETL things.&lt;/li&gt;
+&lt;li&gt;Hug yourself for avoiding SSIS.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>My 2016 recap</title>
+		<link href="blog/2017/01/my-2016-recap/"/>
+		<updated>2017-01-03T06:00:00-06:00</updated>
+		<id>blog/2017/01/my-2016-recap/</id>
+		<content type="html">&lt;p&gt;2016 was a ...year that happened. Love it or hate it, it happened. At a personal level, I had a pretty fantastic 2016.&lt;/p&gt;
+&lt;h2&gt;I discovered what I want to do when I grow up&lt;/h2&gt;
+&lt;p&gt;Nevermind that I am a few weeks from being able to say &lt;a href=&quot;https://www.youtube.com/watch?v=jXEde89WC44&quot;&gt;I&#39;m a man, I&#39;m 40!&lt;/a&gt; It was 2016 when I realized what it is I want to do with my career - I want to speak.&lt;/p&gt;
+&lt;p&gt;When I was an intern at State Farm in the summer of 1998, I was forced to attend Toastmasters on a regular basis. I hated it. It seemed like a bunch of old people who liked to hear themselves talk.&lt;/p&gt;
+&lt;p&gt;But I was not bad at it. One of our assigments was to give a speech about..well I&#39;m not sure what, actually....and in silent protest I gave my speech about all the ways I procrastinated writing it. It went over really well, and I was voted my group&#39;s finalist, which meant there was a chance I would have to give it in front of the entire group of interns. My instructor told me I was &amp;quot;quite a wordsmith&amp;quot; (+1 for vocabulary), but I could use some practice.&lt;/p&gt;
+&lt;p&gt;I ended up not being picked to speak in the finals, which I was pretty excited about. I left that summer with a bad taste in my mouth for Toastmasters - though to be fair, I was young and hated everything.&lt;/p&gt;
+&lt;p&gt;But I also left with the knowledge that I didn&#39;t hate the actual act of speaking. Throughout my career I&#39;ve been happy to speak to coworkers in internal lunch-and-learns. But until recently, I had never gone much further than that.&lt;/p&gt;
+&lt;p&gt;In late 2015, having done a lunch-and-learn on TDD, my boss asked if I was interested in getting out and speaking outside of the company. My TDD lunch-and-learn was not great - lots of bullet points, and too much information crammed into tiny spaces. But I enjoyed it, so I said yes.&lt;/p&gt;
+&lt;p&gt;So in 2016, my goal was really to get out and speak. And when I did - I realized I love it. I love the amount of learning I do when I research a topic to death, because I don&#39;t want to look foolish. I love telling jokes that not everyone gets. I love telling stories that reframe technical ideas in terms of real life. And despite the 10 minutes of &amp;quot;oh crap this is really happening&amp;quot; I feel as the talk is about to start, I love the rush I feel 15 minutes into the talk when the audience is engaged, and laughing at my dumb jokes, and listening to my dumb stories about grocery shopping.&lt;/p&gt;
+&lt;h2&gt;So I did some speaking in 2016&lt;/h2&gt;
+&lt;p&gt;I spoke at Milwaukee meetups twice in 2016. Once on static site generation, and once on clean code, as a lightning talk. These were my first two times speaking outside of my job. The thing I noticed the most was that people were actually engaged and listening. I thought speaking in front of co-workers would have been easier, because they were people I know...but since so many people are just there to pass some time while they eat their lunch, the engagement level isn&#39;t very high. When you are speaking outside of work, you are speaking to people who actively sought out your talk - so the engagement level is way higher.&lt;/p&gt;
+&lt;p&gt;I also got lucky enough to get into four conferences/camps in 2016!&lt;/p&gt;
+&lt;p&gt;My first conference speaking opportunity ever - &lt;a href=&quot;/blog/2016/06/chicago-coder-conference&quot;&gt;at Chicago Coder Conference&lt;/a&gt; - was at a conference that I didn&#39;t know anyone on the selection committee. That felt pretty good. I did a variation of my static site generation talk. I met some great people, and had a really fun time in downtown Chicago for a couple days.&lt;/p&gt;
+&lt;p&gt;Later in the year, I spoke at &lt;a href=&quot;/blog/2016/11/october-recap&quot;&gt;MKE DOT NET and Milwaukee Code Camp&lt;/a&gt;. Each time I&#39;ve spoken, it has gotten easier. At MKE DOT NET, I got a ton of great reviews in our follow-up survey.&lt;/p&gt;
+&lt;p&gt;I also got to speak at another Centare-run event in December - QA Camp. This was an event for QA professionals, and I tag-teamed a talk with my co-worker &lt;a href=&quot;http://thefoxgang.com/&quot;&gt;Tyler Evert&lt;/a&gt;, called &amp;quot;Tight Feedback Loops with TDD and DevOps.&amp;quot; This was my first tag-team talk, and it was really fun. Again, we got a ton of great reviews in the follow-up survey. I feel like I am on the right track.&lt;/p&gt;
+&lt;p&gt;I really wanted to get into That Conference in 2016, but it didn&#39;t happen. Looking back at the abstract I submitted, I am not surprised. It was wordy. I was crafting it as if the reader had nothing to do on a cold winter Saturday, poured themself a cup of coffee, kicked their feet up in front of the fireplace, and read my abstract.&lt;/p&gt;
+&lt;h2&gt;I got some great speaking advice at That Conference&lt;/h2&gt;
+&lt;p&gt;Probably the best part of That Conference is the Open Spaces, in which anyone can propose any topic, and anyone can attend. I facilitated one on &amp;quot;becoming a tech speaker&amp;quot;, and it was amazing. I had tons of great speakers stop by to give advice and answer questions. It was in this session that I realized why I probably had my abstract rejected. I am still trying to figure out how to get my abstracts selected, I feel like it is a game that I just haven&#39;t figured out yet.&lt;/p&gt;
+&lt;p&gt;Some of the other great things I learned about speaking:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It&#39;s okay to reach out to organizers for feedback on why your abstracts weren&#39;t selected. I have used this advice several times already, and no one so far has declined my request for more info.&lt;/li&gt;
+&lt;li&gt;Have backups for everything! This was a theme for me this year. At Milwaukee Code Camp, I thought I had accounted for everything...until the projector stopped working. At MKE DOT NET, Scott Hanselman worked with us to make sure we had backups of everything, including a projector...but we somehow missed a backup microphone, so obviously that&#39;s the one thing that started to die five minutes in. At QA Camp, the batteries in Tyler&#39;s clicker died halfway through. So yeah....backups for everything.&lt;/li&gt;
+&lt;li&gt;Have a checklist of all the things you want to verify during the setup of your talk. &lt;a href=&quot;https://www.evernote.com/shard/s8/sh/bceb64d8-717f-4027-aaaa-6cd73d071ffc/be44ae852ddc8208&quot;&gt;Cory House&lt;/a&gt; has a very thorough example. This is incredibly helpful in those ten minutes before you start up, when your brain is freaking out a little bit.&lt;/li&gt;
+&lt;li&gt;Find what works for you. You will get advice from everyone about how to get started speaking, or get better at speaking. It turns out...you and that person may not agree on what makes a good speaker. Or you may learn differently than they do. Much like the adage about the most effective gym workout being the one that you will not quit - the best speaking tips are the ones that work for you. Which reminds me....&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;I stopped hating Markdown&lt;/h2&gt;
+&lt;p&gt;As early as a few months ago, I despised Markdown. It was too cryptic for me. But I realized that a weird combination of PowerPoint and OneNote weren&#39;t really working for me, for developing talks. I discovered that there were plenty of web-based alternatives, which would allow me to write my notes as an outline from the start, and iteratively build them up. The feedback I got from other speaking coworkers was that they sucked.&lt;/p&gt;
+&lt;p&gt;But I settled on &lt;a href=&quot;https://remarkjs.com&quot;&gt;RemarkJS&lt;/a&gt; and tried it anyway, and it completely works for me. I have written several talks with it, and will continue to write my talks that way.&lt;/p&gt;
+&lt;p&gt;Like always, different strokes for different folks.&lt;/p&gt;
+&lt;p&gt;As a result, I&#39;ve now written talk outlines in Markdown enough times that I don&#39;t need a cheatsheet to do everything. Me from three months ago would not have believed this would happen.&lt;/p&gt;
+&lt;h2&gt;Looking Forward to 2017&lt;/h2&gt;
+&lt;p&gt;I am really happy with my career right now. I am submitting to conference CFP&#39;s any time I can. I am not being accepted a bunch -- yet. I love that &lt;a href=&quot;http://www.centare.com&quot;&gt;Centare&lt;/a&gt; is giving me a ton of opportunity to speak.&lt;/p&gt;
+&lt;p&gt;In 2017 I plan to speak a bit more at local meetups. I have a talk scheduled in late January with the local ReactJS meetup group, and I think spreading my brand locally is a great way for me to get regional conferences to notice me.&lt;/p&gt;
+&lt;p&gt;And speaking of brand, I know this is something I need to work on in 2017. I am a bad self-marketer, and I need to get better.&lt;/p&gt;
+&lt;p&gt;I am also hoping to get into several regional conferences this year. I&#39;m submitting like crazy. It&#39;s not happening as quickly as I want it to, but I know this is what I want to do, so I&#39;m going to keep submitting.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Mocking ES2015 modules</title>
+		<link href="blog/2017/01/mocking-es2015-modules/"/>
+		<updated>2017-01-05T06:00:00-06:00</updated>
+		<id>blog/2017/01/mocking-es2015-modules/</id>
+		<content type="html">&lt;p&gt;If you&#39;re unit testing code that is using ES2015 modules [&lt;a href=&quot;#footnotes&quot;&gt;1&lt;/a&gt;], you&#39;ll probably point want to mock dependencies at some point. For the most part this is just like mocking things in any code. My tool of choice right now is &lt;a href=&quot;https://github.com/jupiter/simple-mock&quot;&gt;simple-mock&lt;/a&gt;, but there are gajillions of options.&lt;/p&gt;
+&lt;h2&gt;Test-induced damage&lt;/h2&gt;
+&lt;p&gt;There is some test-induced damage that my team has come to accept with simple-mock, and I am guessing it would be an issue with other mocking libraries like it. While simple-mock is great for mocking functions that are properties on exported objects, it seemed difficult to mock standalone/named exported functions from dependencies.&lt;/p&gt;
+&lt;p&gt;So we found this to be easy: [&lt;a href=&quot;#footnotes&quot;&gt;2&lt;/a&gt;]&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;//dependency.js
+export default {
+    someAction: function() {
+        //....
+    },
+};
+
+//test.js
+import simple from &amp;quot;simple-mock&amp;quot;;
+
+import dependency from &amp;quot;./dependency&amp;quot;;
+
+describe(&amp;quot;feature&amp;quot;, function() {
+    afterEach(function() {
+        simple.restore();
+    });
+
+    it(&amp;quot;calls a dependency&amp;quot;, function() {
+        //Arrange
+        simple.mock(dependency, &amp;quot;someAction&amp;quot;);
+
+        //Act
+        systemUnderTest.execute();
+
+        //Assert
+        expect(dependency.someAction.callCount).to.equal(1);
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But the &lt;code&gt;simple.mock&lt;/code&gt; function is looking for an object, and a property on that object. So we found this to be difficult:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;//dependency.js
+export function someAction() {
+    //....
+}
+
+//test.js
+import simple from &amp;quot;simple-mock&amp;quot;;
+
+// Notice the difference in how we are importing...
+import { someAction } from &amp;quot;./dependency&amp;quot;;
+
+describe(&amp;quot;feature&amp;quot;, function() {
+    afterEach(function() {
+        simple.restore();
+    });
+
+    it(&amp;quot;calls a dependency&amp;quot;, function() {
+        //Arrange
+        // ¯\_(ツ)_/¯
+        // How would we mock &#39;someAction&#39;? It isn&#39;t a property on an object.
+
+        //Act
+        systemUnderTest.execute();
+
+        //Assert
+        expect(someAction.callCount).to.equal(1);
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As a result of our inability to solve this problem, we had accepted that we would always export a default object from our code, with functions on it as properties.&lt;/p&gt;
+&lt;p&gt;So while we wanted to export something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;//dependency.js - the desired way
+export function someAction() {
+    //....
+}
+
+export function otherAction() {
+    //...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We just always accepted that we would do this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;//dependency.js - the undesired way
+export default {
+    someAction: function() {
+        //....
+    },
+    otherAction: function() {
+        //...
+    },
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Why does it matter?&lt;/h2&gt;
+&lt;p&gt;There&#39;s a reason this was not ideal. Modern bundlers are able to remove the unused exports out of your code, to reduce your bundle size. But code is only removed if it isn&#39;t imported. By exporting a single object with a bunch of functions on it, the entire object must be imported by the calling code.&lt;/p&gt;
+&lt;p&gt;So in the first example, if your code called &lt;code&gt;someAction&lt;/code&gt; but not &lt;code&gt;otherAction&lt;/code&gt;, your final bundle would only include &lt;code&gt;someAction&lt;/code&gt;. But in the second example, even if you are only ever calling &lt;code&gt;someAction&lt;/code&gt;...you are importing the entire object, and therefore the unused &lt;code&gt;otherAction&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In our app, that ends up not being a problem, because we are using all of the code we write. But if we were writing a library, or some code that was intended to be shared by other apps and therefore might not use everything, this would not be cool.&lt;/p&gt;
+&lt;h2&gt;But there is a better way to import the dependency.&lt;/h2&gt;
+&lt;p&gt;Today, we discovered the answer to our problems. The &amp;quot;import * as&amp;quot; syntax allows you to import all exports from a dependency, expanding them onto an object - and therefore allowing you to mock a named/standalone function from your dependency. [&lt;a href=&quot;#footnotes&quot;&gt;3&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;So all that changes is how we import dependencies into our tests:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;//dependency.js
+export function someAction() {
+    //....
+}
+
+//test.js
+import simple from &amp;quot;simple-mock&amp;quot;;
+
+//     vvvvvvvvvvvvvvv Notice the difference in how we are importing
+import * as dependency from &amp;quot;./dependency&amp;quot;;
+//     ^^^^^^^^^^^^^^^
+
+describe(&amp;quot;feature&amp;quot;, function() {
+    afterEach(function() {
+        simple.restore();
+    });
+
+    it(&amp;quot;calls a dependency&amp;quot;, function() {
+        //Arrange
+        // and now we can pass simple.mock a property on an object.
+        simple.mock(dependency, &amp;quot;someAction&amp;quot;);
+
+        //Act
+        systemUnderTest.execute();
+
+        //Assert
+        expect(dependency.someAction.callCount).to.equal(1);
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hooray, JavaScript! Hooray, mocking! Boo, test-induced damage!&lt;/p&gt;
+&lt;hr&gt;
+&lt;div id=&quot;footnotes&quot;&gt;&lt;/div&gt;
+&lt;p&gt;[1] If you aren&#39;t unit testing your JS, you should be! It is not as scary as it sounds. You&#39;ll see great improvements to the quality of your front-end code. As an added bonus, the guilt that you probably feel for not testing your JS will disappear.&lt;/p&gt;
+&lt;p&gt;[2]&lt;a href=&quot;http://mochajs.org/#arrow-functions&quot;&gt;why aren&#39;t you using es2015 arrow functions in your tests?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[3] I ain&#39;t gonna lie, the discovery of this functionality was, as usual, the result of a &lt;a href=&quot;http://stackoverflow.com/a/38414160/1585069&quot;&gt;stackoverflow search&lt;/a&gt; that I definitely tried a long time ago, but must have narrowly missed.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>I&#39;m going to be busy</title>
+		<link href="blog/2017/04/im-going-to-be-busy/"/>
+		<updated>2017-04-19T07:00:00-05:00</updated>
+		<id>blog/2017/04/im-going-to-be-busy/</id>
+		<content type="html">&lt;p&gt;Earlier this year, I decided to become more involved in speaking at local meetups and events. In 2016 I got the speaking bug, but struggled a little to get into conferences. For 2017, I thought a good way to get experience was to engage at the local level.&lt;/p&gt;
+&lt;p&gt;So I scheduled a few meetup dates. Those events have gone really well.&lt;/p&gt;
+&lt;p&gt;In the meantime, I submitted a good amount of abstracts to local and regional conferences, hoping to get into one or two.&lt;/p&gt;
+&lt;h2&gt;And then I got into more than one or two&lt;/h2&gt;
+&lt;p&gt;I started to get accepted to speak at conferences way more quickly than I expected. In 2016, my issue with conference submissions was that I couldn&#39;t get in. In 2017, my issue is the opposite. I have actually started retracting submissions from conferences, for fear of getting accepted and not having any time for my family and my training. A lucky problem to have!&lt;/p&gt;
+&lt;h2&gt;My upcoming schedule&lt;/h2&gt;
+&lt;h3&gt;Chicago Code Camp&lt;/h3&gt;
+&lt;h4&gt;April 29, Chicago&lt;/h4&gt;
+&lt;p&gt;I&#39;ll be presenting my &amp;quot;Getting Started With React&amp;quot; talk at &lt;a href=&quot;https://www.chicagocodecamp.com/&quot;&gt;Chicago Code Camp&lt;/a&gt; at the end of April.&lt;/p&gt;
+&lt;p&gt;One thing that is interesting about speaking is that you never really know what talks will get picked up. My &amp;quot;Getting Started With React&amp;quot; talk was never really intended to happen - it came out of a workshop I did for our internship program at &lt;a href=&quot;http://www.centare.com&quot;&gt;Centare&lt;/a&gt;, and I was reluctant to submit it anywhere. But after Chicago Code Camp, I will have given this talk more than any other talk. Crazy how that works out.&lt;/p&gt;
+&lt;h3&gt;Self.conference&lt;/h3&gt;
+&lt;h4&gt;May 19-20, Detroit&lt;/h4&gt;
+&lt;p&gt;I will be doing my favorite talk - &amp;quot;Code Is Communication&amp;quot; - at &lt;a href=&quot;http://www.selfconference.org&quot;&gt;Self.conference&lt;/a&gt; in May.&lt;/p&gt;
+&lt;p&gt;This is a really fun talk, and I&#39;m excited to get to do it again. I&#39;m also really excited about the other talks at this conference. Getting accepted to Self.conference was my first big surprise.&lt;/p&gt;
+&lt;h3&gt;Open Source North&lt;/h3&gt;
+&lt;h4&gt;June 8, Twin Cities&lt;/h4&gt;
+&lt;p&gt;In June, I&#39;ll be doing a revamp of my oldest talk - &amp;quot;The Static Web Revolution&amp;quot; - at &lt;a href=&quot;http://opensourcenorth.com&quot;&gt;Open Source North&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&#39;m excited about some visual updates I&#39;ll be making for the slides for this talk, playing on the &amp;quot;revolution&amp;quot; idea.&lt;/p&gt;
+&lt;h3&gt;That Conference&lt;/h3&gt;
+&lt;h4&gt;August 7-9, Wisconsin Dells&lt;/h4&gt;
+&lt;p&gt;Oh man, this is the grandaddy of them all. This conference (that conference) is the reason I wanted to start speaking. I saw Cory House speak two years ago, and realized this was what I wanted to do. Getting into &lt;a href=&quot;https://www.thatconference.com&quot;&gt;That Conference&lt;/a&gt; was the first speaking goal I set.&lt;/p&gt;
+&lt;p&gt;So yeah, I&#39;m pretty stoked about this one. I&#39;ll be doing &amp;quot;The Static Web revolution&amp;quot; here as well.&lt;/p&gt;
+&lt;h3&gt;Midwest JS&lt;/h3&gt;
+&lt;h4&gt;August 16-18, Twin Cities&lt;/h4&gt;
+&lt;p&gt;Back to the Twin Cities again, this time for &lt;a href=&quot;http://midwestjs.com/&quot;&gt;Midwest JS&lt;/a&gt;. I&#39;d heard great things about this conference in 2016, so I was planning on attending even if I hadn&#39;t gotten in as a speaker.&lt;/p&gt;
+&lt;p&gt;I&#39;ll be doing a brand new talk here - &amp;quot;Unit Testing Your React App&amp;quot;. This talk was born out of the work I&#39;ve been doing over the last year or so, as well as a desire to learn more about Jest and Enzyme.&lt;/p&gt;
+&lt;h2&gt;Lessons Learned&lt;/h2&gt;
+&lt;p&gt;A few things I&#39;ve learned from this year of craziness, so far.&lt;/p&gt;
+&lt;h3&gt;Keep submitting.&lt;/h3&gt;
+&lt;p&gt;I was frustrated last year, and early this year, with not getting accepted into conferences. Admittedly, some of my very early submissions were not very good. But I thought a lot of the stuff I was submitting last year and early this year was pretty good.&lt;/p&gt;
+&lt;p&gt;It turns out it was, because all of the talks I had picked up this year were things that had been submitted and rejected many times. Especially early on, I think the ratio of rejected to accepted is at least 5 to 1. I just knew I wanted to speak at conferences, so I pushed through the rejection, and it is paying off.&lt;/p&gt;
+&lt;h3&gt;You never know which talks will be accepted.&lt;/h3&gt;
+&lt;p&gt;It blows my mind how many times I&#39;ll be giving my intro to React talk. I hesitated to submit that talk every single time. I thought &amp;quot;this is such a basic thing, they must get a ton of these, why would mine get picked?&amp;quot;&lt;/p&gt;
+&lt;p&gt;I&#39;m not sure why. But it did, several times. So, yeah - you never know which talks are interesting to organizers. It might be the one you least expect.&lt;/p&gt;
+&lt;h3&gt;Don&#39;t spread yourself too thin.&lt;/h3&gt;
+&lt;p&gt;For as many talks as I&#39;ll be doing this summer, I&#39;ve been pretty lucky with which ones have been selected. Considering the range of talks I&#39;d submitted to these events, I could have found myself with a brand new talk for every event. Luckily, I didn&#39;t, so I get to focus on nailing down just a few of them. And I only have one brand new one that I have to start from scratch.&lt;/p&gt;
+&lt;p&gt;For next year, I&#39;m going to make sure that I&#39;m submitting talks that I have a pretty good start on. I don&#39;t want to get stuck having to write 5 new talks over the summer. This can be a hard thing to balance when you&#39;re first starting - I just wanted to get into conferences, so I was submitting anything I thought was a good idea. But it probably makes sense to restrain those ideas a little, to make sure you don&#39;t get swamped with accepted talks that you haven&#39;t written.&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -37,7 +526,7 @@
 &lt;h2&gt;What does this have to do with unit tests?&lt;/h2&gt;
 &lt;p&gt;Full disclosure - I don&#39;t actually know anything about dramatic writing, or about Anton Chekhov.&lt;/p&gt;
 &lt;p&gt;I do know things about writing unit tests, though, especially in JavaScript. Someone recently described Chekhov&#39;s Gun to me, and I thought &amp;quot;that is exactly how I feel about writing unit tests.&amp;quot; Especially when it comes to test setup: if a line of setup code isn&#39;t important to describe a specific test, then I don&#39;t want it to distract me from what is important about the test.&lt;/p&gt;
-&lt;p&gt;Imagine I have an app where users can submit new beers to a curated list of &amp;quot;the best beers ever.&amp;quot; Here&#39;s a test that I might write for a function that validates that the user submitted the ABV (alcohol by volume) for a beer. We&#39;ll call it Test A.&lt;/p&gt;
+&lt;p&gt;Imagine I have an app where users can submit new beers to a curated list of &amp;quot;the best beers ever.&amp;quot; Here&#39;s a test that I might write for a function that validates that the user submitted the ABV (alcohol by volume) for a beer. We&#39;ll call it &lt;code&gt;Noisy Test&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&amp;quot;validateBeer&amp;quot;, () =&amp;gt; {
     it(&amp;quot;returns invalid for beers with no abv&amp;quot;, () =&amp;gt; {
         const beer = {
@@ -59,14 +548,15 @@
     });
 });
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;Test A&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Noisy Test&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This test is pretty decent. I like that the name of the test tells me exactly what it is testing. I like that there aren&#39;t a ton of assertions, and it&#39;s pretty clearly testing only one thing.&lt;/p&gt;
 &lt;p&gt;What I don&#39;t like about it is the distracting setup code. This test verifies that a beer with no ABV is considered invalid. It doesn&#39;t specify &lt;code&gt;abv: undefined&lt;/code&gt; until the 11th line of the test. This means that I have to read through 10 lines of irrelevant setup code before I get to what actually makes this test unique - that the submitted beer doesn&#39;t have an ABV. This is a violation of Chekhov&#39;s Gun, in unit test form.&lt;/p&gt;
-&lt;p&gt;What I&#39;d rather see is something like this - we&#39;ll call it Test B:&lt;/p&gt;
+&lt;p&gt;What I&#39;d rather see is something like this - we&#39;ll call it &lt;code&gt;Better Test&lt;/code&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&amp;quot;validateBeer&amp;quot;, () =&amp;gt; {
     it(&amp;quot;returns invalid for beers with no abv (less setup)&amp;quot;, () =&amp;gt; {
-        const beer = makeMeABeer();
-        beer.abv = undefined;
+        const beer = makeMeABeer({
+            abv: undefined,
+        });
 
         const result = validateBeer(beer);
 
@@ -74,17 +564,20 @@
     });
 });
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;Test B&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Here, I get a beer from an extracted function named &lt;code&gt;makeMeABeer&lt;/code&gt;. This function would generate a typical beer, with values that are usual and not edge-cases. I then change just the values that are unique to this test - in this case, setting &lt;code&gt;beer.abv = undefined&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Extracting my setup of a beer, as in the second example, improves my signal to noise ratio for this test. The signal is &amp;quot;what am I trying to test?&amp;quot; The noise, in the first example, is &amp;quot;setup code that doesn&#39;t impact this test.&amp;quot; The better I can do to provide more signal, and less noise, the easier it is for a reader of my test to understand my intentions.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Better Test&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Here, I get a beer from an extracted function named &lt;code&gt;makeMeABeer&lt;/code&gt;. This function would generate a typical beer, with values that are usual and not edge-cases. I pass in only the values that are unique to this test - in this case, &lt;code&gt;abv: undefined&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Extracting my setup of a beer, as in the second example, improves my signal to noise ratio for this test. The signal is &amp;quot;what am I trying to test?&amp;quot; The noise, in the first example, is &amp;quot;setup code that doesn&#39;t impact this test.&amp;quot; The more I can increase the signal, the easier it is for a reader of my test to understand my intentions.&lt;/p&gt;
 &lt;h2&gt;Why do I care about the reader of this test?&lt;/h2&gt;
 &lt;p&gt;A question: who do we write our unit tests for? It&#39;s ourselves, right?&lt;/p&gt;
 &lt;p&gt;If we&#39;re doing TDD, yes, we get a lot of value out of the tests we&#39;re writing, in the moment.&lt;/p&gt;
 &lt;p&gt;But aside from TDD, who benefits the most from our tests? It&#39;s not you, when you write the test. You&#39;ve got all the context about the test being written. You most likely know what the code does that you are writing. If you&#39;d just finished writing the &lt;code&gt;validateBeer&lt;/code&gt; function, and I asked you what the system was supposed to do with a beer that didn&#39;t have an ABV, you&#39;d likely be able to tell me the answer - without looking at any tests.&lt;/p&gt;
 &lt;p&gt;But if a teammate makes a change a few months from now and this test suddenly starts failing, that teammate will have no context. They won&#39;t know why this test was written in the first place, and they will not know details of how the test was made to pass. They might not even know that ABV is a thing.&lt;/p&gt;
-&lt;p&gt;Test A, a test that is filled with irrelevant setup code, will distract them from discovering why this test exists. It will take them a good amount of time to determine what makes this test unique compared to the others. They might have to compare it to several other tests to see what the difference is.&lt;/p&gt;
-&lt;p&gt;Test B, on the other hand, removes the irrelevant setup details. This will allow them to determine more quickly what makes this test unique. They might not know quickly why it is failing, but at least they&#39;ll know why this test exists, and how it is different.&lt;/p&gt;
-&lt;p&gt;???I need some kind of conclusion but I haven&#39;t figured it out yet.???&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Noisy Test&lt;/code&gt;, a test that is filled with irrelevant setup code, will distract them from discovering why this test exists. It will take them a lot of time to determine what makes this test unique compared to the others. They might have to compare it to several other tests to see what the difference is.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Better Test&lt;/code&gt;, on the other hand, removes the irrelevant setup details. This allows them to determine more quickly what makes this test unique. They might not know immediately why it is failing, but at least they&#39;ll know why this test exists, and how it is different.&lt;/p&gt;
+&lt;h2&gt;Optimize for the reader, not the author&lt;/h2&gt;
+&lt;p&gt;Chekhov&#39;s Gun is all about optimization of information. Anton Chekhov wants your writing to be as efficient as possible - so that readers can consume it with minimal effort and distraction.&lt;/p&gt;
+&lt;p&gt;When we&#39;re writing code, we are communicating with our teammates as much as we are communicating with the compiler. We are authors, and they are our readers. If we write our code in a way that optimizes for our writing experience, our readers will struggle. It won&#39;t take long for them to throw their hands up and say &amp;quot;let&#39;s do a rewrite, because I don&#39;t understand this.&amp;quot;&lt;/p&gt;
+&lt;p&gt;If we write our code in a way that optimizes for the reading experience, our readers will thank us. With less cognitive load from trying to decipher our code, they&#39;ll be able to focus on implementing their changes. Tests that minimize irrelevant setup are one simple way we can optimize our code for the reader.&lt;/p&gt;
 </content>
 	</entry>
 	

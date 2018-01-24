@@ -22,7 +22,7 @@ Full disclosure - I don't actually know anything about dramatic writing, or abou
 
 I do know things about writing unit tests, though, especially in JavaScript. Someone recently described Chekhov's Gun to me, and I thought "that is exactly how I feel about writing unit tests." Especially when it comes to test setup: if a line of setup code isn't important to describe a specific test, then I don't want it to distract me from what is important about the test.
 
-Imagine I have an app where users can submit new beers to a curated list of "the best beers ever." Here's a test that I might write for a function that validates that the user submitted the ABV (alcohol by volume) for a beer. We'll call it Test A.
+Imagine I have an app where users can submit new beers to a curated list of "the best beers ever." Here's a test that I might write for a function that validates that the user submitted the ABV (alcohol by volume) for a beer. We'll call it `Noisy Test`.
 
 ```javascript
 describe("validateBeer", () => {
@@ -47,19 +47,20 @@ describe("validateBeer", () => {
 });
 ```
 
-`Test A`
+`Noisy Test`
 
 This test is pretty decent. I like that the name of the test tells me exactly what it is testing. I like that there aren't a ton of assertions, and it's pretty clearly testing only one thing.
 
 What I don't like about it is the distracting setup code. This test verifies that a beer with no ABV is considered invalid. It doesn't specify `abv: undefined` until the 11th line of the test. This means that I have to read through 10 lines of irrelevant setup code before I get to what actually makes this test unique - that the submitted beer doesn't have an ABV. This is a violation of Chekhov's Gun, in unit test form.
 
-What I'd rather see is something like this - we'll call it Test B:
+What I'd rather see is something like this - we'll call it `Better Test`:
 
 ```javascript
 describe("validateBeer", () => {
     it("returns invalid for beers with no abv (less setup)", () => {
-        const beer = makeMeABeer();
-        beer.abv = undefined;
+        const beer = makeMeABeer({
+            abv: undefined,
+        });
 
         const result = validateBeer(beer);
 
@@ -68,11 +69,11 @@ describe("validateBeer", () => {
 });
 ```
 
-`Test B`
+`Better Test`
 
-Here, I get a beer from an extracted function named `makeMeABeer`. This function would generate a typical beer, with values that are usual and not edge-cases. I then change just the values that are unique to this test - in this case, setting `beer.abv = undefined`.
+Here, I get a beer from an extracted function named `makeMeABeer`. This function would generate a typical beer, with values that are usual and not edge-cases. I pass in only the values that are unique to this test - in this case, `abv: undefined`.
 
-Extracting my setup of a beer, as in the second example, improves my signal to noise ratio for this test. The signal is "what am I trying to test?" The noise, in the first example, is "setup code that doesn't impact this test." The better I can do to provide more signal, and less noise, the easier it is for a reader of my test to understand my intentions.
+Extracting my setup of a beer, as in the second example, improves my signal to noise ratio for this test. The signal is "what am I trying to test?" The noise, in the first example, is "setup code that doesn't impact this test." The more I can increase the signal, the easier it is for a reader of my test to understand my intentions.
 
 ## Why do I care about the reader of this test?
 
@@ -84,8 +85,14 @@ But aside from TDD, who benefits the most from our tests? It's not you, when you
 
 But if a teammate makes a change a few months from now and this test suddenly starts failing, that teammate will have no context. They won't know why this test was written in the first place, and they will not know details of how the test was made to pass. They might not even know that ABV is a thing.
 
-Test A, a test that is filled with irrelevant setup code, will distract them from discovering why this test exists. It will take them a good amount of time to determine what makes this test unique compared to the others. They might have to compare it to several other tests to see what the difference is.
+`Noisy Test`, a test that is filled with irrelevant setup code, will distract them from discovering why this test exists. It will take them a lot of time to determine what makes this test unique compared to the others. They might have to compare it to several other tests to see what the difference is.
 
-Test B, on the other hand, removes the irrelevant setup details. This will allow them to determine more quickly what makes this test unique. They might not know quickly why it is failing, but at least they'll know why this test exists, and how it is different.
+`Better Test`, on the other hand, removes the irrelevant setup details. This allows them to determine more quickly what makes this test unique. They might not know immediately why it is failing, but at least they'll know why this test exists, and how it is different.
 
-???I need some kind of conclusion but I haven't figured it out yet.???
+## Optimize for the reader, not the author
+
+Chekhov's Gun is all about optimization of information. Anton Chekhov wants your writing to be as efficient as possible - so that readers can consume it with minimal effort and distraction.
+
+When we're writing code, we are communicating with our teammates as much as we are communicating with the compiler. We are authors, and they are our readers. If we write our code in a way that optimizes for our writing experience, our readers will struggle. It won't take long for them to throw their hands up and say "let's do a rewrite, because I don't understand this."
+
+If we write our code in a way that optimizes for the reading experience, our readers will thank us. With less cognitive load from trying to decipher our code, they'll be able to focus on implementing their changes. Tests that minimize irrelevant setup are one simple way we can optimize our code for the reader.
