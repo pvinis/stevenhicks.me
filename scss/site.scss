@@ -122,6 +122,15 @@ p code {
     h1 {
         margin-top: 0;
     }
+    img {
+        max-width: 100%;
+    }
+    img + cite {
+        float: right;
+        & + h1 {
+            clear: both;
+        }
+    }
 }
 
 h3.by-line {
@@ -219,5 +228,31 @@ article {
     border-radius: 4px;
     h2 {
         margin-top: 0;
+    }
+}
+
+.engagements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .engagement {
+        width: 180px;
+        border: 1px solid $brand-alt-light;
+        border-radius: 4px;
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        h4,
+        h5,
+        h6 {
+            font-family: $serif;
+        }
+        h4 {
+            margin-top: 0;
+        }
+        h6:last-child {
+            margin-bottom: 0;
+        }
     }
 }

@@ -5,15 +5,31 @@ layout: layout
 ---
 include /mixins.pug
 
-each engagement in collections.engagementsReversed
-    article.engagement
-        h4 #{engagement.data.talk}
-        if engagement.data.link
-            h5
-                a(href=engagement.data.link) #{engagement.data.event}
-        else
-            h5 #{engagement.data.event}
-        h6 #{engagement.data.location} - #{formatDate(engagement.data.date)}
-        if engagement.data.slides
-            h6
-                a(href=engagement.data.slides) Slides
+img(src='the-401.jpg', alt='Steven Hicks @ CodeMash 2018')
+cite Photo by 
+    a(href='https://twitter.com/Wright2Tweet/status/951251467675029504') @Wright2Tweet
+
+h1 Bio
+p Steven Hicks is a full-stack web developer with nearly 20 years experience. He believes in clean, readable, and maintainable code. Steve likes to use the right tool for the job, especially if the right tool is JavaScript. He strongly believes that if you ain't falling, you ain't learning. 
+p Steve embraces continuous improvement and believes that a developer's job is to solve problems, not just write code.
+p When he isn't talking to the duck or playing with his kids, you can find Steve at a triathlon, on his mountain bike, or in a climbing gym. 
+
+h2 Current Talks
+p Abstracts and descriptions for my current talks can be found at my
+    a(href='https://www.papercall.io/speakers/steven-hicks')  papercall.io speaker page.
+
+h2 Speaking Engagements
+
+div.engagements
+    each engagement in collections.engagementsReversed
+        article.engagement
+            h4 #{engagement.data.talk}
+            if engagement.data.link
+                h5
+                    a(href=engagement.data.link) #{engagement.data.event}
+            else
+                h5 #{engagement.data.event}
+            h6 #{engagement.data.location} - #{formatDate(engagement.data.date)}
+            if engagement.data.slides
+                h6
+                    a(href=engagement.data.slides) Slides

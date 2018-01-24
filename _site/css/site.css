@@ -94,6 +94,12 @@ p code {
   padding-top: 2rem; }
   .content h1 {
     margin-top: 0; }
+  .content img {
+    max-width: 100%; }
+  .content img + cite {
+    float: right; }
+    .content img + cite + h1 {
+      clear: both; }
 
 h3.by-line {
   font-weight: normal;
@@ -177,3 +183,23 @@ article {
   border-radius: 4px; }
   .content-article h2 {
     margin-top: 0; }
+
+.engagements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .engagements .engagement {
+    width: 180px;
+    border: 1px solid #daeaea;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center; }
+    .engagements .engagement h4,
+    .engagements .engagement h5,
+    .engagements .engagement h6 {
+      font-family: Merriweather; }
+    .engagements .engagement h4 {
+      margin-top: 0; }
+    .engagements .engagement h6:last-child {
+      margin-bottom: 0; }
