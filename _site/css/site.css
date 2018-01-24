@@ -203,3 +203,24 @@ article {
       margin-top: 0; }
     .engagements .engagement h6:last-child {
       margin-bottom: 0; }
+
+.about {
+  display: flex; }
+  @media only screen and (max-width: 600px) {
+    .about {
+      flex-flow: wrap;
+      justify-content: center; } }
+  .about .bio {
+    flex-grow: 1;
+    margin-right: 2rem; }
+    .about .bio p:first-child {
+      margin-top: 0; }
+  .about .profile {
+    font-size: 2rem;
+    text-align: center; }
+    .about .profile img {
+      width: 250px;
+      max-width: unset;
+      border-radius: 50%; }
+    .about .profile a:not(:last-child) {
+      margin-right: 1rem; }
