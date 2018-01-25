@@ -28,7 +28,16 @@ module.exports = function(eleventyConfig) {
             }));
     });
     return {
-        templateFormats: ["md", "pug", "njk", "png", "jpg", "gif", "css"],
+        templateFormats: [
+            "md",
+            "pug",
+            "njk",
+            "png",
+            "jpg",
+            "gif",
+            "css",
+            "ico",
+        ],
         passthroughFileCopy: true,
         dir: {
             input: ".",

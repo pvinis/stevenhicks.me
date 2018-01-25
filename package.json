@@ -4,10 +4,11 @@
     "description": "Website for Steven Hicks.",
     "main": "index.js",
     "scripts": {
-        "build": "eleventy",
+        "build": "npm run sass && eleventy",
         "start":
-            "concurrently \"npm run sass\" \"eleventy --watch \" \"live-server ./_site\" -n SASS,ELEVENTY,SERVE -c bgBlue,bgGreen,bgYellow",
-        "sass": "gulp"
+            "concurrently \"npm run sass-watch\" \"eleventy --watch \" \"live-server ./_site\" -n SASS,ELEVENTY,SERVE -c bgBlue,bgGreen,bgYellow",
+        "sass": "gulp sass",
+        "sass-watch": "gulp"
     },
     "keywords": ["stevenhicks.me"],
     "author": "Steven J Hicks",
