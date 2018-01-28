@@ -158,6 +158,11 @@ h3.by-line {
         font-size: 1.3rem;
     }
     border-radius: 0 0 4px 4px;
+    @media only screen and (max-width: $width-max-mobile) {
+        a {
+            font-size: 1.2rem;
+        }
+    }
 }
 .footer {
     grid-area: footer;

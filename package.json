@@ -11,7 +11,7 @@
         "sass-watch": "gulp"
     },
     "keywords": ["stevenhicks.me"],
-    "author": "Steven J Hicks",
+    "author": "Steven Hicks",
     "license": "ISC",
     "devDependencies": {
         "@11ty/eleventy": "^0.2.7",

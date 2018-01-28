@@ -121,6 +121,9 @@ h3.by-line {
   .header a:active {
     color: white;
     font-size: 1.3rem; }
+  @media only screen and (max-width: 600px) {
+    .header a {
+      font-size: 1.2rem; } }
 
 .footer {
   grid-area: footer;
