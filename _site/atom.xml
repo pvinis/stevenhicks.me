@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Steven Hicks</title>
 	<link href="https://stevenhicks.me"/>
-	<updated>2018-01-20T06:00:00-06:00</updated>
+	<updated>2018-01-28T06:00:00-06:00</updated>
 	<author>
 		<name>Steven Hicks</name>
 		<email>steven.j.hicks@gmail.com</email>
@@ -11,7 +11,7 @@
 	<entry>
 		<title>Chekhov&#39;s Gun And Better Unit Tests</title>
 		<link href="blog/2018/01/chekhovs-gun-and-better-unit-tests/"/>
-		<updated>2018-01-20T06:00:00-06:00</updated>
+		<updated>2018-01-28T06:00:00-06:00</updated>
 		<id>blog/2018/01/chekhovs-gun-and-better-unit-tests/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;What can we learn about testing from a Russian playwright that&#39;s been dead for over 100 years?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;../chekhovs-gun.jpg&quot; alt=&quot;Chekhovs Gun &amp;amp; Unit Testing Illustration&quot;&gt;&lt;/p&gt;
