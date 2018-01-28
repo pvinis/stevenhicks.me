@@ -3,17 +3,14 @@ permalink: atom.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{{ metadata.title }}</title>
-	<subtitle>{{ metadata.subtitle }}</subtitle>
-	<link href="{{ metadata.feedurl }}" rel="self"/>
-	<link href="{{ metadata.url }}"/>
+	<title>Steven Hicks</title>
+	<link href="https://stevenhicks.me"/>
 	<updated>{{ collections.post | lastUpdatedDate }}</updated>
-	<id>{{ metadata.id }}</id>
 	<author>
-		<name>{{ metadata.author.name }}</name>
-		<email>{{ metadata.author.email }}</email>
+		<name>Steven Hicks</name>
+		<email>steven.j.hicks@gmail.com</email>
 	</author>
-	{% for post in collections.post %}
+	{% for post in collections.postsReversed %}
 	<entry>
 		<title>{{ post.data.title }}</title>
 		<link href="{{ metadata.url }}{{ post.url }}"/>

@@ -6,6 +6,10 @@ layout: blog
 snippet: What can we learn about testing from a Russian playwright that's been dead for over 100 years?
 ---
 
+_What can we learn about testing from a Russian playwright that's been dead for over 100 years?_
+
+![Chekhovs Gun & Unit Testing Illustration](../chekhovs-gun.jpg)
+
 ## Chekhov's Gun
 
 [Anton Chekhov](https://en.wikipedia.org/wiki/Anton_Chekhov) was a Russian playwright who died in 1904. He wrote several hundred stories by the time he was 26, many of them highly regarded. Chekhov is often credited with being a major influence on the modern short story.
@@ -51,7 +55,7 @@ describe("validateBeer", () => {
 
 This test is pretty decent. I like that the name of the test tells me exactly what it is testing. I like that there aren't a ton of assertions, and it's pretty clearly testing only one thing.
 
-What I don't like about it is the distracting setup code. This test verifies that a beer with no ABV is considered invalid. It doesn't specify `abv: undefined` until the 11th line of the test. This means that I have to read through 10 lines of irrelevant setup code before I get to what actually makes this test unique - that the submitted beer doesn't have an ABV. This is a violation of Chekhov's Gun, in unit test form.
+What I don't like about it is the distracting setup code. This test verifies that a beer with no ABV is considered invalid. It doesn't specify `abv: undefined` until the 11th line of the test. This means that I have to read through 10 lines of irrelevant setup code before I get to what actually makes this test unique - the submitted beer doesn't have an ABV. This is a violation of Chekhov's Gun, in unit test form.
 
 What I'd rather see is something like this - we'll call it `Better Test`:
 
@@ -81,11 +85,11 @@ A question: who do we write our unit tests for? It's ourselves, right?
 
 If we're doing TDD, yes, we get a lot of value out of the tests we're writing, in the moment.
 
-But aside from TDD, who benefits the most from our tests? It's not you, when you write the test. You've got all the context about the test being written. You most likely know what the code does that you are writing. If you'd just finished writing the `validateBeer` function, and I asked you what the system was supposed to do with a beer that didn't have an ABV, you'd likely be able to tell me the answer - without looking at any tests.
+But aside from TDD, who benefits the most from our tests? It's not you, when you write the test. You've got all the context about the test being written. You most likely understand the code that you are writing. If you'd just finished writing the `validateBeer` function, and I asked you what the system was supposed to do with a beer that didn't have an ABV, you'd likely be able to tell me the answer - without looking at any tests.
 
-But if a teammate makes a change a few months from now and this test suddenly starts failing, that teammate will have no context. They won't know why this test was written in the first place, and they will not know details of how the test was made to pass. They might not even know that ABV is a thing.
+But if a teammate makes a change a few months from now and this test suddenly starts failing, that teammate will have no context. They won't know why this test was written in the first place. They will not know details of how the test was made to pass. They might not even know that ABV is a thing.
 
-`Noisy Test`, a test that is filled with irrelevant setup code, will distract them from discovering why this test exists. It will take them a lot of time to determine what makes this test unique compared to the others. They might have to compare it to several other tests to see what the difference is.
+`Noisy Test`, a test that is filled with irrelevant setup code, will distract them from discovering why this test exists. It will take them time to determine what makes this test unique compared to the others. They might have to compare it to several other tests to find the difference.
 
 `Better Test`, on the other hand, removes the irrelevant setup details. This allows them to determine more quickly what makes this test unique. They might not know immediately why it is failing, but at least they'll know why this test exists, and how it is different.
 
@@ -95,4 +99,4 @@ Chekhov's Gun is all about optimization of information. Anton Chekhov wants your
 
 When we're writing code, we are communicating with our teammates as much as we are communicating with the compiler. We are authors, and they are our readers. If we write our code in a way that optimizes for our writing experience, our readers will struggle. It won't take long for them to throw their hands up and say "let's do a rewrite, because I don't understand this."
 
-If we write our code in a way that optimizes for the reading experience, our readers will thank us. With less cognitive load from trying to decipher our code, they'll be able to focus on implementing their changes. Tests that minimize irrelevant setup are one simple way we can optimize our code for the reader.
+If we write our code in a way that optimizes for the reading experience, our readers will thank us. With less cognitive load from trying to decipher our code, they'll be able to focus on implementing their changes. Tests that minimize irrelevant setup are one simple way we can help the reader. Optimizing your code for the reader will help you build a more maintainable codebase.
