@@ -22,9 +22,7 @@ The origin of Chekhov's Gun comes from several related quotes from his writings.
 
 ## What does this have to do with unit tests?
 
-Full disclosure - I don't actually know anything about dramatic writing, or about Anton Chekhov.
-
-I do know things about writing unit tests, though, especially in JavaScript. Someone recently described Chekhov's Gun to me, and I thought "that is exactly how I feel about writing unit tests." Especially when it comes to test setup: if a line of setup code isn't important to describe a specific test, then I don't want it to distract me from what is important about the test.
+Aside from a couple of classes in high school, I’ve never studied writing. I don’t remember the first time I heard of Chekhov’s Gun. It resonated with me though, as an analogy of how I feel about writing unit tests — especially when it comes to test setup. If a line of setup code isn’t important to describe a specific test, then I don’t want it to distract me. I’d like to be able to focus on what makes the test unique.
 
 Imagine I have an app where users can submit new beers to a curated list of "the best beers ever." Here's a test that I might write for a function that validates that the user submitted the ABV (alcohol by volume) for a beer. We'll call it `Noisy Test`.
 
