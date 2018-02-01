@@ -5,12 +5,19 @@ $brand-alt-medium: lighten(desaturate($brand-alt, 80%), 30%);
 $brand-alt-light: #daeaea;
 $brand-highlight: lighten($brand-alt-light, 8%);
 $brand-white-text: #f3f3f3;
+$brand-light-gray: desaturate($brand-alt-light, 20%);
 
 $sans-serif: Oswald;
 $serif: Merriweather;
 
 $width-max-mobile: 600px;
 $width-max-phablet: 800px;
+
+@mixin shadowed() {
+    -webkit-box-shadow: 0 2px 2px $brand-light-gray;
+    -moz-box-shadow: 0 2px 2px $brand-light-gray;
+    box-shadow: 0 2px 2px $brand-light-gray;
+}
 
 body {
     margin: 0;
@@ -147,6 +154,7 @@ h3.by-line {
     font-weight: 700;
     background-color: $brand-light;
     background-image: url("../static/img/3px-tile.png");
+    @include shadowed();
 
     color: white;
     text-transform: uppercase;
@@ -202,12 +210,18 @@ article {
     font-family: $serif;
 }
 
+.twitter-tweet {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hero {
     background-color: $brand-highlight;
     padding: 2rem;
     border-radius: 4px;
     display: flex;
     align-items: center;
+    @include shadowed();
 
     h1,
     h2,
@@ -234,6 +248,7 @@ article {
 
 .content-article {
     border: 1px solid $brand-alt-light;
+    @include shadowed();
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 4px;

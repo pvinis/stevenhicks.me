@@ -2,11 +2,83 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Steven Hicks</title>
 	<link href="https://stevenhicks.me"/>
-	<updated>2018-01-28T06:00:00-06:00</updated>
+	<updated>2018-01-31T06:00:00-06:00</updated>
 	<author>
 		<name>Steven Hicks</name>
 		<email>steven.j.hicks@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>2017 In Review</title>
+		<link href="blog/2018/01/2017-in-review/"/>
+		<updated>2018-01-31T06:00:00-06:00</updated>
+		<id>blog/2018/01/2017-in-review/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;Yearly reviews posted after January are the worst. Good thing I got this in with 24 minutes to spare!&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;2017&lt;/h2&gt;
+&lt;p&gt;People say scary things about turning 40. Your body hurts more. You wonder if you&#39;re doing the right thing with your life. You just feel sleepy all the time.&lt;/p&gt;
+&lt;p&gt;2017 was my 40th year on this planet. While I won&#39;t totally argue with some of the things people say about being 40, I will also say this - I hope every year can be as good as my 40th year was.&lt;/p&gt;
+&lt;h2&gt;Speaking&lt;/h2&gt;
+&lt;p&gt;One of my goals in 2017 was to get out and speak a ton. I had a goal of speaking 12 times - averaging once per month. I nailed that exactly! In 2017, I gave....&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;6 talks at conferences&lt;/li&gt;
+&lt;li&gt;2 talks at code camps&lt;/li&gt;
+&lt;li&gt;4 talks at meetups&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The talk I gave most was &lt;a href=&quot;https://steven-j-hicks-speaking.netlify.com/getting-started-with-react&quot;&gt;Getting Started With React&lt;/a&gt;. This was a surprise for me - I hadn&#39;t even considered doing an &amp;quot;intro&amp;quot; style talk at the beginning of the year. I figured no one would want to hear &amp;quot;another intro.&amp;quot; I was wrong.&lt;/p&gt;
+&lt;h3&gt;Self.conference&lt;/h3&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;It&amp;#39;s going to take me a couple days to digest all the amazing ideas for being a better person and dev &lt;a href=&quot;https://twitter.com/selfconference?ref_src=twsrc%5Etfw&quot;&gt;@selfconference&lt;/a&gt;. 10/10 will do again.&lt;/p&gt;&amp;mdash; Steven Hicks (@pepopowitz) &lt;a href=&quot;https://twitter.com/pepopowitz/status/866071098718392329?ref_src=twsrc%5Etfw&quot;&gt;May 20, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;In May, I got to speak at Self.conference, in Detroit. As you can see, I was not prepared for this experience. I&#39;ve been to conferences before, but I&#39;ve never been to one that affected me so much emotionally. There were so many amazing talks that were focused on making you a better person, not just a better developer. I would love to go back here.&lt;/p&gt;
+&lt;p&gt;I hope &lt;a href=&quot;https://twitter.com/crebma&quot;&gt;@crebma&lt;/a&gt; keeps Self.conference going for many more years, so people can experience what I did.&lt;/p&gt;
+&lt;h3&gt;Open Source North&lt;/h3&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;.&lt;a href=&quot;https://twitter.com/OpenSourceNorth?ref_src=twsrc%5Etfw&quot;&gt;@OpenSourceNorth&lt;/a&gt; has a Japanese garden right outside the doors and it. is. glorious. Best conference amenity ever. &lt;a href=&quot;https://twitter.com/hashtag/osn2017?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#osn2017&lt;/a&gt; &lt;a href=&quot;https://t.co/MzzIiMuZiY&quot;&gt;pic.twitter.com/MzzIiMuZiY&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steven Hicks (@pepopowitz) &lt;a href=&quot;https://twitter.com/pepopowitz/status/872875607843119104?ref_src=twsrc%5Etfw&quot;&gt;June 8, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;I wasn&#39;t sure what to expect when I made the trip up to the Twin Cities in June, for Open Source North. I came away really impressed with the conference, and especially the organizers. I got some really great tips from &lt;a href=&quot;https://twitter.com/jeffurban&quot;&gt;Jeff Urban&lt;/a&gt; about how we could improve the organization of &lt;a href=&quot;http://mkedotnet.com&quot;&gt;MKE DOT NET&lt;/a&gt;. I would go back to this conference in a heartbeat, if they&#39;d have me. I think I did pretty well!&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;The most amazing talk of the day nod goes to &lt;a href=&quot;https://twitter.com/pepopowitz?ref_src=twsrc%5Etfw&quot;&gt;@pepopowitz&lt;/a&gt; -- engaging presentation, exciting content. &lt;a href=&quot;https://twitter.com/hashtag/staticweb?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#staticweb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rachel Walwood (@walwoodr) &lt;a href=&quot;https://twitter.com/walwoodr/status/872916663108329472?ref_src=twsrc%5Etfw&quot;&gt;June 8, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;h3&gt;That Conference&lt;/h3&gt;
+&lt;p&gt;That Conference is where I was originally bitten by the speaking bug - in 2015, when I saw &lt;a href=&quot;https://twitter.com/housecor&quot;&gt;Cory House&lt;/a&gt; give two talks, and was blown away by his command of the room. Getting to speak here in 2017 was amazing. It made me feel like I&#39;d really done what I set out to do - become a conference speaker.&lt;/p&gt;
+&lt;p&gt;Shortly before my talk, I ran into &lt;a href=&quot;https://twitter.com/davidgiard&quot;&gt;David Giard&lt;/a&gt;, another of my speaker heroes, in the speaker lounge. My voice crackled as I told him how much he inspired me, and how much it meant for me to be speaking at the same event as him. He was extremely gracious, as always - and then asked when and where my talk was, so he could attend. This was not exactly what I was expecting, and suddenly I felt a bit of pressure to impress him. Cut to fifteen minutes into my talk, with him applauding me and practically rolling out of his chair with laughter, and I felt like I did pretty good.&lt;/p&gt;
+&lt;p&gt;My wife and kids attended my talk, too! This was really fun, and I hope they can be in the audience for more of my talks. I felt like I made them proud.&lt;/p&gt;
+&lt;h3&gt;MidwestJS&lt;/h3&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Borked my phone this morning in the rain. Resorting to 19th century tactics to commemorate a fun speaker dinner &lt;a href=&quot;https://twitter.com/midwest_js?ref_src=twsrc%5Etfw&quot;&gt;@midwest_js&lt;/a&gt;. &lt;a href=&quot;https://twitter.com/hashtag/midwestjs?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#midwestjs&lt;/a&gt; &lt;a href=&quot;https://t.co/K3ywDFxQvm&quot;&gt;pic.twitter.com/K3ywDFxQvm&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steven Hicks (@pepopowitz) &lt;a href=&quot;https://twitter.com/pepopowitz/status/898008069271166976?ref_src=twsrc%5Etfw&quot;&gt;August 17, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;My second trip to the Twin Cities for a conference. I went for a run one morning, and a surprise &lt;em&gt;massive&lt;/em&gt; downpour soaked my phone - and turned it into a hunk o&#39; junk.&lt;/p&gt;
+&lt;p&gt;This was another case of the organizers just being fantastic. One thing I think is really important for speakers is to be very gracious and thankful with the organizers. When they do as great a job as MidwestJS did, it makes it easy to be gracious.&lt;/p&gt;
+&lt;h3&gt;Dev Up&lt;/h3&gt;
+&lt;p&gt;In October, we took the kids out of school for a couple days to make a family trip to Dev Up, in St. Louis. We spent a weekend being tourists, and had a ton of fun.&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Got to &lt;a href=&quot;https://twitter.com/devupconf?ref_src=twsrc%5Etfw&quot;&gt;@devupconf&lt;/a&gt; a little early and spent some family time being tourists. 630 feet of fun. &lt;a href=&quot;https://t.co/TMEXwdx2bh&quot;&gt;pic.twitter.com/TMEXwdx2bh&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steven Hicks (@pepopowitz) &lt;a href=&quot;https://twitter.com/pepopowitz/status/919330189657673728?ref_src=twsrc%5Etfw&quot;&gt;October 14, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;I had a new talk to deliver here - &lt;a href=&quot;https://steven-j-hicks-speaking.netlify.com/do-scary-things/&quot;&gt;Maximize Professional Growth By Doing Scary Things&lt;/a&gt;. This is a talk I&#39;d had floating around in my head for at least a year. I wanted to convince people to do something scary, in hopes that it would change their life - the way that getting into speaking has changed mine.&lt;/p&gt;
+&lt;p&gt;I was emotionally drained during the conference, because I was just so nervous about this talk. It is the most vulnerable thing I&#39;ve done. It took me a lot of energy to build myself up.&lt;/p&gt;
+&lt;p&gt;It went awesome, though.&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;One of my favorite &lt;a href=&quot;https://twitter.com/hashtag/devup2017?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#devup2017&lt;/a&gt; talks was from &lt;a href=&quot;https://twitter.com/pepopowitz?ref_src=twsrc%5Etfw&quot;&gt;@pepopowitz&lt;/a&gt; talking about fear. Feeling inspired. &lt;a href=&quot;https://t.co/9VFZACcWSD&quot;&gt;pic.twitter.com/9VFZACcWSD&lt;/a&gt;&lt;/p&gt;&amp;mdash; Scott Addie (@Scott_Addie) &lt;a href=&quot;https://twitter.com/Scott_Addie/status/920336252280475649?ref_src=twsrc%5Etfw&quot;&gt;October 17, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;It was great to have &lt;a href=&quot;https://twitter.com/davidpine7&quot;&gt;David Pine&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/Scott_Addie&quot;&gt;Scott Addie&lt;/a&gt; - two friends from home - in the front row for this talk. I needed the encouragement, and they delivered.&lt;/p&gt;
+&lt;h2&gt;MKE DOT NET&lt;/h2&gt;
+&lt;p&gt;This was year number 3 for MKE DOT NET. I&#39;ve helped out with all three - but never as much as this year. I was significantly involved from start to finish of the planning this year.&lt;/p&gt;
+&lt;p&gt;And I love it. The day of MKE DOT NET is like Christmas for me. I love the adrenyline of getting to the event early in the morning, and discovering that a marathon is blocking traffic from getting there. It sucks that this kind of thing happens..but it does, every time. We never know what the problem is going to be - but something is going to go wrong, and we need to figure out how to work around it. Dealing with all of the logistical details of a conference gives me a buzz.&lt;/p&gt;
+&lt;h2&gt;I Got A New Job&lt;/h2&gt;
+&lt;p&gt;For the last few years, Centare has been an incubator for me. I&#39;ve grown so much, thanks largely to the amazing team around me.&lt;/p&gt;
+&lt;p&gt;In late 2017, I found myself looking for new work. I moved on to Northwestern Mutual - a place that I think is poised to make some noise. I&#39;m really excited about my new team and new role. I&#39;m doing full-stack JavaScript. This is a change, after spending almost my whole career in .NET development. It is a welcome change.&lt;/p&gt;
+&lt;p&gt;I will continue to help out with MKE DOT NET.&lt;/p&gt;
+&lt;h2&gt;2018 - A Look Ahead&lt;/h2&gt;
+&lt;p&gt;I&#39;ve got a ton of ideas for 2018. I won&#39;t be able to follow through on all of them, I&#39;m sure. There are just too many.&lt;/p&gt;
+&lt;h3&gt;Not As Much Speaking&lt;/h3&gt;
+&lt;p&gt;I&#39;d really like to keep the momentum with speaking at conferences, but it looks like I won&#39;t be submitting to nearly as many as I&#39;d like this year. It seems as if there are basically four weeks that all conferences are scheduled this year.&lt;/p&gt;
+&lt;h3&gt;More Writing&lt;/h3&gt;
+&lt;p&gt;I say this every year. But I re-wrote my blog using &lt;a href=&quot;https://github.com/11ty/eleventy/&quot;&gt;eleventy&lt;/a&gt; last week, hoping that it provides less friction for writing than Metalsmith did. Metalsmith was a bit flaky, and I would often have to restart the dev server just to get it to reload a content change. So far, eleventy has been great.&lt;/p&gt;
+&lt;p&gt;I&#39;ve already published one story to Medium - &lt;a href=&quot;https://medium.com/@pepopowitz/chekhovs-gun-and-better-unit-tests-96fb439e6d0e&quot;&gt;Chekhov&#39;s Gun And Better Unit Tests&lt;/a&gt; - and I&#39;m hoping to write at least 6 Medium-worthy stories this year. Hold me to it, internet!&lt;/p&gt;
+&lt;h3&gt;Self Improvement&lt;/h3&gt;
+&lt;p&gt;I&#39;m looking to cut back on self-deprecation. I rely on it a lot to make sure people don&#39;t think I&#39;m full of myself - but I&#39;ve found this year that it affects me negatively. I think I believe the self-deprecation a little too much. In 2018, I&#39;m hoping to cut back on this habit significantly.&lt;/p&gt;
+&lt;p&gt;I&#39;ve also realized one of my biggest hurdles to feeling comfortable in a social setting with strangers is that I just don&#39;t know how to start conversations. I&#39;m looking into specific ideas to improve this, in the hopes that it makes me feel more confident. Being at a conference where I don&#39;t know anyone can be really draining for me. If I know someone there, or meet someone, it&#39;s a different story - I could talk for hours. I&#39;d like to make it easier for myself to get to that stage.&lt;/p&gt;
+&lt;h3&gt;Something Scary&lt;/h3&gt;
+&lt;p&gt;I&#39;m not totally sure what, yet. I&#39;ve eliminated live-streaming, as I don&#39;t really understand how it is interesting. Writing is part of this, but I want to do something even more scary. I&#39;m deciding between starting a podcast, and making videos for YouTube.&lt;/p&gt;
+&lt;p&gt;I&#39;m also going to submit a workshop idea to conferences. I&#39;ve got a basic idea, but I really need to work out more details before I can submit it. I have ideas on how to make a good workshop - but I&#39;m not sure yet how to write an abstract that will get it accepted.&lt;/p&gt;
+&lt;p&gt;I&#39;d also like to speak at an international conference this year. I got myself a new passport late in 2017, in hopes that I&#39;d get selected soon. Nothing yet but I&#39;ve got a couple open submissions, and more to come.&lt;/p&gt;
+&lt;p&gt;Here&#39;s looking forward to 2018. Let&#39;s get better!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Chekhov&#39;s Gun And Better Unit Tests</title>
