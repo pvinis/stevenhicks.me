@@ -5,8 +5,12 @@ html(lang="en")
     head
         block title
             title #{title}
-        meta(name='description', content=`${metaDescription}`)
+        meta(name='description', content=`${metaDescription || snippet}`)
         meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(property='og:title' content=`${title}`)
+        meta(property='og:description' content=`${snippet || metaDescription}`)
+        meta(property='og:url' content=`https://stevenhicks.me/${page.url}`)
+        meta(property='og:site_name' content=`Steven Hicks`)
         link(rel='stylesheet', href='/css/site.css')
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/foundation.min.css')
         link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Oswald|Merriweather') 
