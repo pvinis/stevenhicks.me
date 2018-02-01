@@ -4,9 +4,8 @@ date: 2018-01-31T12:00:00
 tags: post
 layout: blog
 snippet: 2017 was awesome! I hit the speaker circuit hard. I'm hoping for a great 2018 as well!
+tagline: Yearly reviews posted after January are the worst. Good thing I got this in with 24 minutes to spare!
 ---
-
-_Yearly reviews posted after January are the worst. Good thing I got this in with 24 minutes to spare!_
 
 ## 2017
 

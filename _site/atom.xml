@@ -13,8 +13,7 @@
 		<link href="blog/2018/01/2017-in-review/"/>
 		<updated>2018-01-31T06:00:00-06:00</updated>
 		<id>blog/2018/01/2017-in-review/</id>
-		<content type="html">&lt;p&gt;&lt;em&gt;Yearly reviews posted after January are the worst. Good thing I got this in with 24 minutes to spare!&lt;/em&gt;&lt;/p&gt;
-&lt;h2&gt;2017&lt;/h2&gt;
+		<content type="html">&lt;h2&gt;2017&lt;/h2&gt;
 &lt;p&gt;People say scary things about turning 40. Your body hurts more. You wonder if you&#39;re doing the right thing with your life. You just feel sleepy all the time.&lt;/p&gt;
 &lt;p&gt;2017 was my 40th year on this planet. While I won&#39;t totally argue with some of the things people say about being 40, I will also say this - I hope every year can be as good as my 40th year was.&lt;/p&gt;
 &lt;h2&gt;Speaking&lt;/h2&gt;
@@ -85,8 +84,7 @@
 		<link href="blog/2018/01/chekhovs-gun-and-better-unit-tests/"/>
 		<updated>2018-01-28T06:00:00-06:00</updated>
 		<id>blog/2018/01/chekhovs-gun-and-better-unit-tests/</id>
-		<content type="html">&lt;p&gt;&lt;em&gt;What can we learn about testing from a Russian playwright that&#39;s been dead for over 100 years?&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../chekhovs-gun.jpg&quot; alt=&quot;Chekhovs Gun &amp;amp; Unit Testing Illustration&quot;&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img src=&quot;../chekhovs-gun.jpg&quot; alt=&quot;Chekhovs Gun &amp;amp; Unit Testing Illustration&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Chekhov&#39;s Gun&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Anton_Chekhov&quot;&gt;Anton Chekhov&lt;/a&gt; was a Russian playwright who died in 1904. He wrote several hundred stories by the time he was 26, many of them highly regarded. Chekhov is often credited with being a major influence on the modern short story.&lt;/p&gt;
 &lt;p&gt;One of his most famous contributions is something called Chekhov&#39;s Gun. This is a principle in dramatic writing that suggests that all elements in a story must be relevant in some way. If an element doesn&#39;t have relevance, it should be removed. Irrelevant elements might distract the audience from the intended story.&lt;/p&gt;
@@ -95,8 +93,7 @@
 &lt;p&gt;Remove everything that has no relevance to the story. If you say in the first chapter that there is a rifle hanging on the wall, in the second or third chapter it absolutely must go off. If it&#39;s not going to be fired, it shouldn&#39;t be hanging there.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;What does this have to do with unit tests?&lt;/h2&gt;
-&lt;p&gt;Full disclosure - I don&#39;t actually know anything about dramatic writing, or about Anton Chekhov.&lt;/p&gt;
-&lt;p&gt;I do know things about writing unit tests, though, especially in JavaScript. Someone recently described Chekhov&#39;s Gun to me, and I thought &amp;quot;that is exactly how I feel about writing unit tests.&amp;quot; Especially when it comes to test setup: if a line of setup code isn&#39;t important to describe a specific test, then I don&#39;t want it to distract me from what is important about the test.&lt;/p&gt;
+&lt;p&gt;Aside from a couple of classes in high school, I’ve never studied writing. I don’t remember the first time I heard of Chekhov’s Gun. It resonated with me though, as an analogy of how I feel about writing unit tests — especially when it comes to test setup. If a line of setup code isn’t important to describe a specific test, then I don’t want it to distract me. I’d like to be able to focus on what makes the test unique.&lt;/p&gt;
 &lt;p&gt;Imagine I have an app where users can submit new beers to a curated list of &amp;quot;the best beers ever.&amp;quot; Here&#39;s a test that I might write for a function that validates that the user submitted the ABV (alcohol by volume) for a beer. We&#39;ll call it &lt;code&gt;Noisy Test&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&amp;quot;validateBeer&amp;quot;, () =&amp;gt; {
     it(&amp;quot;returns invalid for beers with no abv&amp;quot;, () =&amp;gt; {

@@ -4,9 +4,8 @@ date: 2018-01-28T12:00:00
 tags: post
 layout: blog
 snippet: What can we learn about testing from a Russian playwright that's been dead for over 100 years?
+tagline: What can we learn about testing from a Russian playwright that's been dead for over 100 years?
 ---
-
-_What can we learn about testing from a Russian playwright that's been dead for over 100 years?_
 
 ![Chekhovs Gun & Unit Testing Illustration](../chekhovs-gun.jpg)
 

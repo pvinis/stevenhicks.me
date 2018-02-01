@@ -145,7 +145,6 @@ p code {
 
 h3.by-line {
     font-weight: normal;
-    margin-bottom: 3rem;
     color: $brand-alt-medium;
 }
 .header {
@@ -208,6 +207,9 @@ h3.by-line {
 
 article {
     font-family: $serif;
+}
+.main-copy {
+    margin-top: 3rem;
 }
 
 .twitter-tweet {

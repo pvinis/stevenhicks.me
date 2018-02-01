@@ -2,8 +2,7 @@
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'UA-113131152-1');
-</script><div class="site"><div class="box header"><a class="navbar-brand" href="/">Steven Hicks</a><a class="navbar-brand" href="/about">About</a><a class="navbar-brand" href="/speaking">Speaking</a></div><div class="content"><h1>Chekhov's Gun And Better Unit Tests</h1><h3 class="by-line">Published January 28, 2018 by Steven Hicks</h3><article><p><em>What can we learn about testing from a Russian playwright that's been dead for over 100 years?</em></p>
-<p><img src="../chekhovs-gun.jpg" alt="Chekhovs Gun &amp; Unit Testing Illustration"></p>
+</script><div class="site"><div class="box header"><a class="navbar-brand" href="/">Steven Hicks</a><a class="navbar-brand" href="/about">About</a><a class="navbar-brand" href="/speaking">Speaking</a></div><div class="content"><h1>Chekhov's Gun And Better Unit Tests</h1><h3 class="by-line">Published January 28, 2018 by Steven Hicks</h3><p class="tag-line"><em>What can we learn about testing from a Russian playwright that's been dead for over 100 years?</em></p><article class="main-copy"><p><img src="../chekhovs-gun.jpg" alt="Chekhovs Gun &amp; Unit Testing Illustration"></p>
 <h2>Chekhov's Gun</h2>
 <p><a href="https://en.wikipedia.org/wiki/Anton_Chekhov">Anton Chekhov</a> was a Russian playwright who died in 1904. He wrote several hundred stories by the time he was 26, many of them highly regarded. Chekhov is often credited with being a major influence on the modern short story.</p>
 <p>One of his most famous contributions is something called Chekhov's Gun. This is a principle in dramatic writing that suggests that all elements in a story must be relevant in some way. If an element doesn't have relevance, it should be removed. Irrelevant elements might distract the audience from the intended story.</p>
@@ -12,8 +11,7 @@ gtag('config', 'UA-113131152-1');
 <p>Remove everything that has no relevance to the story. If you say in the first chapter that there is a rifle hanging on the wall, in the second or third chapter it absolutely must go off. If it's not going to be fired, it shouldn't be hanging there.</p>
 </blockquote>
 <h2>What does this have to do with unit tests?</h2>
-<p>Full disclosure - I don't actually know anything about dramatic writing, or about Anton Chekhov.</p>
-<p>I do know things about writing unit tests, though, especially in JavaScript. Someone recently described Chekhov's Gun to me, and I thought &quot;that is exactly how I feel about writing unit tests.&quot; Especially when it comes to test setup: if a line of setup code isn't important to describe a specific test, then I don't want it to distract me from what is important about the test.</p>
+<p>Aside from a couple of classes in high school, I’ve never studied writing. I don’t remember the first time I heard of Chekhov’s Gun. It resonated with me though, as an analogy of how I feel about writing unit tests — especially when it comes to test setup. If a line of setup code isn’t important to describe a specific test, then I don’t want it to distract me. I’d like to be able to focus on what makes the test unique.</p>
 <p>Imagine I have an app where users can submit new beers to a curated list of &quot;the best beers ever.&quot; Here's a test that I might write for a function that validates that the user submitted the ABV (alcohol by volume) for a beer. We'll call it <code>Noisy Test</code>.</p>
 <pre><code class="language-javascript">describe(&quot;validateBeer&quot;, () =&gt; {
     it(&quot;returns invalid for beers with no abv&quot;, () =&gt; {
