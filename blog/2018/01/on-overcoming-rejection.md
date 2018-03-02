@@ -11,7 +11,7 @@ tagline: Rejection feels bad. Sometimes I forget how to deal with it. Here are s
 
 By the end of 2017, I'd spoken at a handful of events, and I was feeling really good about what 2018 would bring. Things got off to a good start. In the fall of 2017, I got accepted to two 2018 events - [CodeMash](http://www.codemash.org/) in Ohio and [WebCon](http://webcon.illinois.edu/) in Illinois.
 
-Unfortunately, I'd done a bad job of reading my calendar. When I shared the news with my wife, she reminded me that we had planned on taking the kids somewhere for spring break that week. I avoided sending the email to WebCon for a week or two - but I had to decline the invite.
+Unfortunately, I'd done a bad job of reading my calendar. When I shared the news with my wife, she reminded me that we had planned on taking the kids somewhere for spring break the week of WebCon. I avoided sending the email to WebCon for a week or two - but I had to decline the invite.
 
 ## Karma
 
