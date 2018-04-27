@@ -97,10 +97,12 @@ p code {
   .content img {
     max-width: 100%; }
   .content img.half-scale {
-    max-width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto; }
+    @media only screen and (min-width: 800px) {
+      .content img.half-scale {
+        max-width: 50%; } }
   .content img + cite {
     display: block;
     text-align: right; }

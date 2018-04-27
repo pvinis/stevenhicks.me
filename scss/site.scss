@@ -136,7 +136,9 @@ p code {
     max-width: 100%;
   }
   img.half-scale {
-    max-width: 50%;
+    @media only screen and (min-width: $width-max-phablet) {
+      max-width: 50%;
+    }
     display: block;
     margin-left: auto;
     margin-right: auto;
