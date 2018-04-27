@@ -2,11 +2,105 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Steven Hicks</title>
 	<link href="https://stevenhicks.me"/>
-	<updated>2018-03-01T06:00:00-06:00</updated>
+	<updated>2018-04-22T07:00:00-05:00</updated>
 	<author>
 		<name>Steven Hicks</name>
 		<email>steven.j.hicks@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>10 Tips For Writing Conference Talks</title>
+		<link href="blog/2018/04/tips-for-writing-talks/"/>
+		<updated>2018-04-22T07:00:00-05:00</updated>
+		<id>blog/2018/04/tips-for-writing-talks/</id>
+		<content type="html">&lt;div&gt;
+&lt;img class=&quot;half-scale&quot; src=&quot;../anxiety-over-time.jpg&quot; alt=&quot;My anxiety while preparing for a talk looks like a saw.&quot; /&gt;
+&lt;/div&gt;
+&lt;h2&gt;Speaking is fun, you should try it.&lt;/h2&gt;
+&lt;p&gt;For the last couple years, my priorities in life have been three things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;My family&lt;/li&gt;
+&lt;li&gt;Being active&lt;/li&gt;
+&lt;li&gt;Speaking at tech meetups &amp;amp; conferences&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Speaking is pretty new for me. My first talk in public was in February, 2016. In the last couple years, I&#39;ve given over 20 talks at local meetups and code camps, and conferences throughout the Midwest. It&#39;s been a ton of fun, and I highly recommend trying it.&lt;/p&gt;
+&lt;p&gt;I&#39;ve learned &lt;strong&gt;a ton&lt;/strong&gt; about speaking in the last couple years. Here are 10 things I&#39;ve learned about preparing a conference or meetup talk.&lt;/p&gt;
+&lt;h2&gt;Tip 1: Keep your thoughts organized.&lt;/h2&gt;
+&lt;p&gt;It takes me months to write a talk. Often I have multiple ideas formulating at the same time. If I tried to keep all of the different ideas in my brain, I would lose about 95% of them. I need tools to keep track of it all.&lt;/p&gt;
+&lt;p&gt;To stay organized, I use two main tools.&lt;/p&gt;
+&lt;h3&gt;Trello&lt;/h3&gt;
+&lt;p&gt;I keep a Trello board to keep track of all my speaking ideas, talks, submissions, and upcoming engagements. This is high-level stuff, just so I know what I need to be working on every night. I have lists for conferences I want to submit to, open CFPs, abstracts I need to write, talks I&#39;m writing, and talks that are ready to submit.&lt;/p&gt;
+&lt;h3&gt;Git Repository&lt;/h3&gt;
+&lt;p&gt;I have a Git repository that contains all my talks. This is more detailed than what&#39;s in my Trello board. Abstracts, outlines, slides - it&#39;s all in the repo. I wrestle back and forth about whether this should be private or public. It is currently private.&lt;/p&gt;
+&lt;h2&gt;Tip 2: Get outside. Creativity comes from many places.&lt;/h2&gt;
+&lt;p&gt;Most of my ideas don&#39;t come while I&#39;m working. I do a lot of thinking and workshopping ideas in my head in a few key places - in the shower, in bed when I fall asleep/wake up, listening to podcasts in my car, and above all during workouts.&lt;/p&gt;
+&lt;p&gt;I generally prefer working out by myself, because it&#39;s my best thinking time. I feel bad when people ask me if I am looking for a workout buddy, because unless it&#39;s my wife, the answer is almost entirely no. I really like being social with people, but exercise is such a personal thing to me. It&#39;s actually the only time I can think of that I&#39;ll say &amp;quot;no&amp;quot; to company. It&#39;s just such a valuable time for my mind.&lt;/p&gt;
+&lt;p&gt;My ideas usually take months before I even turn them into a conference submission. They simmer in my brain. I work through outlines and brainstorms, making sure that I have enough of a cohesive message to deliver it to an audience.&lt;/p&gt;
+&lt;h2&gt;Tip 3: Keep a notebook on you at all times.&lt;/h2&gt;
+&lt;p&gt;The ideas come at all times. I&#39;ve lost enough ideas in the past that I want to be able to write them down as soon as I get them.&lt;/p&gt;
+&lt;p&gt;I take notes as I think of things. My daughters make me these awesome pocket-sized notebooks out of printer paper, and I keep them in a slim wallet case in my pocket, along with a pen.&lt;/p&gt;
+&lt;p&gt;I have become my father. :)&lt;/p&gt;
+&lt;p&gt;Sometimes the things I write down are points I want to make, sometimes they are jokes, sometimes they are drawings I want to include. Sometimes they are just the way I want to deliver a specific point.&lt;/p&gt;
+&lt;h2&gt;Tip 4: Don&#39;t apply force to an idea. Let it present itself.&lt;/h2&gt;
+&lt;p&gt;Sometimes I feel like an idea has legs, but I just can&#39;t find the overall message. I&#39;ve found that forcing it to become something is less effective than waiting for it to present itself.&lt;/p&gt;
+&lt;p&gt;When I hit a brick wall with an idea, I still add it to my Trello board. If it&#39;s a good idea, it will eventually work its way back to the front of my thoughts.&lt;/p&gt;
+&lt;p&gt;My favorite talk - &lt;a href=&quot;https://steven-j-hicks-speaking.netlify.com/do-scary-things&quot;&gt;Maximize Professional Growth By Doing Scary Things&lt;/a&gt; - took 9 months to graduate from an idea to an outline.&lt;/p&gt;
+&lt;p&gt;If I feel like I have enough notes &amp;amp; ideas to deliver it to an audience, it becomes an outline. I give it a folder in my Git repo. I build an outline out of all the notes I&#39;ve written down. They are often scatterbrained and messy.&lt;/p&gt;
+&lt;p&gt;Then I let it simmer some more.&lt;/p&gt;
+&lt;h2&gt;Tip 5: Start with content and a message. Save the slides for last.&lt;/h2&gt;
+&lt;p&gt;I&#39;ll work for a month or so at building an outline. At this stage, I&#39;m mostly worried about two things - all of the content I think is worth delivering, and a single message I want my audience to walk away with.&lt;/p&gt;
+&lt;p&gt;I prefer a simple nested outline, in a text editor. It&#39;s quick and easy for me to move things around. I&#39;ve heard others say they use mind-mapping software at this stage.&lt;/p&gt;
+&lt;p&gt;I don&#39;t start writing abstracts or slides until I&#39;ve got a rough outline and a message established.&lt;/p&gt;
+&lt;h2&gt;Tip 6: Don&#39;t write an abstract if you aren&#39;t certain you can write the talk.&lt;/h2&gt;
+&lt;p&gt;When I first started trying to get into speaking, I didn&#39;t have much restraint on the abstracts I submitted. I wrote and submitted as many as I could think of, with little thought to how I would fill 45 minutes. This got me in trouble.&lt;/p&gt;
+&lt;p&gt;Once, I found that I had to write a talk that I wasn&#39;t really interested in. This was very hard to do, and I just kept procrastinating. I eventually reached out to the &amp;quot;organizers&amp;quot; (who happened to be my coworkers) and asked if I could change topics. Thankfully, I could.&lt;/p&gt;
+&lt;p&gt;I also found that I had too many talks to write this way. Different conferences picked up different ideas, and I had to write them all. This is probably normal when you&#39;re starting out, but I think my tendency to abstract without a solid idea of the content exacerbated the problem.&lt;/p&gt;
+&lt;p&gt;Now, I don&#39;t feel like I can write a solid abstract without a good outline. The outline isn&#39;t finalized at this stage - but it gives me a good idea of what&#39;s in the talk, so that I can summarize it with confidence.&lt;/p&gt;
+&lt;p&gt;Writing my abstract takes me many tries. I&#39;ll throw a few attempts in a markdown file in my repo, and none of them are usually what I end up with. I pick and choose from all the attempts, and assemble them into something I feel good about.&lt;/p&gt;
+&lt;h2&gt;Tip 7: Get feedback from people. Sort the feedback before you address it.&lt;/h2&gt;
+&lt;p&gt;Armed with a rough draft of an abstract, I&#39;ll reach out to a few friends, and ask them for feedback. I generally ask a few key people who I know will give me the kind of feedback I&#39;m looking for. It takes time to determine who you can trust to give you good feedback, but it&#39;s worth the effort to find out.&lt;/p&gt;
+&lt;p&gt;When you get helpful, constructive feedback, it helps you improve your ideas &amp;amp; abstracts tremendously. But even with feedback from people you trust, not all feedback is worth addressing.&lt;/p&gt;
+&lt;p&gt;Sometimes, you get feedback that is more about the person giving the feedback, and less about your abstract. It could be a suggestion that you rewrite your talk to be about something they&#39;re more interested in. It might be that their past experiences influence their opinions of what you&#39;ve written. Feedback from friends almost always comes from good intentions - but I&#39;ve found it important to sort the feedback I get. I will generally only address feedback with the following characteristics:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It is definitely about my idea or abstract.&lt;/li&gt;
+&lt;li&gt;It is specific. We have an idea on how I can improve it, or we can at least identify what the problem is.&lt;/li&gt;
+&lt;li&gt;It is more than just an opinion.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is not to say that I don&#39;t like feedback - I love it. I&#39;ll continue to ask for feedback, and you should too. It&#39;s just important to recognize when it is actually something you can/should address.&lt;/p&gt;
+&lt;h2&gt;Tip 8: Remember that your talk is for the audience.&lt;/h2&gt;
+&lt;p&gt;As I&#39;m turning my outline into a full-length talk, I often have to remind myself that the talk isn&#39;t for me - it&#39;s for the people listening. Even if it&#39;s a story I&#39;m telling about my experiences, people aren&#39;t listening to &lt;strong&gt;me&lt;/strong&gt; - they are listening to my message. They aren&#39;t interested in how &lt;strong&gt;I&lt;/strong&gt; got through a problem, they are interested in how my experiences could help &lt;strong&gt;them&lt;/strong&gt; get through their problems.&lt;/p&gt;
+&lt;p&gt;I focus on optimizing the flow of the information. I want my listeners to digest the topic with as little effort as possible. I once resorted to a card-sorting exercise, because I just couldn&#39;t work out the flow.&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Sometimes, putting together a talk looks more like this than &amp;quot;making slides.&amp;quot; Trying to find a way to fit pieces together to make it flow. &lt;a href=&quot;https://t.co/LGbh3dkn63&quot;&gt;pic.twitter.com/LGbh3dkn63&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steven Hicks (@pepopowitz) &lt;a href=&quot;https://twitter.com/pepopowitz/status/909875532120170498?ref_src=twsrc%5Etfw&quot;&gt;September 18, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;I want my talks to be (1) clear, (2) inspiring, and (3) entertaining. Making this happen is usually harder than identifying the content &amp;amp; message. I spend a lot of time editing my talk to meet these goals. The attendees paid to be at the conference, though, and I didn&#39;t - so any effort I can put in to give them more value is worth it.&lt;/p&gt;
+&lt;h2&gt;Tip 9: The perfect image is hard to find. Make your own!&lt;/h2&gt;
+&lt;p&gt;When my outline approaches &amp;quot;good enough,&amp;quot; I finally start to build my slides. I use a tool called &lt;a href=&quot;http://remarkjs.com/&quot;&gt;RemarkJS&lt;/a&gt; for my slides. It&#39;s an HTML/CSS/JS-based presentation tool, and it allows me to write all my slides in Markdown. Since I already have an outline in a text file, it&#39;s pretty easy to turn that into Markdown slides.&lt;/p&gt;
+&lt;p&gt;As I&#39;m doing this, I start thinking about imagery. Images add a lot to your slides, but they have to be the right images. Showing an unrelated image can distract listeners - they spend time trying to decipher how the image relates, instead of listening to you.&lt;/p&gt;
+&lt;p&gt;I&#39;ve spent a lot of time looking for the right images.&lt;/p&gt;
+&lt;p&gt;Early on, I would do an image search on Google. This takes more time than you think - especially if you&#39;re looking for something specific.&lt;/p&gt;
+&lt;p&gt;I&#39;ve used sites like &lt;a href=&quot;//unsplash.com&quot;&gt;Unsplash&lt;/a&gt;, &lt;a href=&quot;//pexels.com&quot;&gt;Pexels&lt;/a&gt;, and &lt;a href=&quot;//flickr.com&quot;&gt;Flickr&lt;/a&gt;, and these all have great images. They still take a lot of time when you&#39;re looking for something specific, though.&lt;/p&gt;
+&lt;p&gt;Inspired by &lt;a href=&quot;//twitter.com/reverentgeek&quot;&gt;David Neal&lt;/a&gt;, I started drawing my own images on an iPad. Initially, they were bad. Even today, many of them are not great. But they add two major benefits to my talks:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;They add a personal touch to the slides. People overwhelmingly appreciate this, and comment on it often.&lt;/li&gt;
+&lt;li&gt;I spend significantly less time drawing all my images than I spent searching for them.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Sometimes I get to a point in my slide preparation where all I want to do is draw images. It&#39;s therapeutic, and it breaks up the monotony of building out slides and practicing.&lt;/p&gt;
+&lt;div&gt;
+&lt;img class=&quot;half-scale&quot; src=&quot;../pizza.jpg&quot; alt=&quot;My oven sets off a smoke alarm every time I cook a pizza.&quot; /&gt;
+&lt;cite&gt;Seriously, though. Try to find a good image of an oven that sets off a smoke alarm every time you cook a pizza in it.&lt;/cite&gt;
+&lt;/div&gt;
+&lt;h2&gt;Tip 10: Find The Way That Works For You&lt;/h2&gt;
+&lt;p&gt;If you&#39;re interested in presenting at tech meetups and conferences, or getting better, you should &lt;a href=&quot;https://channel9.msdn.com/Shows/On-NET/Public-speaking-with-Scott-Hanselman-Kendra-Havens-Maria-Naggaga-Nakanwagi-Kasey-Uhlenhuth-and-Donov&quot;&gt;watch this video from MSDN&lt;/a&gt;. There are a ton of good tips in it, but my favorite that comes out of it is from &lt;a href=&quot;https://twitter.com/shanselman&quot;&gt;Scott Hanselman&lt;/a&gt; -&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Find the way that works for you, and do it unapologetically.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This applies to so much more than just speaking, but it is definitely applicable here. In the past couple years, I&#39;ve watched more videos and read more tweets and articles about speaking than 99% of the world. The one thing I can say for certain is that the process is different for everyone.&lt;/p&gt;
+&lt;p&gt;I effectively script every talk that I do. I rely on my notes as I speak. I don&#39;t read them word for word, but I have thought through almost every word I&#39;m going to say ahead of time. I do this because I&#39;m afraid that if I ramble, I&#39;m going to say things I regret. Scripting your talk goes against almost every speaker&#39;s advice. But it works for me, because it makes me feel more comfortable when I&#39;m up there, and I can deliver those lines without sounding like a robot. (I think.)&lt;/p&gt;
+&lt;p&gt;I also don&#39;t practice very much. This also goes against most speakers&#39; advice. Many even say &amp;quot;you should practice so much you&#39;re bored with your talk.&amp;quot; But I spend so much time with the ideas bouncing around in my brain, and editing my outline, and editing my outline some more, that I don&#39;t feel like I need a ton of practice. By the time I&#39;ve actually built my slide deck, I know most of the content pretty well.&lt;/p&gt;
+&lt;p&gt;And really, that&#39;s all that matters when you&#39;re writing a talk - do what works for you. If you don&#39;t know what works for you, try some things that you think might. You&#39;ll find out pretty quickly if they don&#39;t.&lt;/p&gt;
+&lt;p&gt;Different strokes for different folks, as they say.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>On Overcoming Rejection</title>
@@ -15,7 +109,7 @@
 		<id>blog/2018/01/on-overcoming-rejection/</id>
 		<content type="html">&lt;p&gt;2017 was huge for me. After discovering that I wanted to get into speaking at conferences, in 2017 I made those dreams a reality. I attacked the conference submission season with reckless abandon. I was going to submit anywhere, and let &lt;strong&gt;them&lt;/strong&gt; tell me &amp;quot;no&amp;quot; instead of telling &lt;strong&gt;myself&lt;/strong&gt; &amp;quot;no.&amp;quot; There was some rejection here and there, but also a lot of success. At one point, I had received so many acceptances that I started retracting submissions. There are only so many weekends in a Wisconsin summer, and I didn&#39;t want to fill them all with conferences.&lt;/p&gt;
 &lt;p&gt;By the end of 2017, I&#39;d spoken at a handful of events, and I was feeling really good about what 2018 would bring. Things got off to a good start. In the fall of 2017, I got accepted to two 2018 events - &lt;a href=&quot;http://www.codemash.org/&quot;&gt;CodeMash&lt;/a&gt; in Ohio and &lt;a href=&quot;http://webcon.illinois.edu/&quot;&gt;WebCon&lt;/a&gt; in Illinois.&lt;/p&gt;
-&lt;p&gt;Unfortunately, I&#39;d done a bad job of reading my calendar. When I shared the news with my wife, she reminded me that we had planned on taking the kids somewhere for spring break that week. I avoided sending the email to WebCon for a week or two - but I had to decline the invite.&lt;/p&gt;
+&lt;p&gt;Unfortunately, I&#39;d done a bad job of reading my calendar. When I shared the news with my wife, she reminded me that we had planned on taking the kids somewhere for spring break the week of WebCon. I avoided sending the email to WebCon for a week or two - but I had to decline the invite.&lt;/p&gt;
 &lt;h2&gt;Karma&lt;/h2&gt;
 &lt;p&gt;The second I sent the email, I said out loud &amp;quot;I&#39;ve got some bad karma coming my way.&amp;quot; One of the things I hate most in life is saying you&#39;ll do something, then backing out. Whether it&#39;s going to a concert, meeting for lunch, speaking at a conference, whatever - I am a reliable person, and doing things that chip away at my reliability make me mad.&lt;/p&gt;
 &lt;p&gt;Today, I received a notice from &lt;a href=&quot;https://ndcoslo.com/&quot;&gt;NDC Oslo 2018&lt;/a&gt; that my sessions were not accepted. Nevermind the fact that NDC is a notoriously difficult conference to get into, and that I probably don&#39;t have the experience yet to get into an international conference. All I could think was &amp;quot;this is my 11th straight conference rejection since I sent that email to WebCon! It&#39;s obviously karma! @#$#@$!#$@#!!!&amp;quot;&lt;/p&gt;
