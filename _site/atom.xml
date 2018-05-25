@@ -10,9 +10,9 @@
 	
 	<entry>
 		<title>10 Tips For Writing Conference Talks</title>
-		<link href="blog/2018/04/tips-for-writing-talks/"/>
+		<link href="/blog/2018/04/tips-for-writing-talks/"/>
 		<updated>2018-04-22T07:00:00-05:00</updated>
-		<id>blog/2018/04/tips-for-writing-talks/</id>
+		<id>/blog/2018/04/tips-for-writing-talks/</id>
 		<content type="html">&lt;div&gt;
 &lt;img class=&quot;half-scale&quot; src=&quot;../anxiety-over-time.jpg&quot; alt=&quot;My anxiety while preparing for a talk looks like a saw.&quot; /&gt;
 &lt;/div&gt;
@@ -104,9 +104,9 @@
 	
 	<entry>
 		<title>On Overcoming Rejection</title>
-		<link href="blog/2018/01/on-overcoming-rejection/"/>
+		<link href="/blog/2018/01/on-overcoming-rejection/"/>
 		<updated>2018-03-01T06:00:00-06:00</updated>
-		<id>blog/2018/01/on-overcoming-rejection/</id>
+		<id>/blog/2018/01/on-overcoming-rejection/</id>
 		<content type="html">&lt;p&gt;2017 was huge for me. After discovering that I wanted to get into speaking at conferences, in 2017 I made those dreams a reality. I attacked the conference submission season with reckless abandon. I was going to submit anywhere, and let &lt;strong&gt;them&lt;/strong&gt; tell me &amp;quot;no&amp;quot; instead of telling &lt;strong&gt;myself&lt;/strong&gt; &amp;quot;no.&amp;quot; There was some rejection here and there, but also a lot of success. At one point, I had received so many acceptances that I started retracting submissions. There are only so many weekends in a Wisconsin summer, and I didn&#39;t want to fill them all with conferences.&lt;/p&gt;
 &lt;p&gt;By the end of 2017, I&#39;d spoken at a handful of events, and I was feeling really good about what 2018 would bring. Things got off to a good start. In the fall of 2017, I got accepted to two 2018 events - &lt;a href=&quot;http://www.codemash.org/&quot;&gt;CodeMash&lt;/a&gt; in Ohio and &lt;a href=&quot;http://webcon.illinois.edu/&quot;&gt;WebCon&lt;/a&gt; in Illinois.&lt;/p&gt;
 &lt;p&gt;Unfortunately, I&#39;d done a bad job of reading my calendar. When I shared the news with my wife, she reminded me that we had planned on taking the kids somewhere for spring break the week of WebCon. I avoided sending the email to WebCon for a week or two - but I had to decline the invite.&lt;/p&gt;
@@ -164,9 +164,9 @@
 	
 	<entry>
 		<title>2017 In Review</title>
-		<link href="blog/2018/01/2017-in-review/"/>
+		<link href="/blog/2018/01/2017-in-review/"/>
 		<updated>2018-01-31T06:00:00-06:00</updated>
-		<id>blog/2018/01/2017-in-review/</id>
+		<id>/blog/2018/01/2017-in-review/</id>
 		<content type="html">&lt;h2&gt;2017&lt;/h2&gt;
 &lt;p&gt;People say scary things about turning 40. Your body hurts more. You wonder if you&#39;re doing the right thing with your life. You just feel sleepy all the time.&lt;/p&gt;
 &lt;p&gt;2017 was my 40th year on this planet. While I won&#39;t totally argue with some of the things people say about being 40, I will also say this - I hope every year can be as good as my 40th year was.&lt;/p&gt;
@@ -235,9 +235,9 @@
 	
 	<entry>
 		<title>Chekhov&#39;s Gun And Better Unit Tests</title>
-		<link href="blog/2018/01/chekhovs-gun-and-better-unit-tests/"/>
+		<link href="/blog/2018/01/chekhovs-gun-and-better-unit-tests/"/>
 		<updated>2018-01-28T06:00:00-06:00</updated>
-		<id>blog/2018/01/chekhovs-gun-and-better-unit-tests/</id>
+		<id>/blog/2018/01/chekhovs-gun-and-better-unit-tests/</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;../chekhovs-gun.jpg&quot; alt=&quot;Chekhovs Gun &amp;amp; Unit Testing Illustration&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Chekhov&#39;s Gun&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Anton_Chekhov&quot;&gt;Anton Chekhov&lt;/a&gt; was a Russian playwright who died in 1904. He wrote several hundred stories by the time he was 26, many of them highly regarded. Chekhov is often credited with being a major influence on the modern short story.&lt;/p&gt;
@@ -305,9 +305,9 @@
 	
 	<entry>
 		<title>I&#39;m going to be busy</title>
-		<link href="blog/2017/04/im-going-to-be-busy/"/>
+		<link href="/blog/2017/04/im-going-to-be-busy/"/>
 		<updated>2017-04-19T07:00:00-05:00</updated>
-		<id>blog/2017/04/im-going-to-be-busy/</id>
+		<id>/blog/2017/04/im-going-to-be-busy/</id>
 		<content type="html">&lt;p&gt;Earlier this year, I decided to become more involved in speaking at local meetups and events. In 2016 I got the speaking bug, but struggled a little to get into conferences. For 2017, I thought a good way to get experience was to engage at the local level.&lt;/p&gt;
 &lt;p&gt;So I scheduled a few meetup dates. Those events have gone really well.&lt;/p&gt;
 &lt;p&gt;In the meantime, I submitted a good amount of abstracts to local and regional conferences, hoping to get into one or two.&lt;/p&gt;
@@ -350,9 +350,9 @@
 	
 	<entry>
 		<title>Mocking ES2015 modules</title>
-		<link href="blog/2017/01/mocking-es2015-modules/"/>
+		<link href="/blog/2017/01/mocking-es2015-modules/"/>
 		<updated>2017-01-05T06:00:00-06:00</updated>
-		<id>blog/2017/01/mocking-es2015-modules/</id>
+		<id>/blog/2017/01/mocking-es2015-modules/</id>
 		<content type="html">&lt;p&gt;If you&#39;re unit testing code that is using ES2015 modules [&lt;a href=&quot;#footnotes&quot;&gt;1&lt;/a&gt;], you&#39;ll probably point want to mock dependencies at some point. For the most part this is just like mocking things in any code. My tool of choice right now is &lt;a href=&quot;https://github.com/jupiter/simple-mock&quot;&gt;simple-mock&lt;/a&gt;, but there are gajillions of options.&lt;/p&gt;
 &lt;h2&gt;Test-induced damage&lt;/h2&gt;
 &lt;p&gt;There is some test-induced damage that my team has come to accept with simple-mock, and I am guessing it would be an issue with other mocking libraries like it. While simple-mock is great for mocking functions that are properties on exported objects, it seemed difficult to mock standalone/named exported functions from dependencies.&lt;/p&gt;
@@ -486,9 +486,9 @@ describe(&amp;quot;feature&amp;quot;, function() {
 	
 	<entry>
 		<title>My 2016 recap</title>
-		<link href="blog/2017/01/my-2016-recap/"/>
+		<link href="/blog/2017/01/my-2016-recap/"/>
 		<updated>2017-01-03T06:00:00-06:00</updated>
-		<id>blog/2017/01/my-2016-recap/</id>
+		<id>/blog/2017/01/my-2016-recap/</id>
 		<content type="html">&lt;p&gt;2016 was a ...year that happened. Love it or hate it, it happened. At a personal level, I had a pretty fantastic 2016.&lt;/p&gt;
 &lt;h2&gt;I discovered what I want to do when I grow up&lt;/h2&gt;
 &lt;p&gt;Nevermind that I am a few weeks from being able to say &lt;a href=&quot;https://www.youtube.com/watch?v=jXEde89WC44&quot;&gt;I&#39;m a man, I&#39;m 40!&lt;/a&gt; It was 2016 when I realized what it is I want to do with my career - I want to speak.&lt;/p&gt;
@@ -529,9 +529,9 @@ describe(&amp;quot;feature&amp;quot;, function() {
 	
 	<entry>
 		<title>SSIS Is Annoying</title>
-		<link href="blog/2016/12/ssis-is-annoying/"/>
+		<link href="/blog/2016/12/ssis-is-annoying/"/>
 		<updated>2016-12-01T06:00:00-06:00</updated>
-		<id>blog/2016/12/ssis-is-annoying/</id>
+		<id>/blog/2016/12/ssis-is-annoying/</id>
 		<content type="html">&lt;p&gt;The project I&#39;m currently working on requires a spreadsheet to be imported into the database. SSIS seemed like the logical solution to this.&lt;/p&gt;
 &lt;p&gt;But one month after dealing with SSIS, I am done with it. SSIS is like 85% awesome - but 15% &amp;quot;OMG I hate you&amp;quot;. &lt;a href=&quot;https://www.youtube.com/watch?v=QfzDUpB88x4&amp;amp;t=0m24s&quot;&gt;I wrote a song about it, like to hear it here it goes&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;SSIS doesn&#39;t work consistently across machines&lt;/h2&gt;
@@ -577,9 +577,9 @@ describe(&amp;quot;feature&amp;quot;, function() {
 	
 	<entry>
 		<title>October Recap</title>
-		<link href="blog/2016/11/october-recap/"/>
+		<link href="/blog/2016/11/october-recap/"/>
 		<updated>2016-11-12T06:00:00-06:00</updated>
-		<id>blog/2016/11/october-recap/</id>
+		<id>/blog/2016/11/october-recap/</id>
 		<content type="html">&lt;p&gt;October was a crazy month! Aside from being peak soccer season for my kids, I spoke at Milwaukee Code Camp on the 15th, and MKE DOT NET at the end of the month.&lt;/p&gt;
 &lt;p&gt;First off, thanks to everyone who attended my sessions! I had a great time. I really enjoy the storytelling part of speaking. It is quickly becoming clear to me that stories are how you draw people in.&lt;/p&gt;
 &lt;h2&gt;Milwaukee Code Camp&lt;/h2&gt;
@@ -601,9 +601,9 @@ describe(&amp;quot;feature&amp;quot;, function() {
 	
 	<entry>
 		<title>Getting Started With TDD</title>
-		<link href="blog/2016/08/getting-started-with-tdd/"/>
+		<link href="/blog/2016/08/getting-started-with-tdd/"/>
 		<updated>2016-08-19T07:00:00-05:00</updated>
-		<id>blog/2016/08/getting-started-with-tdd/</id>
+		<id>/blog/2016/08/getting-started-with-tdd/</id>
 		<content type="html">&lt;h2&gt;Background&lt;/h2&gt;
 &lt;p&gt;Recently, a coworker asked me to send him some good resources for introducing a team to TDD. Rather than hoarding the info, this seemed like something I should probably put somewhere for the next person that asks. Much of this is information that I talked about in my &amp;quot;You down with TDD? Yeah you know me&amp;quot; talk that I wish I could give more often.&lt;/p&gt;
 &lt;p&gt;There is entirely too much information to fit into one place, so I&#39;ve broken the info down a bit.&lt;/p&gt;
@@ -660,9 +660,9 @@ describe(&amp;quot;feature&amp;quot;, function() {
 	
 	<entry>
 		<title>My TDD Sales Pitch</title>
-		<link href="blog/2016/08/my-tdd-sales-pitch/"/>
+		<link href="/blog/2016/08/my-tdd-sales-pitch/"/>
 		<updated>2016-08-18T07:00:00-05:00</updated>
-		<id>blog/2016/08/my-tdd-sales-pitch/</id>
+		<id>/blog/2016/08/my-tdd-sales-pitch/</id>
 		<content type="html">&lt;h2&gt;Background&lt;/h2&gt;
 &lt;p&gt;Recently, a coworker asked me to send him some good resources for introducing a team to TDD. Rather than hoarding the info, this seemed like something I should probably put somewhere for the next person that asks. Much of this is information that I talked about in my &amp;quot;You down with TDD? Yeah you know me&amp;quot; talk that I wish I could give more often.&lt;/p&gt;
 &lt;p&gt;There is entirely too much information to fit into one place, so I&#39;ve broken the info down a bit.&lt;/p&gt;
@@ -710,9 +710,9 @@ describe(&amp;quot;feature&amp;quot;, function() {
 	
 	<entry>
 		<title>Back-ends? Where we&#39;re going, we don&#39;t need...back-ends.....</title>
-		<link href="blog/2016/06/chicago-coder-conference/"/>
+		<link href="/blog/2016/06/chicago-coder-conference/"/>
 		<updated>2016-06-10T07:00:00-05:00</updated>
-		<id>blog/2016/06/chicago-coder-conference/</id>
+		<id>/blog/2016/06/chicago-coder-conference/</id>
 		<content type="html">&lt;p&gt;I got to present at this year&#39;s Chicago Coder Conference, about static site generators and the &amp;quot;JAM stack.&amp;quot; This is a talk I&#39;ve been doing variations of here and there for about six months. It was the first time I&#39;ve been lucky enough to present at a conference.&lt;/p&gt;
 &lt;p&gt;I had a great time! I was a bit disheartened by the fact that I&#39;d been time-slotted up against Uncle Bob, and I even told everyone I met the first day of the conference that they should go listen to him instead of me. It was an honor to be speaking at the same venue as him, he is an amazing speaker and a role model for me. I just wish I hadn&#39;t had to compete with him for listeners....&lt;/p&gt;
 &lt;p&gt;Still, I had about 15 people come hang out and listen to me. I had great conversation with several of them before and after my talk. I&#39;ve been going into these things with the thought that if I get two people to legitimately listen to what I have to say, and I can legitimately help them, it is a win. In this case, I think I definitely met that goal, and I am pretty hungry to speak again soon.&lt;/p&gt;
@@ -723,9 +723,9 @@ describe(&amp;quot;feature&amp;quot;, function() {
 	
 	<entry>
 		<title>Maybe I was wrong about React</title>
-		<link href="blog/2016/04/maybe-i-was-wrong-about-react/"/>
+		<link href="/blog/2016/04/maybe-i-was-wrong-about-react/"/>
 		<updated>2016-04-07T07:00:00-05:00</updated>
-		<id>blog/2016/04/maybe-i-was-wrong-about-react/</id>
+		<id>/blog/2016/04/maybe-i-was-wrong-about-react/</id>
 		<content type="html">&lt;h2&gt;So many places to start&lt;/h2&gt;
 &lt;p&gt;There are a lot of examples of how to set up a project with React, and very little direction on the best route. The first time I tried to do this, I ended up with a whole lot of analysis paralysis, and couldn&#39;t figure out where to even start.&lt;/p&gt;
 &lt;h2&gt;It depends on how you learn&lt;/h2&gt;
@@ -756,9 +756,9 @@ describe(&amp;quot;feature&amp;quot;, function() {
 	
 	<entry>
 		<title>Ember looks neat</title>
-		<link href="blog/2016/03/emberLooksNeat/"/>
+		<link href="/blog/2016/03/emberLooksNeat/"/>
 		<updated>2016-03-24T07:00:00-05:00</updated>
-		<id>blog/2016/03/emberLooksNeat/</id>
+		<id>/blog/2016/03/emberLooksNeat/</id>
 		<content type="html">&lt;h2&gt;I got 99 problems and 98 of them are javascript MV* frameworks&lt;/h2&gt;
 &lt;p&gt;I am in the market for a new MV* framework in Javascript. I&#39;ve done Angular 1, many times. There are things I like about it - dependency injection is easy, meaning unit testing is easy; there is &lt;a href=&quot;https://github.com/johnpapa/angular-styleguide&quot;&gt;good guidance&lt;/a&gt; on style and best practices; documentation is pretty great. There are also things I don&#39;t like about it - it can be slow; the digest cycle can make me want to rip my hair out at times; writing directives can be confusing and sometimes feels a little like throwing darts at a dartboard to see what sticks. But that ship has sailed, and there are too many other frameworks to stick with Angular 1 for life. I am a breadth of knowledge guy, not depth of knowledge - and the longer I stick with one framework, the more I feel like I&#39;m falling behind.&lt;/p&gt;
 &lt;h3&gt;Angular 2&lt;/h3&gt;
@@ -789,9 +789,9 @@ describe(&amp;quot;feature&amp;quot;, function() {
 	
 	<entry>
 		<title>Static Site Generators Are The New WordPress</title>
-		<link href="blog/2016/03/staticgen/"/>
+		<link href="/blog/2016/03/staticgen/"/>
 		<updated>2016-03-10T06:00:00-06:00</updated>
-		<id>blog/2016/03/staticgen/</id>
+		<id>/blog/2016/03/staticgen/</id>
 		<content type="html">&lt;h2&gt;Static Site Generators Are The New WordPress&lt;/h2&gt;
 &lt;p&gt;I recently presented at the MKE Web Pros meetup group, about static site generators, and how you can build stupid simple websites with them.&lt;/p&gt;
 &lt;h3&gt;Summary&lt;/h3&gt;

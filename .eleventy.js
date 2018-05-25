@@ -28,6 +28,7 @@ module.exports = function(eleventyConfig) {
         isoDate: dateToISO(item.date),
       }));
   });
+  eleventyConfig.addPassthroughCopy('_redirects');
   return {
     templateFormats: ['md', 'pug', 'njk', 'png', 'jpg', 'gif', 'css', 'ico'],
     passthroughFileCopy: true,
