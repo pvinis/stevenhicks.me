@@ -6,7 +6,7 @@ layout: layout
 
 # Building Quality JavaScript With Test-Driven Development
 
-If you're interested in me leading this workshop at your company, [I'd love to hear from you!](mailto:steven.j.hicks+workshops@gmail.com)
+If you'd like me to present this workshop at your company, [I'd love to hear from you!](mailto:steven.j.hicks+workshops@gmail.com)
 
 ## [Slides]()
 
