@@ -8,7 +8,7 @@ layout: layout
 
 If you'd like me to present this workshop at your company, [I'd love to hear from you!](mailto:steven.j.hicks+workshops@gmail.com)
 
-## [Slides]()
+## [Slides](http://steven-j-hicks-speaking.netlify.com/test-driven-javascript)
 
 ## [Exercises](https://github.com/pepopowitz/tdd-workshop)
 
