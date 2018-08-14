@@ -2,11 +2,68 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Steven Hicks</title>
 	<link href="https://stevenhicks.me"/>
-	<updated>2018-04-22T07:00:00-05:00</updated>
+	<updated>2018-08-13T07:00:00-05:00</updated>
 	<author>
 		<name>Steven Hicks</name>
 		<email>steven.j.hicks@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>5 Tips For Writing A Conference Submission</title>
+		<link href="/blog/2018/08/tips-for-writing-conference-submissions/"/>
+		<updated>2018-08-13T07:00:00-05:00</updated>
+		<id>/blog/2018/08/tips-for-writing-conference-submissions/</id>
+		<content type="html">&lt;p&gt;Writing a winning conference talk submission seems like a dark art.&lt;/p&gt;
+&lt;p&gt;In the past couple months, I&#39;ve read every word of nearly 250 conference talk submissions. Multiple times. I&#39;m on the speaker committee for &lt;a href=&quot;https://www.creamcitycode.com/&quot;&gt;Cream City Code&lt;/a&gt; (nee MKE DOT NET), and we recently finalized our selections for our October 2018 event.&lt;/p&gt;
+&lt;p&gt;I &lt;strong&gt;cannot&lt;/strong&gt; refute the idea that small animal sacrifice or eye of newt will get you into your next tech conference. I &lt;strong&gt;can&lt;/strong&gt; share some tips for writing a submission that I&#39;d love to read, though!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; I&#39;ll pick on myself a little in this article, so as not to pick on anyone else. All examples are based on my own talks.&lt;/p&gt;
+&lt;h2&gt;Tip 1: Clear titles are better than witty titles&lt;/h2&gt;
+&lt;p&gt;Some people recommend that you craft a witty title in your submission, to stand out from the others.&lt;/p&gt;
+&lt;p&gt;A better way to stand out is to have a title that tells me (and the attendees) exactly what the talk is about. If you can craft a witty or punny title and still give me full clarity on the talk subject, that&#39;s great. But I will not dock you for a simple, straightforward title like &amp;quot;Building A Blog With Static Website Generation.&amp;quot; It tells me what I&#39;m going to learn about!&lt;/p&gt;
+&lt;p&gt;On the other hand, a title like &amp;quot;Back-ends? Where we&#39;re going, we don&#39;t need...back-ends...&amp;quot; is a super awesome reference to &lt;a href=&quot;https://www.youtube.com/watch?v=flge_rw6RG0&quot;&gt;a great movie&lt;/a&gt;, but it doesn&#39;t tell the reviewers what the talk is about. Worse, it doesn&#39;t tell &lt;strong&gt;the attendees&lt;/strong&gt; what the talk is about. So when they check the schedule right before the next session, deciding where to go next, they will skip over your talk and find a title they understand.&lt;/p&gt;
+&lt;p&gt;In my experience, talks don&#39;t get accepted/rejected &lt;strong&gt;by conference organizers&lt;/strong&gt; based on title alone. They do get chosen/skipped &lt;strong&gt;by attendees&lt;/strong&gt; based on title alone, though. Help them find the right session by using a clear title.&lt;/p&gt;
+&lt;h2&gt;Tip 2: Don&#39;t stress out about the &amp;quot;elevator pitch&amp;quot;&lt;/h2&gt;
+&lt;p&gt;We use &lt;a href=&quot;https://www.papercall.io/&quot;&gt;Papercall&lt;/a&gt; to manage our CFP. Papercall provides two fields for people to describe their talk: Abstract and Description.&lt;/p&gt;
+&lt;p&gt;Description is not character-limited. Abstract is limited, though, to 300 characters. Characters - not words.&lt;/p&gt;
+&lt;p&gt;It is &lt;strong&gt;really hard&lt;/strong&gt; to write something worthwhile in 300 characters. There are a few strategies I&#39;ve seen (or used) to maximize the 300 characters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cut sentences/phrases out of the Description field to get it down to 300&lt;/li&gt;
+&lt;li&gt;Write a single sentence that is a lengthy version of the title&lt;/li&gt;
+&lt;li&gt;Apply SEO skills, and pack keywords&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All these result in something that is pretty much meaningless to me. I&#39;ve stopped reading the Abstract field.&lt;/p&gt;
+&lt;p&gt;I&#39;m sure I&#39;m an outlier on this, and you should definitely still fill this in for submissions to &lt;a href=&quot;https://www.creamcitycode.com/&quot;&gt;Cream City Code&lt;/a&gt; and other events. But your efforts are better spent on the Description than the 300-character Abstract.&lt;/p&gt;
+&lt;h2&gt;Tip 3: Tell me why I should attend, and what I&#39;ll walk away with&lt;/h2&gt;
+&lt;p&gt;Sometimes we get submissions where the Description field is about the same length as the 300-character Abstract field.&lt;/p&gt;
+&lt;p&gt;I almost always down-vote these submissions, for lack of information. The Description field is not character-limited. It ends up on the website, and in the printed program. This is what attendees read to decide where to go - give them a good idea of what they&#39;re going to learn about!&lt;/p&gt;
+&lt;p&gt;There are several components I love to see in a Description:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a common pain-point, or an explanation why the talk is important&lt;/li&gt;
+&lt;li&gt;a brief description of the main topic&lt;/li&gt;
+&lt;li&gt;a few things I&#39;ll take away from the talk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These components lead again to clarity: not only for me, but for the people looking for a session to attend.&lt;/p&gt;
+&lt;p&gt;The most important thing your Description does is get the right audience in the room. You don&#39;t want &lt;strong&gt;everyone&lt;/strong&gt; to attend your talk, you want the people who will most benefit from it.&lt;/p&gt;
+&lt;p&gt;If you describe a problem, the solution, and some takeaways, you&#39;ll get the right attendees in your session. You&#39;ll also help the organizers feel confident about the lineup they&#39;re putting together.&lt;/p&gt;
+&lt;p&gt;It&#39;s also important to note that you can write a Description that far exceeds 300 characters, but still doesn&#39;t give me enough information. Don&#39;t add fluff to make your Description longer. Add words that are meaningful, and that add value.&lt;/p&gt;
+&lt;h2&gt;Tip 4: A few small errors are fine...but not too many&lt;/h2&gt;
+&lt;p&gt;In the second grade, I took second place in the Oconomowoc School District spelling bee. I lost on the word &amp;quot;embarrassed.&amp;quot; The jokes wrote themselves: &amp;quot;It&#39;s okay, Steve! Don&#39;t be...(wait for it)...&lt;strong&gt;EMBARRASSED&lt;/strong&gt;!!!&amp;quot; To this day, I am convinced I spelled it correctly, and the judges did not.&lt;/p&gt;
+&lt;p&gt;That is to say, I am an above average speller. I am also married to an English teacher - and I think there is a super-secret English teacher test for potential partners, to weed out the grammatically deficient. So I think I&#39;m above average at grammar, too.&lt;/p&gt;
+&lt;p&gt;A couple small errors will get noticed by me, but I&#39;ll look past them. We all make mistakes - I once submitted a cover letter with the wrong company name! I&#39;m willing to overlook a couple small issues.&lt;/p&gt;
+&lt;p&gt;But I won&#39;t overlook a submission with lots of spelling or grammar errors. It makes me think you haven&#39;t thought much beyond the abstract. If you don&#39;t care about the quality of your submission, I&#39;m not sure you&#39;ll care about the quality of your talk. Most of all, I&#39;m worried you might not do a great job of communicating to the audience.&lt;/p&gt;
+&lt;p&gt;Use tools to check your spelling and grammar. Use &lt;a href=&quot;http://hemingwayapp.com/&quot;&gt;Hemingway&lt;/a&gt; or a similar tool to reduce the reading level of your submission. If you struggle with grammar and spelling, have someone review your submission.&lt;/p&gt;
+&lt;h2&gt;Tip 5: Please don&#39;t make people feel bad&lt;/h2&gt;
+&lt;p&gt;Sometimes things are worded in a way that I feel like I&#39;m an idiot, or not smart enough to attend your session. If I&#39;m a WordPress developer, the sentence &amp;quot;If you&#39;re still using WordPress, you&#39;re doing it wrong.&amp;quot; makes me feel bad about myself. I&#39;ll admit that I&#39;m pretty sensitive - but if your abstract makes me feel bad about myself, I&#39;m not going to attend.&lt;/p&gt;
+&lt;p&gt;You probably intend to be funny. You and your officemates maybe say things like &amp;quot;you&#39;re doing it wrong&amp;quot; as a joke, and you laugh with each other. I get that. But I still don&#39;t like it.&lt;/p&gt;
+&lt;p&gt;Submissions with exclusive/gate-keeper language like this are a red flag to me. They worry me that someone will attend your session who doesn&#39;t get your jokes. That you won&#39;t have a good sense of your audience, and you&#39;ll push the jokes too far. And that we&#39;ll have to have a conversation that none of us are happy about.&lt;/p&gt;
+&lt;h2&gt;Keep submitting your talk!&lt;/h2&gt;
+&lt;p&gt;All of these recommendations are based on my preferences. Different conferences are organized by different people with different preferences. Even within &lt;a href=&quot;https://www.creamcitycode.com/&quot;&gt;Cream City Code&lt;/a&gt;, there are differences in the preferences of all 6 reviewers. (This is intentional, and a benefit. We want different preferences, to give the lineup a good balance.)&lt;/p&gt;
+&lt;p&gt;This is one of the main reasons conference talk submission seems like a dark art. What gets you into one conference won&#39;t get you into another. Different reviewers are looking for different things.&lt;/p&gt;
+&lt;p&gt;The large majority of submissions to conferences are well-written. Conferences just don&#39;t have room for them all. At &lt;a href=&quot;https://www.creamcitycode.com/&quot;&gt;Cream City Code&lt;/a&gt;, we start with our highest-rated sessions, then fit other highly-rated sessions around them to give broad topic coverage. There are a lot of really good submissions that we just can&#39;t pick, because we only have 30 slots!&lt;/p&gt;
+&lt;p&gt;If you submit to a conference and don&#39;t get in, there&#39;s a good chance you did nothing wrong. Please don&#39;t take it personally. Keep submitting!&lt;/p&gt;
+&lt;p&gt;It&#39;s all about finding a group of reviewers with which your talk resonates.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>10 Tips For Writing Conference Talks</title>
