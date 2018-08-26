@@ -22,16 +22,17 @@ We’ll be creating an app to manage all the adorable kittens (or puppies) in ou
 
 This session includes a healthy balance of instruction and hands-on activities. We’ll cover a broad variety of topics required to build a React app:
 
-React fundamentals
-Features of modern JavaScript that ease React development
-The ‘Component’ mindset
-JSX, a strange-looking hybrid between JavaScript and HTML
-Verifying component inputs
-Styling React components
-Routing
-State management
-Automated testing
-Best practices
+- React fundamentals
+- Features of modern JavaScript that ease React development
+- The ‘Component’ mindset
+- JSX, a strange-looking hybrid between JavaScript and HTML
+- Verifying component inputs
+- Styling React components
+- Routing
+- State management
+- Automated testing
+- Best practices
+
 Experience with HTML, CSS, and JavaScript is required. You’ll need Git v2.15.0 or higher, NodeJS v8.9.4 or higher, NPM v5.6.0 or higher, and a text editor of your choosing.
 
 [See here](https://github.com/pepopowitz/your-first-react-app-exercises/blob/master/SETUP.md) for detailed setup instructions.
