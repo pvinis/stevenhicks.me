@@ -6,6 +6,8 @@ layout: layout
 
 # Unit Testing Your React App
 
+## [Video](https://www.youtube.com/watch?v=-JeyIdKPNsE)
+
 ## [Slides](https://steven-j-hicks-speaking.netlify.com/testing-with-react/)
 
 ## [Code Samples](https://github.com/pepopowitz/unit-testing-your-react-app)
