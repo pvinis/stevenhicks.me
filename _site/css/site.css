@@ -217,7 +217,7 @@ article {
   justify-content: space-around; }
   .engagements .engagement {
     width: 180px;
-    border: 1px solid #daeaea;
+    box-shadow: 0px 1px 5px 1px #daeaea;
     border-radius: 4px;
     margin: 10px;
     padding: 20px;
