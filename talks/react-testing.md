@@ -16,8 +16,10 @@ layout: layout
 
 ## Abstract
 
-Congratulations! You’re building a sweet new web application with React. But what are you doing for unit testing?
+Writing unit tests is like making good food choices. We know it’s beneficial to us, and it’s easy to do when we aren’t stressed. But give us a looming deadline and a product owner looking over our shoulder, and we throw our good habits out the window.
 
-Setting your environment up for JavaScript unit testing can be intimidating. React tooling is phenomenal though, and makes setup a breeze. In this session, we’ll look at how to get started writing tests for your React app. We’ll dig into the features of Jest as a test-runner and test framework. Then we’ll take a look at Enzyme, a framework for testing your React components directly. Finally, we’ll look at guidance and best practices. What should you test? When should you test it? How can you keep your React code friendly to unit tests?
+React testing tools can help you maintain good unit testing habits. Setup with Jest as a test-runner and test framework is a breeze. Enzyme, a library for testing your React components directly, enables you to write simple tests with clear intentions. In this session, you’ll learn how to use these tools to write meaningful and maintainable unit tests.
 
-You will leave this session ready to cover your React app with tests.
+We’ll also talk about guidance and best practices. What should you test? When should you test it? How can you keep your React code friendly to tests?
+
+This session will arm you with the tools and guidance to unit test your React app. You’ll leave ready to write tests!
