@@ -15,11 +15,11 @@
     "author": "Steven Hicks",
     "license": "ISC",
     "devDependencies": {
-        "@11ty/eleventy": "^0.3.5",
+        "@11ty/eleventy": "^0.7.1",
         "concurrently": "^3.5.1",
         "gulp": "^3.9.1",
         "gulp-sass": "^3.1.0",
-        "live-server": "^1.2.0",
+        "live-server": "^1.2.1",
         "luxon": "^0.3.1"
     }
 }
