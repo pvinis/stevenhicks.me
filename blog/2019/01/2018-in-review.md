@@ -24,7 +24,7 @@ I took a look back at my Twitter feed from 2018, though, and things looked prett
 
 Heading into 2018, I thought that I was going to have to cut back on speaking. My job wasn't happy about me taking time "off" to speak.
 
-I still managed to present 12 times! This is as many times as I presented in 2017.
+But I still managed to present 12 times! This is as many times as I presented in 2017.
 
 I took a few vacation days to do it, which I wasn't thrilled about. I also had some help from [my friend Tony](https://twitter.com/oobert) advocating for me at work, convincing people that I was helping the company. I also did a good amount of local speaking - 5 times out of 12, to be precise. This breakdown also mirrored my 2017 speaking engagements.
 
@@ -104,7 +104,7 @@ I got an opportunity to find out, when [Fly](https://twitter.com/flydotio) accep
 
 I came away from the experience feeling like I could definitely write/speak for a living, especially if I believed in the product. I'm still worried about the amount of travel that a dev advocate does. That just isn't realistic for me right now. But maybe this type of role is in my future.
 
-### I Was On A Podcast! Er, Two Podcasts???
+### I Was On A Podcast! Twice!
 
 Early in 2018, [David Pine](https://twitter.com/davidpine7) connected me with [Dave Rael](https://twitter.com/raelyard), and I got to be a guest on the Developer On Fire podcast! I had a great time [talking to Dave about "doing scary things", becoming a speaker, and tightening your feedback loops](https://developeronfire.com/podcast/episode-317-steven-hicks-scary-things). And the movie "Medicine Man".
 
