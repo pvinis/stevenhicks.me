@@ -2,11 +2,89 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Steven Hicks</title>
 	<link href="https://stevenhicks.me"/>
-	<updated>2019-01-29T06:00:00-06:00</updated>
+	<updated>2019-02-19T06:00:00-06:00</updated>
 	<author>
 		<name>Steven Hicks</name>
 		<email>steven.j.hicks@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Building A Workshop</title>
+		<link href="/blog/2019/02/building-a-workshop/"/>
+		<updated>2019-02-19T06:00:00-06:00</updated>
+		<id>/blog/2019/02/building-a-workshop/</id>
+		<content type="html">&lt;p&gt;Presenting a 45-minute session at a meetup or conference is really fun. I&#39;ve never thought that was enough time to do more than inspire people to research the topic. In 2018, I decided I wanted to get more out of speaking. I wanted to feel like I was &lt;em&gt;teaching&lt;/em&gt; people, in addition to inspiring them.&lt;/p&gt;
+&lt;p&gt;So I started leading workshops. I &lt;a href=&quot;https://twitter.com/MusicCityTech/status/1002264602422456331&quot;&gt;led a half-day workshop at Music City Tech&lt;/a&gt; on writing Test-Driven JavaScript, and then &lt;a href=&quot;https://twitter.com/pepopowitz/status/1049406551994306560&quot;&gt;a full-day workshop at Dev Up&lt;/a&gt; called &amp;quot;Building Your First React App&amp;quot;. In early 2019 I &lt;a href=&quot;https://twitter.com/anaccidentaldev/status/1082665637229531141&quot;&gt;led my React workshop again at CodeMash&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&#39;ve definitely walked away from these first few feeling like I&#39;m teaching and making a difference. If workshops are something you&#39;ve considered, I encourage you to give them a shot. I &lt;em&gt;think&lt;/em&gt; most conferences get significantly less submissions for workshops than talks, so it is easier to get started.&lt;/p&gt;
+&lt;p&gt;If that&#39;s you, then you might be interested in some things I&#39;ve learned about building workshops in the past year!&lt;/p&gt;
+&lt;h2&gt;It takes a lot of time&lt;/h2&gt;
+&lt;p&gt;A half-day workshop probably took me about 50 hours to put together; a full-day workshop took about 100 hours.&lt;/p&gt;
+&lt;p&gt;That&#39;s a lot of time! Before it scares you off, you should know these things for context:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;It takes me about 40 hours of work to put together a one-hour talk. I obsess over the flow of a talk, I add drawings, and I script (effectively) every talk I write. This is more time than most people put into a talk. So 50/100 hours is likely on the high side of what it would take you to build a workshop.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I have a very specific balance of talking-to-hands-on that I strive for. I don&#39;t like to talk for more than 20 minutes before people get their hands on their keyboard for 20 minutes. I think this forces me to put more time into thinking about how exercises can build from each other, and how I can break exercises down into smaller pieces.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Think a lot about what kind of workshop you want&lt;/h2&gt;
+&lt;p&gt;The answer to this question probably has a big effect on how much time it takes to build your workshop. I&#39;ve seen a few different styles of workshop, each with advantages and disadvantages.&lt;/p&gt;
+&lt;h3&gt;The self-driven workshop&lt;/h3&gt;
+&lt;p&gt;Some workshop leaders say a few words at the beginning, then let people dig in on their own for the rest of the 4 hours. I call this a &amp;quot;self-driven workshop.&amp;quot;&lt;/p&gt;
+&lt;p&gt;The self-driven workshop is a favorite of attendees who want to work on their own time. They don&#39;t really need the leader there, so they can take the exercises home with them.&lt;/p&gt;
+&lt;p&gt;On the other hand, this strategy gives learners more opportunity to distribute skill-wise. Fast learners will finish everything within an hour; slow learners will take more. Many learners will even leave when they realize it&#39;s completely self-driven, knowing they can work on it at their convenience.&lt;/p&gt;
+&lt;p&gt;My preference is to engage with learners early and often - so I stay away from the self-driven workshop. If you batch your exercises small, you see less of a gap between the fast and slow learners. You might end up with a range of 10 to 20 minutes with small exercises, compared to 1 hour to 3.5 hours for a self-driven workshop. This is more likely to keep everyone engaged for the entire session, and it gives me more opportunities to interact with people.&lt;/p&gt;
+&lt;h3&gt;The lecture&lt;/h3&gt;
+&lt;p&gt;Some workshop leaders can fill all 4 hours with instruction. They are deep experts in their field, and have tons of knowledge to share.&lt;/p&gt;
+&lt;p&gt;I am not this level of expert. I also don&#39;t think 4 hours of lecture is engaging for an audience. Human attention span is short. You get maybe 20 minutes before people start to check out.&lt;/p&gt;
+&lt;p&gt;At a workshop, people have their laptops in front of them. If you give them an opportunity to check out, they will take it, and you will struggle to get them back. This doesn&#39;t mean they&#39;ll sit there and play minesweeper for the next 3 hours. It means they&#39;ll spend 20 minutes on Twitter, then decide &amp;quot;this sucks, I&#39;m not getting anything out of it&amp;quot;, then walk out to another session.&lt;/p&gt;
+&lt;p&gt;It isn&#39;t only 100% talking that makes for a boring workshop. Even if you split your workshop into 1 hour talking then 3 hours of hands-on, that first hour is an opportunity for people to check out before you even get to the exercises. At the very least, I&#39;d consider breaking this balance into [30 minutes talking, 1:30 exercises, :30 talking, 1:30 exercises]. Even better would be 15 minutes talking/45 minutes exercise repeated 4 times.&lt;/p&gt;
+&lt;h3&gt;The interactive workshop&lt;/h3&gt;
+&lt;p&gt;No surprise I&#39;m sure, but this is definitely my preferred style of workshop. I strive for about 15 minutes of talking, then about 20-30 minutes of exercises of some sort.&lt;/p&gt;
+&lt;p&gt;Variety of exercise is also important in this style of workshop. Repetitive exercises can get boring. My favorite workshops that I&#39;ve attended have used a variety of styles of exercise. A mix of hands-on coding, looking at code, pairing, just talking about things,… In my React workshop, I have learners draw components on handouts with a pen.&lt;/p&gt;
+&lt;p&gt;Running an interactive workshop requires strict time-boxing, to make sure you&#39;re covering all the things you want to cover. It is really easy to run over time on exercises. You&#39;re an expert in your field, and your audience is full of beginners - every exercise you write will take them longer than you think.&lt;/p&gt;
+&lt;p&gt;This is okay, they&#39;re learning! You just need to be okay with cutting an exercise short when you know time is up.&lt;/p&gt;
+&lt;h2&gt;Get people talking to each other within the first 20 minutes&lt;/h2&gt;
+&lt;p&gt;If you&#39;re interested in leading a lecture or self-driven workshop, this is probably not necessary.&lt;/p&gt;
+&lt;p&gt;Agile coaches/speakers are especially great at making this happen. Even if it&#39;s a simple &amp;quot;meet your neighbor&amp;quot;, getting people talking early sets the tone of keeping people interactive and engaged.&lt;/p&gt;
+&lt;p&gt;In my workshops, I&#39;ve mostly only tried the &amp;quot;meet your neighbor&amp;quot;. I required pairing for one exercise in my Test-Driven workshop, but it didn&#39;t go great. It seems like a lot of people have resistance to pairing. I have a deep love for pairing. I think if done well it can be career-changing, so I still want to share that experience with people.&lt;/p&gt;
+&lt;p&gt;I&#39;ll back off on the pairing &lt;em&gt;requirement&lt;/em&gt; in the future, and make it &lt;em&gt;optional but encouraged&lt;/em&gt;. I also could better support pairing by taking time up front to say “if you want to pair, raise your hand right now…and find each other.” It would require people moving seats, but it might work.&lt;/p&gt;
+&lt;h2&gt;Written instructions are really helpful&lt;/h2&gt;
+&lt;p&gt;It is &lt;strong&gt;incredibly&lt;/strong&gt; helpful to give your audience detailed instructions for exercises. Anything less will leave them lost and confused. Don&#39;t assume anything is understood that you haven&#39;t already explained. Provide links to resources for things that you didn&#39;t explain. The more details you give them, the fewer questions you&#39;ll have to answer.&lt;/p&gt;
+&lt;p&gt;It&#39;s even helpful to include basic information that you &lt;em&gt;did&lt;/em&gt; cover in your lecture/instruction. Some people might not have understood it when you were speaking. Others might do better with reading than listening.&lt;/p&gt;
+&lt;p&gt;Even the exercises where laptops aren&#39;t used should have written instructions. Once your learners are conditioned to look at your written instructions for each exercise, they will look there even when there aren&#39;t any.&lt;/p&gt;
+&lt;h3&gt;Post the instructions in a public location&lt;/h3&gt;
+&lt;p&gt;This isn&#39;t a requirement, but attendees are really appreciative when they can (a) finish the exercises on their own, and (b) share them with their coworkers. I put all of mine &lt;a href=&quot;https://github.com/pepopowitz/your-first-react-app-exercises&quot;&gt;in a GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Enable people to jump into later exercises easily&lt;/h2&gt;
+&lt;p&gt;Very few people will complete every exercise in a workshop, from start to finish. Some might join your session halfway through. Some might get stuck on an exercise, and since &lt;a href=&quot;#the-interactive-workshop&quot;&gt;you&#39;re strictly time-boxing&lt;/a&gt;, they might not have time to finish it.&lt;/p&gt;
+&lt;p&gt;To account for this, build your exercises in a way that someone can jump into a later one without having finished everything before it. This will help them focus on the current exercise, and it will free you up from solving issues from 3 exercises ago.&lt;/p&gt;
+&lt;p&gt;I accomplished this &lt;a href=&quot;https://github.com/pepopowitz/your-first-react-app-exercises&quot;&gt;in my React workshop&lt;/a&gt; by having each exercise start with the &amp;quot;completed&amp;quot; state of the previous. I have a separate folder for each exercise, and all the code for all exercises is readily available. I give them the starting point for each exercise, and a folder containing the completed state in case they get stuck.&lt;/p&gt;
+&lt;p&gt;I&#39;ve also seen people accomplish this with git branches, commits, or tags.&lt;/p&gt;
+&lt;h2&gt;Finding the right difficulty level is...difficult&lt;/h2&gt;
+&lt;p&gt;It&#39;s important to me to have a difficulty level that (a) isn&#39;t too hard for brand new beginners, but (b) doesn&#39;t bore the advanced learners. This is a really hard balance to find.&lt;/p&gt;
+&lt;p&gt;The way I first approached it, with my TDD workshop, was to try to make the exercises &lt;em&gt;so long&lt;/em&gt; that no one would ever finish. I thought this would keep the advanced learners interested, without the beginners having to worry about how far they got.&lt;/p&gt;
+&lt;p&gt;This approach definitely appeased the advanced learners, but it had a damaging effect on the beginners. They became stressed out that they were never able to finish. Several people commented on how far behind they felt after my workshop. This felt awful - I &lt;strong&gt;never&lt;/strong&gt; want to make beginners feel that way.&lt;/p&gt;
+&lt;p&gt;With that knowledge in hand, I did a better job of planning exercises in my React workshop. I aimed for activities that would take &lt;em&gt;me&lt;/em&gt; about 5 minutes to complete. Because I have significantly more experience in the topic, this ends up being &lt;strong&gt;plenty&lt;/strong&gt; of work for the advanced learners without overwhelming the beginners. Just in case an advanced student finished work quickly, I threw in a link to an interesting related article and/or a vague &amp;quot;bonus&amp;quot; exercise that could keep them busy.&lt;/p&gt;
+&lt;p&gt;You will get a wide range of experience levels in your workshop. It’s up to you to decide what you want to do with those people. Do you want to teach to the least experienced person in the room, at the risk of someone more advanced walking out? Are you more interested in keeping the advanced students happy at the risk of frustrating the beginners? I aim for the middle, and expect to lose a few people on either end.&lt;/p&gt;
+&lt;h2&gt;Be flexible with time&lt;/h2&gt;
+&lt;h3&gt;Give people breaks&lt;/h3&gt;
+&lt;p&gt;I knew going into my first workshop that I needed to account for breaks. &lt;em&gt;No one&lt;/em&gt; can sit for 4 hours, no matter how funny my dumb jokes are. I scheduled one break into my Test-Driven workshop, about halfway through.&lt;/p&gt;
+&lt;p&gt;We didn&#39;t get anywhere near halfway before we needed it. I could see the lack of focus in their eyes. We took our break earlier than expected, and then a second a little over an hour later. My schedule was a little messed up, but we recovered.&lt;/p&gt;
+&lt;p&gt;Now I factor in two breaks per 4 hour session, about ten minutes for each break. I don&#39;t schedule them, though. I find it more effective to gauge the temperature of the room when we&#39;ve been sitting for an hour. I start looking ahead at my schedule (which is conveniently broken down into 15-20 minute chunks), to figure out when our next break will fit in.&lt;/p&gt;
+&lt;h3&gt;Let them choose the last topics&lt;/h3&gt;
+&lt;p&gt;It&#39;s hard to stick to an exact schedule for a workshop. Embrace this by over-planning topics. Plan out a couple more than needed to fill the session, but let your group choose which topics they&#39;re most interested in at the end. They&#39;ll appreciate having control over the curriculum, they&#39;ll get more out of your session, and you&#39;ll feel like you&#39;ve tailored your course for them.&lt;/p&gt;
+&lt;h2&gt;Watch out for logical leaps&lt;/h2&gt;
+&lt;p&gt;I&#39;m still learning this lesson.&lt;/p&gt;
+&lt;p&gt;It&#39;s easy, as an expert in your topic, to make logical leaps. In my React workshop, we talk about &lt;code&gt;setState&lt;/code&gt; for managing component state. The next logical concept to me is application-level state. But there is a big difference between managing component state and managing application state. It took me months of experience to understand the nuances and differences between the two.&lt;/p&gt;
+&lt;p&gt;It&#39;s hard to boil that experience down into 15 minutes of lecture. It&#39;s a big leap for someone who just learned about component state to understand &lt;em&gt;what&lt;/em&gt; application state is, &lt;em&gt;how&lt;/em&gt; it&#39;s different from component state, &lt;em&gt;why&lt;/em&gt; it matters, and &lt;em&gt;OMG this doesn&#39;t look anything like component state&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;It is definitely your responsibility to figure out how to guide them through these leaps. But it&#39;s also easy to underestimate the size of those leaps. Err on the side of caution. Always assume the leap is bigger than you think it is, and never assume they&#39;ll be able to make the leap without a lot of assistance from you.&lt;/p&gt;
+&lt;p&gt;I look back at this tweet often, as a reminder of how slowly I should be transitioning through concepts while teaching:&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Sometimes I read things on edutwitter from someone who thinks they have discovered something amazing, which often sounds profoundy, thinky, or researchy, and I sigh and reflect on how music educators have known said thing for years. In evidence I give you Mrs Curwen, 1886: &lt;a href=&quot;https://t.co/fvPgXVJUL9&quot;&gt;pic.twitter.com/fvPgXVJUL9&lt;/a&gt;&lt;/p&gt;&amp;mdash; Martin Fautley (@DrFautley) &lt;a href=&quot;https://twitter.com/DrFautley/status/1024227769004306432?ref_src=twsrc%5Etfw&quot;&gt;July 31, 2018&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;h2&gt;Focus on the learners&lt;/h2&gt;
+&lt;p&gt;It feels nice to have a room of people looking to you for guidance. Just remember that the workshop is not about you, or your ego, or all the things that you know - it&#39;s about the awesome people who came to learn from you. Do everything in your power to make learning easier for them.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>2018 In Review</title>
@@ -22,7 +100,7 @@
 &lt;p&gt;I took a look back at my Twitter feed from 2018, though, and things looked pretty dang good.&lt;/p&gt;
 &lt;h3&gt;I Did More Speaking Than Expected!&lt;/h3&gt;
 &lt;p&gt;Heading into 2018, I thought that I was going to have to cut back on speaking. My job wasn&#39;t happy about me taking time &amp;quot;off&amp;quot; to speak.&lt;/p&gt;
-&lt;p&gt;I still managed to present 12 times! This is as many times as I presented in 2017.&lt;/p&gt;
+&lt;p&gt;But I still managed to present 12 times! This is as many times as I presented in 2017.&lt;/p&gt;
 &lt;p&gt;I took a few vacation days to do it, which I wasn&#39;t thrilled about. I also had some help from &lt;a href=&quot;https://twitter.com/oobert&quot;&gt;my friend Tony&lt;/a&gt; advocating for me at work, convincing people that I was helping the company. I also did a good amount of local speaking - 5 times out of 12, to be precise. This breakdown also mirrored my 2017 speaking engagements.&lt;/p&gt;
 &lt;h4&gt;At CodeMash&lt;/h4&gt;
 &lt;p&gt;My speaking year started off with a trip to Ohio for CodeMash, a conference I&#39;d heard a lot of things about. My talk went great, but my highlight was giving a lightning talk.&lt;/p&gt;
@@ -65,7 +143,7 @@
 &lt;p&gt;I&#39;ve kicked around the idea of getting into developer relations for a while. One thing I&#39;ve never been sure about is being paid to write/speak about a specific product, instead of &amp;quot;whatever I want.&amp;quot; This feels like a situation where I&#39;d have trouble motivating myself.&lt;/p&gt;
 &lt;p&gt;I got an opportunity to find out, when &lt;a href=&quot;https://twitter.com/flydotio&quot;&gt;Fly&lt;/a&gt; accepted my proposal to &lt;a href=&quot;https://fly.io/articles/adding-another-layer-to-the-stack/&quot;&gt;write an article for them&lt;/a&gt;. They have a great team. They were really helpful getting me up to speed with Fly Edge Apps, and they helped me craft an idea and a solid article.&lt;/p&gt;
 &lt;p&gt;I came away from the experience feeling like I could definitely write/speak for a living, especially if I believed in the product. I&#39;m still worried about the amount of travel that a dev advocate does. That just isn&#39;t realistic for me right now. But maybe this type of role is in my future.&lt;/p&gt;
-&lt;h3&gt;I Was On A Podcast! Er, Two Podcasts???&lt;/h3&gt;
+&lt;h3&gt;I Was On A Podcast! Twice!&lt;/h3&gt;
 &lt;p&gt;Early in 2018, &lt;a href=&quot;https://twitter.com/davidpine7&quot;&gt;David Pine&lt;/a&gt; connected me with &lt;a href=&quot;https://twitter.com/raelyard&quot;&gt;Dave Rael&lt;/a&gt;, and I got to be a guest on the Developer On Fire podcast! I had a great time &lt;a href=&quot;https://developeronfire.com/podcast/episode-317-steven-hicks-scary-things&quot;&gt;talking to Dave about &amp;quot;doing scary things&amp;quot;, becoming a speaker, and tightening your feedback loops&lt;/a&gt;. And the movie &amp;quot;Medicine Man&amp;quot;.&lt;/p&gt;
 &lt;p&gt;In early summer, while at &lt;a href=&quot;https://twitter.com/MusicCityTech&quot;&gt;Music City Tech&lt;/a&gt; in Nashville, I got a chance to record another podcast - this time with &lt;a href=&quot;https://twitter.com/mgroves&quot;&gt;Matt Groves&lt;/a&gt;, on the Cross-Cutting Concerns podcast. &lt;a href=&quot;https://crosscuttingconcerns.com/Podcast-089-Steve-Hicks-Speaking&quot;&gt;We talked about the differences between writing an hour long talk and building a half-day workshop&lt;/a&gt;. Spoiler: there are differences.&lt;/p&gt;
 &lt;h3&gt;My Scary Thing Was Workshops!&lt;/h3&gt;
