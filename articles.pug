@@ -1,0 +1,19 @@
+---
+layout: layout
+title: Articles - Steven Hicks
+metaDescription: Ramblings on development, life, and the development life. By Milwaukee developer Steven Hicks.
+---
+include /mixins.pug
+
+each article in collections.postsReversed
+    article.content-article
+        header
+            h2
+                a(href=article.url)= article.data.title
+            h3.by-line #{formatDate(article.isoDate)}
+        p !{article.data.snippet}
+        a(href=article.url) Read about it!
+        hr
+
+        //p #{JSON.stringify(article.data)}
+

@@ -5,21 +5,23 @@ metaDescription: Ramblings on development, life, and the development life. By Mi
 ---
 include /mixins.pug
 
-.hero
-    div.headline
-        h1 Steven Hicks
-        h2 MKE web development generalist and  speaker. Husband/dad/pack-mule, fake rock climber, and mediocre triathlete.
-        h3 If you ain't falling, you ain't learning.
-    img(src='/static/img/avatar.jpg' alt='Steven Hicks')
+p Hi friends! Write some stuff here about speaking, coding, and getting in touch.
+
+hr
     
-h3 Recent Stuff
+h2 Recent Articles
     
-each article in collections.postsReversed
+each article in collections.postsReversed.slice(0,5)
     article.content-article
         header
-            h2
+            h3
                 a(href=article.url)= article.data.title
-            h3 #{formatDate(article.isoDate)}
+            h4.by-line #{formatDate(article.isoDate)}
         p !{article.data.snippet}
         a(href=article.url) Read about it!
+        hr
         //p #{JSON.stringify(article.data)}
+
+h3
+    a(href='/articles') Read more articles
+

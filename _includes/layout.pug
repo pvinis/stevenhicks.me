@@ -19,8 +19,8 @@ html(lang="en")
         meta(property='twitter:image' content='https://www.stevenhicks.me/static/img/avatar.jpg')
 
         link(rel='stylesheet', href='/css/site.css')
-        link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/foundation.min.css')
-        link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Oswald|Merriweather') 
+        link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css')
+        link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans')
         link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') 
 
     body
@@ -31,24 +31,31 @@ html(lang="en")
             gtag('js', new Date());
             gtag('config', 'UA-113131152-1');
 
-        div.site
-            .box.header
-                a.navbar-brand(href='/') Steven Hicks
-                a.navbar-brand(href='/about') About
-                a.navbar-brand(href='/speaking') Speaking
-            .content
+        #root
+            #header
+                .nav
+                    a.navbar-brand(href='/articles') Articles
+                    a.navbar-brand(href='/speaking') Speaking
+                    a.navbar-brand(href='/about') About
+                .avatar
+                    a(href='/')
+                        img(src='/static/img/avatar.jpg', alt='Steven Hicks')
+                        div.shadow
+            #content
                 block content
                     div !{_layoutContent}
-            .footer
-                a(href='//twitter.com/pepopowitz')
-                    i.fa.fa-twitter-square(aria-hidden='true')
-                    span.sr-only
-                        | @pepopowitz on Twitter
-                a(href='/atom.xml')
-                    i.fa.fa-rss-square(aria-hidden='true')
-                    span.sr-only
-                        | Atom Feed
-                h6 &copy; Steven Hicks 2019
+            #footer
+                hr
+                .legal
+                    a(href='//twitter.com/pepopowitz')
+                        i.fa.fa-twitter-square(aria-hidden='true')
+                        span.sr-only
+                            | @pepopowitz on Twitter
+                    a(href='/atom.xml')
+                        i.fa.fa-rss-square(aria-hidden='true')
+                        span.sr-only
+                            | Atom Feed
+                    h6 &copy; Steven Hicks 2019
         script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js')
         script.
             hljs.initHighlightingOnLoad();
