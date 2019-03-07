@@ -224,7 +224,7 @@ blockquote {
   }
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 h1 {
@@ -264,10 +264,18 @@ pre {
     padding: 45px;
   }
 }
-p code {
-  background-color: $brand-white-pure;
+p {
+  code {
+    background-color: $brand-white-pure;
+  }
+  strong {
+    color: $brand;
+  }
 }
 
+.first {
+  margin-top: 0;
+}
 .box {
   padding: 1rem;
 }
@@ -345,7 +353,7 @@ p code {
 
     a {
       font-size: 1.4rem;
-      margin-right: 1.2rem;
+      margin-right: 1rem;
       color: $brand-white;
       @include textShadowed($brand-dark);
     }
@@ -419,7 +427,12 @@ article {
   }
 }
 
-.about {
+h1.about {
+  a {
+    margin-left: 1rem;
+  }
+}
+div.about {
   display: flex;
   @media only screen and (max-width: $width-max-mobile) {
     flex-flow: wrap;

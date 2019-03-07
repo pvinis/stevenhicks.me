@@ -132,7 +132,7 @@ blockquote {
   padding: 0 70px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px; }
+  margin-top: 30px; }
   @media only screen and (max-width: 650px) {
     #content {
       padding: 0 20px; } }
@@ -174,6 +174,12 @@ pre {
 
 p code {
   background-color: white; }
+
+p strong {
+  color: #ad1700; }
+
+.first {
+  margin-top: 0; }
 
 .box {
   padding: 1rem; }
@@ -232,7 +238,7 @@ p code {
     font-size: 1rem; }
     #footer .legal a {
       font-size: 1.4rem;
-      margin-right: 1.2rem;
+      margin-right: 1rem;
       color: #fef5ea;
       text-shadow: 1px 1px 3px #470900; }
     #footer .legal h6 {
@@ -292,24 +298,27 @@ h3 + .content-article {
     .engagements .engagement h6:last-child {
       margin-bottom: 0; }
 
-.about {
+h1.about a {
+  margin-left: 1rem; }
+
+div.about {
   display: flex; }
   @media only screen and (max-width: 650px) {
-    .about {
+    div.about {
       flex-flow: wrap;
       justify-content: center; } }
-  .about .bio {
+  div.about .bio {
     flex-grow: 1;
     margin-right: 2rem; }
-    .about .bio p:first-child {
+    div.about .bio p:first-child {
       margin-top: 0; }
-  .about .profile {
+  div.about .profile {
     font-size: 2rem;
     text-align: center; }
-    .about .profile img {
+    div.about .profile img {
       width: 250px;
       height: 250px;
       max-width: unset;
       border-radius: 50%; }
-    .about .profile a:not(:last-child) {
+    div.about .profile a:not(:last-child) {
       margin-right: 1rem; }
