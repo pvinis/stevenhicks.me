@@ -21,9 +21,9 @@ h4 {
 img {
   filter: sepia(0.3) saturate(0.9);
   border-radius: 60px;
-  -webkit-box-shadow: 0px 2px 5px 1px #ff920045;
-  -moz-box-shadow: 0px 2px 5px 1px #ff920045;
-  box-shadow: 0px 1px 5px 1px #ff920045; }
+  -webkit-box-shadow: 0px 1px 5px #ff3314;
+  -moz-box-shadow: 0px 1px 5px #ff3314;
+  box-shadow: 0px 1px 5px #ff3314; }
 
 hr {
   margin: 3rem 0;
@@ -41,10 +41,10 @@ blockquote {
   padding: 2rem 3rem;
   margin: 3rem 2rem;
   border-radius: 60px;
-  -webkit-box-shadow: 0px 2px 5px 1px #ff920045;
-  -moz-box-shadow: 0px 2px 5px 1px #ff920045;
-  box-shadow: 0px 1px 5px 1px #ff920045;
-  background-color: rgba(255, 163, 41, 0.270588);
+  -webkit-box-shadow: 0px 1px 5px #ff3314;
+  -moz-box-shadow: 0px 1px 5px #ff3314;
+  box-shadow: 0px 1px 5px #ff3314;
+  background-color: white;
   font-style: italic;
   font-size: 1.2em; }
   @media only screen and (max-width: 650px) {
@@ -71,7 +71,9 @@ blockquote {
   flex-direction: row;
   justify-content: space-between;
   background: linear-gradient(to bottom, #ad1700 0%, #ad1700 20%, #e04100 20%, #e04100 40%, #ff7300 40%, #ff7300 60%, #fc9700 60%, #fc9700 80%, #ffb501 80%, #ffb501 100%);
-  box-shadow: 0px 2px 5px #ad1700; }
+  -webkit-box-shadow: 0px 1px 5px #ad1700;
+  -moz-box-shadow: 0px 1px 5px #ad1700;
+  box-shadow: 0px 1px 5px #ad1700; }
   @media only screen and (max-width: 650px) {
     #header {
       margin: 10px 10px 0 10px; } }
@@ -85,8 +87,10 @@ blockquote {
   display: flex;
   flex-direction: row;
   align-items: center;
-  box-shadow: inset 0px 1px 2px #ad1700;
-  background-color: #e04100; }
+  -webkit-box-shadow: inset 0px 1px 2px #470900;
+  -moz-box-shadow: inset 0px 1px 2px #470900;
+  box-shadow: inset 0px 1px 2px #470900;
+  background-color: #ad1700; }
   @media only screen and (max-width: 650px) {
     .nav {
       flex-direction: column; } }
@@ -97,7 +101,7 @@ blockquote {
     font-weight: bold;
     text-decoration: none;
     font-size: 1.3rem;
-    text-shadow: 1px 1px 3px #ad1700; }
+    text-shadow: 1px 1px 3px #470900; }
   .nav a:hover,
   .nav a:visited,
   .nav a:focus {
@@ -120,7 +124,9 @@ blockquote {
     position: absolute;
     top: 10px;
     left: 0;
-    box-shadow: inset 0px 1px 2px #ad1700; }
+    -webkit-box-shadow: inset 0px 1px 2px #470900;
+    -moz-box-shadow: inset 0px 1px 2px #470900;
+    box-shadow: inset 0px 1px 2px #470900; }
 
 #content {
   padding: 0 70px;
@@ -156,9 +162,9 @@ h6 {
   line-height: 22px; }
 
 pre {
-  -webkit-box-shadow: 0px 2px 5px 1px #ff920045;
-  -moz-box-shadow: 0px 2px 5px 1px #ff920045;
-  box-shadow: 0px 1px 5px 1px #ff920045;
+  -webkit-box-shadow: 0px 1px 5px #ff3314;
+  -moz-box-shadow: 0px 1px 5px #ff3314;
+  box-shadow: 0px 1px 5px #ff3314;
   margin: 3rem auto;
   border-radius: 60px;
   overflow-x: auto;
@@ -167,7 +173,7 @@ pre {
     padding: 45px; }
 
 p code {
-  background-color: rgba(255, 163, 41, 0.270588); }
+  background-color: white; }
 
 .box {
   padding: 1rem; }
@@ -202,7 +208,9 @@ p code {
   flex-direction: row;
   justify-content: space-between;
   background: linear-gradient(to bottom, #ad1700 0%, #ad1700 20%, #e04100 20%, #e04100 40%, #ff7300 40%, #ff7300 60%, #fc9700 60%, #fc9700 80%, #ffb501 80%, #ffb501 100%);
-  box-shadow: 0px 2px 5px #ad1700; }
+  -webkit-box-shadow: 0px 1px 5px #ad1700;
+  -moz-box-shadow: 0px 1px 5px #ad1700;
+  box-shadow: 0px 1px 5px #ad1700; }
   @media only screen and (max-width: 650px) {
     #footer {
       margin: 50px 10px 10px 10px; } }
@@ -216,18 +224,22 @@ p code {
     justify-content: center;
     align-self: center;
     align-items: center;
-    box-shadow: inset 0px 1px 2px #ad1700;
-    background-color: #e04100;
+    -webkit-box-shadow: inset 0px 1px 2px #470900;
+    -moz-box-shadow: inset 0px 1px 2px #470900;
+    box-shadow: inset 0px 1px 2px #470900;
+    background-color: #ad1700;
     color: #fef5ea;
     font-size: 1rem; }
     #footer .legal a {
       font-size: 1.4rem;
       margin-right: 1.2rem;
-      color: #fef5ea; }
+      color: #fef5ea;
+      text-shadow: 1px 1px 3px #470900; }
     #footer .legal h6 {
       margin: 0;
       font-size: 1rem;
-      font-family: "Quattrocento"; }
+      font-family: "Quattrocento";
+      text-shadow: 1px 1px 3px #470900; }
 
 .sr-only {
   position: absolute;
@@ -264,9 +276,9 @@ h3 + .content-article {
   justify-content: space-around; }
   .engagements .engagement {
     width: 180px;
-    -webkit-box-shadow: 0px 2px 5px 1px #ff920045;
-    -moz-box-shadow: 0px 2px 5px 1px #ff920045;
-    box-shadow: 0px 1px 5px 1px #ff920045;
+    -webkit-box-shadow: 0px 1px 5px #ff3314;
+    -moz-box-shadow: 0px 1px 5px #ff3314;
+    box-shadow: 0px 1px 5px #ff3314;
     border-radius: 4px;
     margin: 10px;
     padding: 20px;

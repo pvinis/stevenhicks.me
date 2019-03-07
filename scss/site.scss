@@ -1,11 +1,13 @@
 $brand: #ad1700;
-$brand-light: lighten($brand, 10%);
+$brand-dark: darken($brand, 20%);
+$brand-light: lighten($brand, 20%);
 $brand-alt: #ff7300;
 $brand-alt-medium: lighten(desaturate($brand-alt, 80%), 30%);
 $brand-alt-light: #ff920045;
 $brand-highlight: lighten($brand-alt-light, 8%);
 
 $brand-white: #fef5ea;
+$brand-white-pure: white;
 $brand-black: darken($brand, 30%);
 $brand-black-desaturated: desaturate($brand-black, 60%);
 $brand-dark-gray: lighten($brand-black-desaturated, 30%);
@@ -26,10 +28,20 @@ $border-radius: 60px;
 $width-max-mobile: 650px;
 $width-min-desktop: 651px;
 
-@mixin shadowed() {
-  -webkit-box-shadow: 0px 2px 5px 1px $brand-alt-light;
-  -moz-box-shadow: 0px 2px 5px 1px $brand-alt-light;
-  box-shadow: 0px 1px 5px 1px $brand-alt-light;
+@mixin boxShadowed($color) {
+  -webkit-box-shadow: 0px 1px 5px$color;
+  -moz-box-shadow: 0px 1px 5px $color;
+  box-shadow: 0px 1px 5px $color;
+}
+
+@mixin boxShadowedInset($color) {
+  -webkit-box-shadow: inset 0px 1px 2px $color;
+  -moz-box-shadow: inset 0px 1px 2px $color;
+  box-shadow: inset 0px 1px 2px $color;
+}
+
+@mixin textShadowed($color) {
+  text-shadow: 1px 1px 3px $color;
 }
 
 html {
@@ -61,7 +73,7 @@ h4 {
 img {
   filter: sepia(0.3) saturate(0.9);
   border-radius: $border-radius;
-  @include shadowed();
+  @include boxShadowed($brand-light);
 }
 
 hr {
@@ -91,8 +103,8 @@ blockquote {
   }
   border-radius: $border-radius;
 
-  @include shadowed();
-  background-color: $brand-highlight;
+  @include boxShadowed($brand-light);
+  background-color: $brand-white-pure;
   font-style: italic;
   font-size: 1.2em;
 
@@ -140,7 +152,7 @@ blockquote {
     $stripe-5 80%,
     $stripe-5 100%
   );
-  box-shadow: 0px 2px 5px $brand;
+  @include boxShadowed($brand);
 }
 
 .nav {
@@ -157,8 +169,8 @@ blockquote {
   }
   align-items: center;
 
-  box-shadow: inset 0px 1px 2px $stripe-1;
-  background-color: $stripe-2;
+  @include boxShadowedInset($brand-dark);
+  background-color: $brand;
 
   a {
     margin: 0 20px;
@@ -168,7 +180,7 @@ blockquote {
     font-weight: bold;
     text-decoration: none;
     font-size: 1.3rem;
-    text-shadow: 1px 1px 3px $brand;
+    @include textShadowed($brand-dark);
   }
 
   a:hover,
@@ -201,7 +213,7 @@ blockquote {
     top: 10px;
     left: 0;
 
-    box-shadow: inset 0px 1px 2px $stripe-1;
+    @include boxShadowedInset($brand-dark);
   }
 }
 
@@ -243,7 +255,7 @@ h6 {
 /// below here is untouched
 
 pre {
-  @include shadowed;
+  @include boxShadowed($brand-light);
   margin: 3rem auto;
   border-radius: $border-radius;
   overflow-x: auto;
@@ -253,7 +265,7 @@ pre {
   }
 }
 p code {
-  background-color: $brand-highlight;
+  background-color: $brand-white-pure;
 }
 
 .box {
@@ -313,7 +325,7 @@ p code {
     $stripe-5 80%,
     $stripe-5 100%
   );
-  box-shadow: 0px 2px 5px $brand;
+  @include boxShadowed($brand);
   .legal {
     height: 40px;
     margin-right: 5px;
@@ -326,8 +338,8 @@ p code {
     align-self: center;
     align-items: center;
 
-    box-shadow: inset 0px 1px 2px $stripe-1;
-    background-color: $stripe-2;
+    @include boxShadowedInset($brand-dark);
+    background-color: $brand;
     color: $brand-white;
     font-size: 1rem;
 
@@ -335,11 +347,13 @@ p code {
       font-size: 1.4rem;
       margin-right: 1.2rem;
       color: $brand-white;
+      @include textShadowed($brand-dark);
     }
     h6 {
       margin: 0;
       font-size: 1rem;
       font-family: $serif;
+      @include textShadowed($brand-dark);
     }
   }
 }
@@ -386,7 +400,7 @@ article {
 
   .engagement {
     width: 180px;
-    @include shadowed();
+    @include boxShadowed($brand-light);
     border-radius: 4px;
     margin: 10px;
     padding: 20px;
