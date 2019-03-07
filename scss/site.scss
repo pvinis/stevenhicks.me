@@ -25,8 +25,8 @@ $serif: 'Quattrocento';
 
 $border-radius: 60px;
 
-$width-max-mobile: 650px;
-$width-min-desktop: 651px;
+$width-max-mobile: 670px;
+$width-min-desktop: 671px;
 
 @mixin boxShadowed($color) {
   -webkit-box-shadow: 0px 1px 5px$color;
@@ -279,6 +279,12 @@ p {
 .box {
   padding: 1rem;
 }
+.mobile-only {
+  display: none;
+  @media only screen and (max-width: $width-max-mobile) {
+    display: inline;
+  }
+}
 
 #content {
   min-width: 0;
@@ -430,6 +436,11 @@ article {
 h1.about {
   a {
     margin-left: 1rem;
+  }
+  @media only screen and (max-width: $width-max-mobile) {
+    br + a {
+      margin-left: 0;
+    }
   }
 }
 div.about {

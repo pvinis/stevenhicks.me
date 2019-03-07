@@ -7,7 +7,7 @@ html {
 body {
   margin: 0;
   background-color: #fef5ea; }
-  @media only screen and (min-width: 651px) {
+  @media only screen and (min-width: 671px) {
     body {
       padding: 2rem 2rem 0 2rem; } }
 
@@ -47,7 +47,7 @@ blockquote {
   background-color: white;
   font-style: italic;
   font-size: 1.2em; }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 670px) {
     blockquote {
       margin: 2rem 0; } }
   blockquote p:first-child {
@@ -74,7 +74,7 @@ blockquote {
   -webkit-box-shadow: 0px 1px 5px #ad1700;
   -moz-box-shadow: 0px 1px 5px #ad1700;
   box-shadow: 0px 1px 5px #ad1700; }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 670px) {
     #header {
       margin: 10px 10px 0 10px; } }
 
@@ -91,7 +91,7 @@ blockquote {
   -moz-box-shadow: inset 0px 1px 2px #470900;
   box-shadow: inset 0px 1px 2px #470900;
   background-color: #ad1700; }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 670px) {
     .nav {
       flex-direction: column; } }
   .nav a {
@@ -133,7 +133,7 @@ blockquote {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px; }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 670px) {
     #content {
       padding: 0 20px; } }
 
@@ -184,6 +184,12 @@ p strong {
 .box {
   padding: 1rem; }
 
+.mobile-only {
+  display: none; }
+  @media only screen and (max-width: 670px) {
+    .mobile-only {
+      display: inline; } }
+
 #content {
   min-width: 0;
   padding-top: 2rem; }
@@ -195,7 +201,7 @@ p strong {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-    @media only screen and (min-width: 651px) {
+    @media only screen and (min-width: 671px) {
       #content img.half-scale {
         max-width: 50%; } }
   #content img + cite {
@@ -217,7 +223,7 @@ p strong {
   -webkit-box-shadow: 0px 1px 5px #ad1700;
   -moz-box-shadow: 0px 1px 5px #ad1700;
   box-shadow: 0px 1px 5px #ad1700; }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 670px) {
     #footer {
       margin: 50px 10px 10px 10px; } }
   #footer .legal {
@@ -301,9 +307,13 @@ h3 + .content-article {
 h1.about a {
   margin-left: 1rem; }
 
+@media only screen and (max-width: 670px) {
+  h1.about br + a {
+    margin-left: 0; } }
+
 div.about {
   display: flex; }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 670px) {
     div.about {
       flex-flow: wrap;
       justify-content: center; } }
