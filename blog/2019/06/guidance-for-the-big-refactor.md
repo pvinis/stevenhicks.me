@@ -64,7 +64,7 @@ Feedback is especially hard with big problems, because you have the large proble
 
 Know generally where you're headed, but think about how you can get there in as small of steps as possible. Apply small refactoring actions, and commit them frequently.
 
-Address the biggest issues early if you can, or defer them if you aren't sure of the right abstraction for them. The right time will present itself for you to address them - don't force it.
+Address the biggest issues early if you can, but don't force them if you aren't sure of the right abstraction yet. The right time will present itself.
 
 ## 8. Acknowledge that **THE BIG REFACTOR** is hard work.
 

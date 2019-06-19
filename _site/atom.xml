@@ -48,7 +48,7 @@
 &lt;p&gt;Feedback is especially hard with big problems, because you have the large problem space modeled in your head, and it&#39;s hard to share that with others. It can feel counterproductive to bring someone into your model - there&#39;s lots of explaining to do. Resist the temptation to drive forward on your own, though. Getting feedback will help you make sure you&#39;re on the right path, and give you ideas along the way.&lt;/p&gt;
 &lt;h2&gt;7. Take baby steps.&lt;/h2&gt;
 &lt;p&gt;Know generally where you&#39;re headed, but think about how you can get there in as small of steps as possible. Apply small refactoring actions, and commit them frequently.&lt;/p&gt;
-&lt;p&gt;Address the biggest issues early if you can, or defer them if you aren&#39;t sure of the right abstraction for them. The right time will present itself for you to address them - don&#39;t force it.&lt;/p&gt;
+&lt;p&gt;Address the biggest issues early if you can, but don&#39;t force them if you aren&#39;t sure of the right abstraction yet. The right time will present itself.&lt;/p&gt;
 &lt;h2&gt;8. Acknowledge that &lt;strong&gt;THE BIG REFACTOR&lt;/strong&gt; is hard work.&lt;/h2&gt;
 &lt;p&gt;Allow yourself to take time. Writing code that solves a new problem is easier than writing code that solves an old problem. When you&#39;re solving a new problem, you don&#39;t know very many edge cases, and you can approach with simpler abstractions. When you&#39;re solving an old problem, the edge cases are all known, and the right abstractions to cover them all take more thought and consideration.&lt;/p&gt;
 &lt;h2&gt;Good luck!&lt;/h2&gt;
