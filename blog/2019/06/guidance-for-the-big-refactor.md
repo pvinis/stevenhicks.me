@@ -21,7 +21,7 @@ Will you...
 
 - Modify the existing code-path? This requires you to complete before you can commit. Depending on how **BIG** this **BIG REFACTOR** is, this can be problematic and stressful.
 - Create a second code-path side-by-side? Things can get out of sync this way. You'll need to look for changes to the original before merging, or enforce changes be made in both code-paths. This _does_ allow you to test side-by-side, which is nice.
-- Incrementally introduce your new code, using [branch-by-abstraction](https://martinfowler.com/bliki/BranchByAbstraction.html)? I am adding this option to sound smart - I only learned about it while looking for some guidance today, and haven't figure out how to apply it in my current scenario. It sounds great, though!
+- Incrementally introduce your new code, using [branch-by-abstraction](https://martinfowler.com/bliki/BranchByAbstraction.html)? I am adding this option to sound smart - I only learned about it while looking for some guidance today, and haven't figured out how to apply it in my current scenario. It sounds great, though!
 
 I don't know what the right answer is, for me or for you. They all make sense, sometimes, and I don't have a good heuristic for identifying the right fit. I often regret the path I choose - I regret the path I initially chose for this **BIG REFACTOR**. I doubt you'd want to use my heuristic even if I had one.
 
