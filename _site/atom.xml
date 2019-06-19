@@ -2,11 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Steven Hicks</title>
 	<link href="https://stevenhicks.me"/>
-	<updated>2019-02-19T06:00:00-06:00</updated>
+	<updated>2019-06-19T07:00:00-05:00</updated>
 	<author>
 		<name>Steven Hicks</name>
 		<email>steven.j.hicks@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Guidance For THE BIG REFACTOR</title>
+		<link href="/blog/2019/06/guidance-for-the-big-refactor/"/>
+		<updated>2019-06-19T07:00:00-05:00</updated>
+		<id>/blog/2019/06/guidance-for-the-big-refactor/</id>
+		<content type="html">&lt;p&gt;Most refactoring resources are about specific actions you can take in your code. Extract method, Remove middle-man, ...the kinds of actions that are well-documented at &lt;a href=&quot;https://refactoring.com/catalog/&quot;&gt;refactoring.com/catalog/&lt;/a&gt;. Missing is more general guidance for undergoing &lt;strong&gt;THE BIG REFACTOR&lt;/strong&gt;. You know the one. The one you&#39;re dreading, but you know you&#39;ll need to eventually do. The one you have ideas for but can&#39;t figure out how to start. The one that will in the end pay off large amounts of technical debt, but will cost you large amounts of brain cycles along the way.&lt;/p&gt;
+&lt;p&gt;I&#39;m currently in the middle of one of these. I feel a bit like I&#39;m in the weeds right now, struggling to find open air. So, yeah - this article is as much for me as it is for you. But my situation prompted me to take a step back, and start thinking meta. As I struggle through my own &lt;strong&gt;BIG REFACTOR&lt;/strong&gt;, and think about the things that have gone well or poorly, I offer this handful of suggestions to you - brave soul who is about to enter &lt;strong&gt;THE BIG REFACTOR&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;1. Move things out of the way that don&#39;t belong&lt;/h2&gt;
+&lt;p&gt;First things first, make yourself a clean workspace. There are functions that exist in the code you&#39;ll be tackling that shouldn&#39;t be there. Utilities that don&#39;t have anything to do with the current object. Objects that are &lt;em&gt;related&lt;/em&gt; to the code you&#39;re changing, but can live on their own. Move these things away from the problem - extract them to a method or object somewhere else.&lt;/p&gt;
+&lt;h2&gt;2. Choose your replacement strategy&lt;/h2&gt;
+&lt;p&gt;Will you...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Modify the existing code-path? This requires you to complete before you can commit. Depending on how &lt;strong&gt;BIG&lt;/strong&gt; this &lt;strong&gt;BIG REFACTOR&lt;/strong&gt; is, this can be problematic and stressful.&lt;/li&gt;
+&lt;li&gt;Create a second code-path side-by-side? Things can get out of sync this way. You&#39;ll need to look for changes to the original before merging, or enforce changes be made in both code-paths. This &lt;em&gt;does&lt;/em&gt; allow you to test side-by-side, which is nice.&lt;/li&gt;
+&lt;li&gt;Incrementally introduce your new code, using &lt;a href=&quot;https://martinfowler.com/bliki/BranchByAbstraction.html&quot;&gt;branch-by-abstraction&lt;/a&gt;? I am adding this option to sound smart - I only learned about it while looking for some guidance today, and haven&#39;t figure out how to apply it in my current scenario. It sounds great, though!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I don&#39;t know what the right answer is, for me or for you. They all make sense, sometimes, and I don&#39;t have a good heuristic for identifying the right fit. I often regret the path I choose - I regret the path I initially chose for this &lt;strong&gt;BIG REFACTOR&lt;/strong&gt;. I doubt you&#39;d want to use my heuristic even if I had one.&lt;/p&gt;
+&lt;p&gt;Spend some time thinking about which of these paths best fits before you begin.&lt;/p&gt;
+&lt;h2&gt;3. Cover the system with tests&lt;/h2&gt;
+&lt;p&gt;Not just any tests, the &lt;em&gt;right&lt;/em&gt; tests. Not tests that test implementation of existing code - those will get deleted during your refactor, and won&#39;t tell you if you broke something.&lt;/p&gt;
+&lt;p&gt;The right tests are at a higher level than what you&#39;re replacing/rewriting, and which don&#39;t care about the implementation you&#39;re writing.&lt;/p&gt;
+&lt;p&gt;They might be integration tests. They might be UI tests (I&#39;m totally digging &lt;a href=&quot;https://cypress.io&quot;&gt;Cypress&lt;/a&gt; for those right now). Possibly a controversial opinion on my part - they don&#39;t necessarily have to be &lt;em&gt;permanent&lt;/em&gt; tests - they can just be your guide for now, and you can delete them when you&#39;re done.&lt;/p&gt;
+&lt;p&gt;Cover &lt;em&gt;everything&lt;/em&gt; you&#39;ll be replacing with these tests. You&#39;ll use them along the way to test for regressions.&lt;/p&gt;
+&lt;h2&gt;4. Focus on your health.&lt;/h2&gt;
+&lt;p&gt;You will get swallowed up by the problem. Don&#39;t let it take away the things you know you need to be healthy and happy. Don&#39;t lose sleep, don&#39;t skip meals, don&#39;t skip exercise. Treat it like a marathon, not a sprint. Pace yourself. You&#39;re not going to power through &lt;strong&gt;THE BIG REFACTOR&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Take breaks. Let your mind wander and think about the problem on its own. Your brain will work on the problem without you forcing it to. It&#39;s called &lt;a href=&quot;https://en.wikipedia.org/wiki/Incubation_(psychology)&quot;&gt;incubation&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;5. Document everything.&lt;/h2&gt;
+&lt;p&gt;Keep a NOTES.md file in your codebase, right next to your changes, so everyone can see it. Keep track of...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Things you discover that you know you&#39;ll have to account for&lt;/li&gt;
+&lt;li&gt;Things you think might help you solve problems along the way&lt;/li&gt;
+&lt;li&gt;Issues you run into that you know you&#39;ll have to fix&lt;/li&gt;
+&lt;li&gt;Ideas of things you want to change - make a backlog, don&#39;t work on them all at once&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;6. Commit &amp;amp; get feedback frequently.&lt;/h2&gt;
+&lt;p&gt;Committing frequently is not so hard. Finish each phase of your &lt;strong&gt;BIG REFACTOR&lt;/strong&gt; by committing the work and pushing it. This allows you to start each next phase with a clean slate; which makes it easier to revert when you get stuck in a corner or decide on a direction change.&lt;/p&gt;
+&lt;p&gt;Getting feedback frequently is harder, at least for me. I like for my work to be reasonably polished before I submit it for feedback. I&#39;m trying to get better at this. As my coworker Chris told me today, he could have reassured me that I was on the right track with &lt;em&gt;half&lt;/em&gt; the work I&#39;d done so far. My emotional state &lt;em&gt;definitely&lt;/em&gt; could have used that encouragement a day or two ago.&lt;/p&gt;
+&lt;p&gt;Feedback is especially hard with big problems, because you have the large problem space modeled in your head, and it&#39;s hard to share that with others. It can feel counterproductive to bring someone into your model - there&#39;s lots of explaining to do. Resist the temptation to drive forward on your own, though. Getting feedback will help you make sure you&#39;re on the right path, and give you ideas along the way.&lt;/p&gt;
+&lt;h2&gt;7. Take baby steps.&lt;/h2&gt;
+&lt;p&gt;Know generally where you&#39;re headed, but think about how you can get there in as small of steps as possible. Apply small refactoring actions, and commit them frequently.&lt;/p&gt;
+&lt;p&gt;Address the biggest issues early if you can, or defer them if you aren&#39;t sure of the right abstraction for them. The right time will present itself for you to address them - don&#39;t force it.&lt;/p&gt;
+&lt;h2&gt;8. Acknowledge that &lt;strong&gt;THE BIG REFACTOR&lt;/strong&gt; is hard work.&lt;/h2&gt;
+&lt;p&gt;Allow yourself to take time. Writing code that solves a new problem is easier than writing code that solves an old problem. When you&#39;re solving a new problem, you don&#39;t know very many edge cases, and you can approach with simpler abstractions. When you&#39;re solving an old problem, the edge cases are all known, and the right abstractions to cover them all take more thought and consideration.&lt;/p&gt;
+&lt;h2&gt;Good luck!&lt;/h2&gt;
+&lt;p&gt;I hope your &lt;strong&gt;BIG REFACTOR&lt;/strong&gt; treats you well! Or at least, you pay off some debt with minimal scars. Let me know how it goes, and &lt;a href=&quot;mailto:steven.j.hicks@gmail.com&quot;&gt;send me an email&lt;/a&gt; or &lt;a href=&quot;https://twitter.com/pepopowitz&quot;&gt;hit me up on Twitter&lt;/a&gt; if you have advice that I didn&#39;t cover!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Building A Workshop</title>
