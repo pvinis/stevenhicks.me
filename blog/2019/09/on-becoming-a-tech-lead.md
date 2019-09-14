@@ -45,8 +45,8 @@ In the transition, my team's previous tech lead did a great job of sharing all t
 
 But I never hit him up.
 
-When I realized this afternoon that I never reached out to him for more advice, and that he'd officially left Artsy by now, I worried that I'd missed an opportunity.
+When I realized this afternoon that I never reached out to him for more advice, and that he'd officially left Artsy by now, I worried that I'd missed an opportunity. But I realized that the things I'm going to need the most help with are all contextual. He couldn't possibly transfer all his system and organization knowledge to me, and if he could, I couldn't possibly absorb it. And it probably wouldn't matter anyway, because every situation will likely require context and nuance, which isn't a thing that can be knowledge-transferred.
 
-Thinking about it some more, I think I'm okay. I realized a strange parallel between becoming a tech lead and becoming a parent. I've prepared myself to head into this tech lead position the same way I recommended Chris prepare for parenthood: **not at all**. Knowing that every situation is going to be unique, and probably difficult, but I'm going to figure it out. Or not - and that's okay, too.
+I realized that I've found a parallel between becoming a tech lead and becoming a parent. I've prepared myself to head into this tech lead position the same way I recommended Chris prepare for parenthood: **not at all**. Knowing that every situation is going to be unique, and probably difficult, but I'm going to figure it out. Or _not_ - and that's okay, too.
 
-And then in a couple years I'll probably want another baby, or team, or something.
+And then in a couple years I'll probably want another baby, or team, or something. Or maybe kittens.
