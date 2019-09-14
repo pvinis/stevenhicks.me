@@ -97,11 +97,10 @@ a:active {
 
 blockquote {
   padding: 2rem 3rem;
-  margin: 3rem 2rem;
+  margin: 3rem 0rem;
   @media only screen and (max-width: $width-max-mobile) {
     margin: 2rem 0;
   }
-  border-radius: $border-radius;
 
   @include boxShadowed($brand-light);
   background-color: $brand-white-pure;
