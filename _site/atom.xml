@@ -2,11 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Steven Hicks</title>
 	<link href="https://stevenhicks.me"/>
-	<updated>2019-06-19T07:00:00-05:00</updated>
+	<updated>2019-09-13T07:00:00-05:00</updated>
 	<author>
 		<name>Steven Hicks</name>
 		<email>steven.j.hicks@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>On Becoming A Tech Lead</title>
+		<link href="/blog/2019/09/on-becoming-a-tech-lead/"/>
+		<updated>2019-09-13T07:00:00-05:00</updated>
+		<id>/blog/2019/09/on-becoming-a-tech-lead/</id>
+		<content type="html">&lt;p&gt;My coworker Chris recently asked me for advice on being a new parent. He and his partner are expecting a baby in the next couple months, and he was curious how I, father of two above-average children, recommended he prepare.&lt;/p&gt;
+&lt;p&gt;I believe my exact words were:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;lolololol OMFG there is nothing you can do to prepare for children.&lt;/p&gt;
+&lt;p&gt;~ me&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;He asked &amp;quot;but are there any books or resources you recommend?&amp;quot;&lt;/p&gt;
+&lt;p&gt;I said &amp;quot;ha ha ha ha ha NO. You can&#39;t possibly prepare.&amp;quot;&lt;/p&gt;
+&lt;p&gt;And then we went on our way.&lt;/p&gt;
+&lt;p&gt;I felt awful afterward. I realized that I did a &lt;em&gt;terrible&lt;/em&gt; job of getting my point across. If I even knew what my point was! I thought about it for the next day, trying to figure out what I was really trying to say.&lt;/p&gt;
+&lt;h2&gt;My actual advice for new parents&lt;/h2&gt;
+&lt;p&gt;I went back to Chris to apologize for my awful advice. He assured me he wasn&#39;t terrified by my advice, but it&#39;s pretty obvious that he &lt;em&gt;could&lt;/em&gt; have been terrified by it.&lt;/p&gt;
+&lt;p&gt;I explained what I meant:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is nothing you can do to prepare for children, in the sense that it doesn&#39;t really matter. Every day is going to be something you&#39;ve never dealt with before. Parenthood is messy - there is no guidebook, because every baby is different, and so is every family. You&#39;re basically making shit up the entire time, and you&#39;re on very little sleep so you&#39;re not even making shit up &lt;strong&gt;well&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;But that is what&#39;s beautiful about it. You get through it, every single day. Some of the days are miserable - you start the day already ego-depleted, and you have to somehow get to the end of the day &lt;strong&gt;and&lt;/strong&gt; take care of your baby who won&#39;t stop screaming &lt;strong&gt;and&lt;/strong&gt; then not be a jerk to the ones you love &lt;strong&gt;and&lt;/strong&gt; you still haven&#39;t eaten anything because you don&#39;t have time. But you get through it....together....with your baby...and your partner.&lt;/p&gt;
+&lt;p&gt;And it&#39;s beautiful but terrifying, but you forget all the bad stuff, and two years later you decide you want another baby.&lt;/p&gt;
+&lt;p&gt;~ me&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;But like....tech leads and stuff?&lt;/h2&gt;
+&lt;p&gt;I might have buried the lede a bit - last week I was chosen to be the tech lead on my team! :partycat:&lt;/p&gt;
+&lt;p&gt;In the transition, my team&#39;s previous tech lead did a great job of sharing all the things he&#39;s been doing, to help me prepare. He wrote up a ton of docs, which were all really great. He said &amp;quot;I&#39;m still here for a week - let me know if you have any questions.&amp;quot; I said &amp;quot;I will definitely hit you up before you leave.&amp;quot;&lt;/p&gt;
+&lt;p&gt;But I never hit him up.&lt;/p&gt;
+&lt;p&gt;When I realized this afternoon that I never reached out to him for more advice, and that he&#39;d officially left Artsy by now, I worried that I&#39;d missed an opportunity.&lt;/p&gt;
+&lt;p&gt;Thinking about it some more, I think I&#39;m okay. I realized a strange parallel between becoming a tech lead and becoming a parent. I&#39;ve prepared myself to head into this tech lead position the same way I recommended Chris prepare for parenthood: &lt;strong&gt;not at all&lt;/strong&gt;. Knowing that every situation is going to be unique, and probably difficult, but I&#39;m going to figure it out. Or not - and that&#39;s okay, too.&lt;/p&gt;
+&lt;p&gt;And then in a couple years I&#39;ll probably want another baby, or team, or something.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Guidance For THE BIG REFACTOR</title>
