@@ -131,4 +131,4 @@ The things I'm most focused on for the next year:
 
 - Running a marathon (or 50k) on trail. Five years ago I said "I can't imagine ever wanting to run more than 6 miles," but here I am ¯\\\_(ツ)\_/¯. I really want "ultrarunner" to become part of my identity. It will take way more structure - I'll need to follow a training plan more closely than I ever have to run that long.
 
-Aside from that, we'll see.
+Aside from that, we'll see. I make no promises, other than that I shall do my best.
