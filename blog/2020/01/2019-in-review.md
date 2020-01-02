@@ -125,8 +125,10 @@ I'm doing better. As I've pulled myself further away from commitments, I've foun
 
 The things I'm most focused on for the next year:
 
-- Continuing to find balance. I want my kids and my wife to get the best me, instead of the leftovers of a person stretched too thin. My scary thing for 2020 is to devote more time to **myself**.
+- Continuing to find balance. I want my kids and my wife to get the best me, instead of the leftovers of a person stretched too thin. My scary thing for 2020 is to devote more time to **myself** and my family.
 
-- Running a marathon on trail. Five years ago I said "I can't imagine ever wanting to run more than 6 miles," but here I am ¯\\\_(ツ)\_/¯. It will take way more structure - I'll need to follow a training plan more closely than I ever have.
+- Undoing some very old habits and patterns. I quickly fall back into bad habits during intense but important conversations. I'm working hard with my therapist to break free from these loops in 2020.
+
+- Running a marathon (or 50k) on trail. Five years ago I said "I can't imagine ever wanting to run more than 6 miles," but here I am ¯\\\_(ツ)\_/¯. I really want "ultrarunner" to become part of my identity. It will take way more structure - I'll need to follow a training plan more closely than I ever have to run that long.
 
 Aside from that, we'll see.
