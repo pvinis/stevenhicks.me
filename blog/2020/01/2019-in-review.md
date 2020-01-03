@@ -87,9 +87,13 @@ I took on the role of tech lead for my team at Artsy. I've learned that there is
 
 ## Cream City Code
 
-Cream City Code 2019 was not great. The event itself was great...the organization leading up to it, not so much. I've helped organize this event for its entire life, and it feels like a third child to me. I love it **so much it hurts**.
+Cream City Code 2019 was not great. The event itself was great...the organization leading up to it, not so much. I’ve helped organize this event for its entire life, and it feels like a third child to me. I love it **so much it hurts**.
 
-But the organization went so disastrously bad this year that I had to step away. We made the decision early on to join forces with another event. I didn't like the idea, but I was in the minority, and I conceded. As the year went on, all of the things I was concerned about started happening. It was like watching a train wreck - I knew it was coming, but I felt helpless to do anything about it. I lost sleep. I felt awful physically. I ruminated. After talking to my therapist a few sessions in a row, I decided to dump the work on my friends and remove myself from organization, because my well-being couldn't handle being around it.
+But the organization went so disastrously bad this year that I had to step away. The core CCC team made the decision early on to join forces with another event. We were excited at the prospect of having less work to do, fewer costs to cover, and a unique spin on a tech conference. Many of our problems from previous years seemed like they’d be solved.
+
+As the year went on, it became clear that our expectations were not going to be met. As we got closer to the date of the event, we felt increasingly helpless to do anything about it.
+
+I lost sleep. I felt awful physically. I ruminated. After talking to my therapist a few sessions in a row, I decided to dump the work on the rest of the core team and remove myself from organization, because my well-being couldn’t handle being around it. As they’ve always done, my friends - especially [Rachel Krause](https://twitter.com/rachelkrau), [David Pine](https://twitter.com/davidpine7), [Ben Felda](https://twitter.com/ben_felda), [Adam Pritzl](https://twitter.com/zuul86) - worked ridiculously hard and put together an amazing event.
 
 The thing I learned most from CCC was to trust my instincts, and more importantly, to _fight_ to defend my instincts. I am a passive person when it comes to conflict, and I give up quickly when I meet resistance. I need to stand stronger when I have strong beliefs.
 

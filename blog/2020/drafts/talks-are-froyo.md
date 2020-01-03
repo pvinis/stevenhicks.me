@@ -10,7 +10,7 @@ tagline: yum yum yummmety yum yum a yummy yummy yum yum yummmety yum
 
 ## Don't mix Andes Candies with Gummi Bears
 
-It's easy as an expert who is leading a workshop to bombard your audience with knowledge. There are _so many cool things_ you know about your topic, and you just want to share them all with your students.
+It's easy as an expert to bombard your audience with knowledge. There are _so many cool things_ you know about your topic, and you just want to share them all with your students.
 
 Think of it like frozen yogurt, though. When we take our kids to get froyo, they go _crazy_ for toppings. They have no regard for cohesion. They get strawberry yogurt and add Reese's Pieces, Andes Candies, Gummi Bears, and brownie bites. It's an explosion of flavors - but they taste _awful_ together.
 
