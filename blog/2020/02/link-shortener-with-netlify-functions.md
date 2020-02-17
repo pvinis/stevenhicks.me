@@ -1,6 +1,7 @@
 ---
 title: Saving Myself One Minute Per Day With Netlify Functions And A Custom Search Engine
 date: 2020-02-06T12:00:00
+draft: true
 tags: post
 layout: blog
 snippet: I built a URL expander with Netlify Functions, and connected my browser to it with a custom search engine. It saves about 1 minute per day and it was totally worth it.
