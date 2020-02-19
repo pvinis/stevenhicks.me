@@ -2,36 +2,120 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Steven Hicks</title>
 	<link href="https://stevenhicks.me"/>
-	<updated>2020-02-06T06:00:00-06:00</updated>
+	<updated>2020-02-18T06:00:00-06:00</updated>
 	<author>
 		<name>Steven Hicks</name>
 		<email>steven.j.hicks@gmail.com</email>
 	</author>
 	
 	<entry>
-		<title>Saving Myself One Minute Per Day With Netlify Functions And A Custom Search Engine</title>
-		<link href="/blog/2020/02/link-shortener-with-netlify-functions/"/>
-		<updated>2020-02-06T06:00:00-06:00</updated>
-		<id>/blog/2020/02/link-shortener-with-netlify-functions/</id>
-		<content type="html">&lt;p&gt;I visit the &lt;a href=&quot;https://github.com/artsy/reaction&quot;&gt;artsy/reaction&lt;/a&gt; repository in GitHub about 15 times a day. It&#39;s the repo I contribute most to at Artsy, and I spend a lot of time working with PRs there.&lt;/p&gt;
-&lt;p&gt;You might think I&#39;ve bookmarked it, but I haven&#39;t. I don&#39;t really use bookmarks very much - I&#39;ve become one of those people who just wants to type commands instead of looking for items in a UI list.&lt;/p&gt;
-&lt;p&gt;You also might think that I can easily find the URLs I visit frequently in my Chrome omnibar results. You&#39;re not wrong...I can find them pretty easily, most of the time. But there&#39;s often a lot of noise in those results, and it takes me a few seconds to find the one I&#39;m looking for.&lt;/p&gt;
-&lt;p&gt;A few seconds! 15 times a day! Do I look like I live in a cave? Each one of those few seconds is a tiny papercut. What I&#39;d &lt;em&gt;love&lt;/em&gt; to be able to do is open my browser, type some variation of &amp;quot;reaction,&amp;quot; and magically end up at &lt;a href=&quot;https://github.com/artsy/reaction&quot;&gt;github.com/artsy/reaction&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I accomplished this by adding a custom search engine to my browser, which will send a query to a function I have running on Netlify, which will interpret the text and redirect me somewhere. There are many ways I could have solved the problem - I even have several alternatives installed already - but this is the approach that fit best with my habits. If you&#39;re just interested in the code, it lives at &lt;a href=&quot;https://github.com/pepopowitz/goto&quot;&gt;github.com/pepopowitz/goto&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;The Problem&lt;/h2&gt;
-&lt;p&gt;Here&#39;s a gif of me entering &lt;code&gt;reaction&lt;/code&gt; into Chrome:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./search-for-reaction-before.gif&quot; alt=&quot;Me entering  into Chrome and having to scour half a dozen results to find the URL I want&quot;&gt;&lt;/p&gt;
-&lt;p&gt;There&#39;s only about half a dozen results in the omnibox, but that&#39;s enough to confuse me. Some are general Google search terms - those are just noise to me. The others are all very similar - it&#39;s hard for me to pick out which one I&#39;m looking for. I &lt;em&gt;know&lt;/em&gt; this is not that big of a deal but it just bothered me. So I fixed it.&lt;/p&gt;
-&lt;h2&gt;A URL Expander&lt;/h2&gt;
-&lt;p&gt;My first attempt at building a link expander was to write an Express app that I could run locally. The code was not difficult to write, and it worked! Keeping it running locally was a challenge, though. I never figured out how to get it running at startup. It seemed complicated, and I wasn&#39;t too burdened by starting up the local server in a terminal....at first. Eventually I became tired of having to restart the local server. It was exacerbated by the wifi on my MacBook becoming less stable, a problem I have only been able to fix by rebooting a couple times a week.&lt;/p&gt;
-&lt;p&gt;It struck me that this would be a good opportunity to play with Netlify functions. I&#39;m a massive Netlify fan, but haven&#39;t had a reason to take advantage of functions yet. I wanted to build a function that would take a query, and redirect recognized queries to a mapped URL and unrecognized queries to Google. The logic of the function seemed straightforward. Working with Netlify functions was new, but there are a lot of good tutorials and projects to reference.&lt;/p&gt;
-&lt;p&gt;I remembered reading &lt;a href=&quot;https://medium.com/netlify/creating-your-own-url-shortener-with-netlify-forms-and-functions-a4286f55ea6c&quot;&gt;Phil Hawksworth&#39;s article on building a link shortener&lt;/a&gt; so I started there. Unfortunately, this wasn&#39;t quite a match. In his example, you shorten a link by submitting it through a form, and a corresponding redirect gets added to a file. The redirects themselves are statically declared. I wanted my redirects to be evaluated dynamically. There are a lot of URLs I visit within github.com, and I didn&#39;t want to have to add a new one every time I started working on a different project.&lt;/p&gt;
-&lt;p&gt;I&lt;/p&gt;
-&lt;h2&gt;Custom Search Engines&lt;/h2&gt;
-&lt;p&gt;You might not know this feature is there, but you can add custom search engines to your browser. In fact, your browser has probably added a bunch for you already. I use Chrome, so this is what my custom search engines look like in my settings:&lt;/p&gt;
-&lt;p&gt;TODO: image of custom search engines&lt;/p&gt;
-&lt;p&gt;I sure didn&#39;t add all those. I think Chrome adds them for you when you visit a site that features the ability to search.&lt;/p&gt;
-&lt;p&gt;At any rate, we can add one of these ourselves.&lt;/p&gt;
+		<title>Working With Variables In Cypress Tests</title>
+		<link href="/blog/2020/02/working-with-variables-in-cypress-tests/"/>
+		<updated>2020-02-18T06:00:00-06:00</updated>
+		<id>/blog/2020/02/working-with-variables-in-cypress-tests/</id>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;https://cypress.io&quot;&gt;Cypress&lt;/a&gt; is a great tool for writing automated tests against your web app. It can make end-to-end tests a lot less scary for a JavaScript developer like me. One of the most impressive things to me is how excited developers are to write Cypress tests. It says a lot about a tool when people are practically falling over each other to introduce it into their codebase.&lt;/p&gt;
+&lt;p&gt;Cypress has &lt;a href=&quot;https://docs.cypress.io/guides/references/trade-offs.html&quot;&gt;several self-acknowledged limitations&lt;/a&gt;. When I first learned of Cypress, I read that &lt;a href=&quot;https://docs.cypress.io/guides/core-concepts/variables-and-aliases.html&quot;&gt;working with variables was significantly more difficult than most of the JavaScript I&#39;ve written&lt;/a&gt;. I initially dismissed this as an edge case that I didn&#39;t need to worry about. And I was correct for my first handful of tests!&lt;/p&gt;
+&lt;p&gt;And then I wasn&#39;t correct anymore. I wanted to write a test that did three things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;View a list of articles&lt;/li&gt;
+&lt;li&gt;Click on the first article&lt;/li&gt;
+&lt;li&gt;Request a separate API endpoint for that article to get more information&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I&#39;ll refer to this test as &lt;code&gt;myExtractedURLParamTest&lt;/code&gt; in the rest of this article.&lt;/p&gt;
+&lt;p&gt;I couldn&#39;t hard-code the API URL, because the ID might be different every time the test ran. I knew I had access to the URL in my Cypress test, so I thought I&#39;d grab that when I viewed the article page, extract the ID, and then make a request to the API based on the extracted ID. This is when I learned that working with variables in a Cypress test is not intuitive.&lt;/p&gt;
+&lt;h2&gt;Why is it hard to work with variables in Cypress?&lt;/h2&gt;
+&lt;p&gt;The Cypress docs include &lt;a href=&quot;https://docs.cypress.io/guides/core-concepts/variables-and-aliases.html&quot;&gt;a lengthy writeup on how to work with variables&lt;/a&gt;, including this short paragraph on why traditional &lt;code&gt;const&lt;/code&gt;/&lt;code&gt;let&lt;/code&gt;/&lt;code&gt;var&lt;/code&gt; assignments don&#39;t work as expected:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You cannot assign or work with the return values of any Cypress command. &lt;strong&gt;Commands are enqueued and run asynchronously.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The emphasis is my own. When you write a Cypress test, it feels like each command is a statement that&#39;s executing immediately, but that&#39;s not the case. &lt;a href=&quot;https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html#Commands-Are-Asynchronous&quot;&gt;Each command you write in a Cypress test is added to a queue of commands&lt;/a&gt;, each of which will be executed in order &lt;em&gt;asynchronously&lt;/em&gt; when the test runs. Your test is effectively a script for Cypress to play back at a later date. This asynchronous nature of commands enables one of Cypress&#39;s greatest features: automatic waiting for each command.&lt;/p&gt;
+&lt;p&gt;But it also means you can&#39;t return values from one command and use that value in the next command. &lt;a href=&quot;https://docs.cypress.io/guides/core-concepts/variables-and-aliases.html&quot;&gt;That lengthy Cypress help doc&lt;/a&gt; comes in handy to understand how to work with variables, but there are several concepts on that page and others that we&#39;ll tie together to write &lt;code&gt;myExtractedURLParamTest&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Extracting the URL parameter&lt;/h2&gt;
+&lt;p&gt;Cypress gives us access to the current URL through the &lt;a href=&quot;https://docs.cypress.io/api/commands/location.html#Syntax&quot;&gt;&lt;code&gt;.location()&lt;/code&gt; command&lt;/a&gt;. In our &lt;code&gt;myExtractedURLParamTest&lt;/code&gt; test, when we&#39;re visiting the first article page, &lt;code&gt;.location()&lt;/code&gt; might return something like &lt;code&gt;http://localhost:1234/articles/5678&lt;/code&gt; where &lt;code&gt;5678&lt;/code&gt; is the article ID. We don&#39;t really care about the origin (&lt;code&gt;http://localhost:1234&lt;/code&gt;), and we can specify only the portion of the location that we&#39;re interested in, in this case the &lt;code&gt;pathname&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;cy.location(&#39;pathname&#39;); // /articles/5678
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that a series of commands starts by accessing the &lt;code&gt;cy&lt;/code&gt; global variable.&lt;/p&gt;
+&lt;h2&gt;Extracting the article ID&lt;/h2&gt;
+&lt;p&gt;The pathname includes information we don&#39;t need: the prefix &lt;code&gt;/articles/&lt;/code&gt; is not part of the article ID. What I&#39;d &lt;em&gt;like&lt;/em&gt; to do is take the result of the pathname, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split&quot;&gt;&lt;code&gt;.split() it&lt;/code&gt;&lt;/a&gt; based on slashes, and take the last fragment.&lt;/p&gt;
+&lt;p&gt;My initial instinct for this test was to write something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// this is tempting but it will not work.
+const articleID = cy.location(&#39;pathname&#39;).split(&#39;/&#39;)[2];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But this doesn&#39;t work. Remember how all Cypress commands are asynchronous? In JavaScript, asynchrony is handled with &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise&quot;&gt;promises&lt;/a&gt;. Cypress commands &lt;a href=&quot;https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html#Commands-Are-Promises&quot;&gt;are a specific implementation of promises&lt;/a&gt;. We can&#39;t &lt;code&gt;.split(&amp;quot;/&amp;quot;)&lt;/code&gt; the result of &lt;code&gt;cy.location(&amp;quot;pathname&amp;quot;)&lt;/code&gt;, because the return value isn&#39;t a string - it&#39;s a Cypress version of a promise!&lt;/p&gt;
+&lt;p&gt;If you&#39;re familiar with promises, you might predict the proper way to split the pathname - by chaining the &lt;code&gt;.location()&lt;/code&gt; call to &lt;a href=&quot;https://docs.cypress.io/api/commands/then.html#Syntax&quot;&gt;&lt;code&gt;.then()&lt;/code&gt;&lt;/a&gt;, and working with the result of the &lt;code&gt;.location()&lt;/code&gt; promise. Like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;cy.location(&#39;pathname&#39;).then(path =&amp;gt; {
+  // path is the value from the previous command, `location(&amp;quot;pathname&amp;quot;).
+  //   In our example, the value of `path` is &amp;quot;/articles/5678&amp;quot;.
+  const articleID = path.split(&#39;/&#39;)[2];
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Storing the article ID for future use&lt;/h2&gt;
+&lt;p&gt;Cool, now we&#39;ve got the ID of the article. We aren&#39;t going to use it right away, so we want to store it somewhere that our test can access it later. Cypress provides a feature named &lt;a href=&quot;https://docs.cypress.io/guides/core-concepts/variables-and-aliases.html#Aliases&quot;&gt;&amp;quot;aliases&amp;quot;&lt;/a&gt; for storing variables for future use. Specifically, we&#39;ll use the &lt;a href=&quot;https://docs.cypress.io/api/commands/as.html#Syntax&quot;&gt;&lt;code&gt;.as()&lt;/code&gt; command&lt;/a&gt; to alias a value.&lt;/p&gt;
+&lt;p&gt;The challenge in our test is that &lt;code&gt;.as()&lt;/code&gt;, like all commands, can only be called from a Cypress chain. Remember that Cypress chains start with accessing the &lt;code&gt;cy&lt;/code&gt; global object, then chaining any commands onto it. We need to get our &lt;code&gt;articleID&lt;/code&gt; into this sequence of commands somehow:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;cy.????.as(&amp;quot;articleID&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cypress provides a command named &lt;a href=&quot;https://docs.cypress.io/api/commands/wrap.html#Syntax&quot;&gt;&lt;code&gt;.wrap()&lt;/code&gt;&lt;/a&gt; to accomplish this. &lt;code&gt;.wrap()&lt;/code&gt; takes a value and yields it as the result of a command, which can then be chained to any other Cypress commands. Our example test will look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;cy.location(&#39;pathname&#39;).then(path =&amp;gt; {
+  const articleID = path.split(&#39;/&#39;)[2];
+  cy.wrap(articleID).as(&#39;articleID&#39;);
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once the &lt;code&gt;.as(&#39;articleID&#39;)&lt;/code&gt; command runs, we&#39;ll have access to our article ID from any command later in the test, aliased as &lt;code&gt;articleID&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Accessing the aliased article ID&lt;/h2&gt;
+&lt;p&gt;Aliased values can be accessed using another command: &lt;a href=&quot;https://docs.cypress.io/api/commands/get.html#Syntax&quot;&gt;&lt;code&gt;.get()&lt;/code&gt;&lt;/a&gt;. When retrieving values with named aliases, as in our situation, we specify the name with an &lt;code&gt;@&lt;/code&gt; prefix, like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;cy.get(&#39;@articleID&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We&#39;ll chain another &lt;code&gt;.then()&lt;/code&gt; command to work with the result of the call to &lt;code&gt;.get()&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;cy.get(&#39;@articleID&#39;).then(articleID =&amp;gt; {
+  // do stuff with the articleID
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For &lt;code&gt;myExtractedURLParamTest&lt;/code&gt;, we&#39;d build up a new URL in that function body, and call &lt;code&gt;cy.request()&lt;/code&gt; to hit our API, like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;cy.get(&#39;@articleID&#39;).then(articleID =&amp;gt; {
+  cy.request(`/api/articles/${articleID}`).then(response =&amp;gt; {
+    expect(response.status).to.eq(200);
+    // And any other assertions we want to make with our API response
+  });
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Tying it all together&lt;/h2&gt;
+&lt;p&gt;The final test looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;it(&#39;myExtractedURLParamTest&#39;, () =&amp;gt; {
+  // Visit the articles list and click on the first link
+  cy.visit(&#39;/articles&#39;);
+  cy.get(&#39;[data-cy=article]&#39;).click();
+
+  // Wait until we&#39;re on an article page
+  cy.location(&#39;pathname&#39;).should(&#39;match&#39;, /^\/articles\/.*$/);
+
+  // Extract the article ID from the URL and alias it
+  cy.location(&#39;pathname&#39;).then(path =&amp;gt; {
+    // path = &amp;quot;/articles/234234234&amp;quot;
+    const articleID = path.split(&#39;/&#39;)[2];
+    cy.wrap(articleID).as(&#39;articleID&#39;);
+  });
+
+  // Access the article ID from the alias
+  cy.get(&#39;@articleID&#39;).then(articleID =&amp;gt; {
+    // do stuff with the articleID
+    cy.request(`/api/articles/${articleID}`).then(response =&amp;gt; {
+      expect(response.status).to.eq(200);
+      expect(response.body.title).to.eq(
+        &#39;A stolen $15,000 wooden monkey was returned to a Danish art museum?&#39;
+      );
+    });
+  });
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the end, we used the following Cypress commands to string this all together:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&quot;https://docs.cypress.io/api/commands/location.html#Syntax&quot;&gt;&lt;code&gt;.location()&lt;/code&gt; command&lt;/a&gt; to access the current URL&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;https://docs.cypress.io/api/commands/then.html#Syntax&quot;&gt;&lt;code&gt;.then()&lt;/code&gt; command&lt;/a&gt; to work with the result of the previous command&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;https://docs.cypress.io/api/commands/wrap.html#Syntax&quot;&gt;&lt;code&gt;.wrap()&lt;/code&gt; command&lt;/a&gt; to yield a known value from a new command&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;https://docs.cypress.io/api/commands/as.html#Syntax&quot;&gt;&lt;code&gt;.as()&lt;/code&gt; command&lt;/a&gt; to alias a value and store it for other commands to use&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;https://docs.cypress.io/api/commands/get.html#Syntax&quot;&gt;&lt;code&gt;.get()&lt;/code&gt; command&lt;/a&gt; to access an aliased value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&#39;s a little more roundabout than most of the JavaScript I&#39;ve written in my life. The asynchronous nature of Cypress commands changes the way we pass information between them, but the features are all there for us to write robust tests.&lt;/p&gt;
 </content>
 	</entry>
 	
