@@ -64,6 +64,8 @@ cy.location('pathname').then(path => {
 });
 ```
 
+_**Update:** [Gleb from Cypress](https://dev.to/bahmutov) pointed out in a comment on dev.to that I could use the `.invoke()` and `.its()` commands to simplify this code. [Take a look at his suggestions!](https://dev.to/bahmutov/comment/ll1o)_
+
 ## Storing the article ID for future use
 
 Cool, now we've got the ID of the article. We aren't going to use it right away, so we want to store it somewhere that our test can access it later. Cypress provides a feature named ["aliases"](https://docs.cypress.io/guides/core-concepts/variables-and-aliases.html#Aliases) for storing variables for future use. Specifically, we'll use the [`.as()` command](https://docs.cypress.io/api/commands/as.html#Syntax) to alias a value.
@@ -154,3 +156,25 @@ In the end, we used the following Cypress commands to string this all together:
 - The [`.get()` command](https://docs.cypress.io/api/commands/get.html#Syntax) to access an aliased value
 
 It's a little more roundabout than most of the JavaScript I've written in my life. The asynchronous nature of Cypress commands changes the way we pass information between them, but the features are all there for us to write robust tests.
+
+## Update
+
+[Gleb from Cypress](https://dev.to/bahmutov) [pointed out in a comment on dev.to](https://dev.to/bahmutov/comment/ll1o) that I could simplify the step where we extract the ID from the URL and alias it. Instead of this:
+
+```javascript
+cy.location('pathname').then(path => {
+  const articleID = path.split('/')[2];
+  cy.wrap(articleID).as('articleID');
+});
+```
+
+...we can take advantage of two more commands built into Cypress. The [`.invoke()` command](https://docs.cypress.io/api/commands/invoke.html#Syntax) will invoke a function on the result of the previous command, and the [`.its()` command](https://docs.cypress.io/api/commands/its.html#Syntax) will access a property on the result of the previous command. The simplified code looks like this:
+
+```javascript
+cy.location('pathname')
+  .invoke('split', '/')
+  .its(2)
+  .as('articleID');
+```
+
+Much more readable. Thanks, Gleb!
