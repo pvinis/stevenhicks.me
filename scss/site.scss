@@ -75,6 +75,9 @@ img {
   border-radius: $border-radius;
   @include boxShadowed($brand-light);
 }
+img.square-corners {
+  border-radius: 0;
+}
 
 hr {
   margin: 3rem 0;
@@ -253,6 +256,9 @@ h6 {
 
 /// below here is untouched
 
+code {
+  color: $brand;
+}
 pre {
   @include boxShadowed($brand-light);
   margin: 3rem auto;

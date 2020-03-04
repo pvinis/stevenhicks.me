@@ -2,11 +2,124 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Steven Hicks</title>
 	<link href="https://stevenhicks.me"/>
-	<updated>2020-02-18T06:00:00-06:00</updated>
+	<updated>2020-03-04T06:00:00-06:00</updated>
 	<author>
 		<name>Steven Hicks</name>
 		<email>steven.j.hicks@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Saving Myself One Minute Per Day With Netlify Functions And A Custom Search Engine</title>
+		<link href="/blog/2020/03/saving-myself-one-minute-per-day-netlify-functions-custom-search-engine/"/>
+		<updated>2020-03-04T06:00:00-06:00</updated>
+		<id>/blog/2020/03/saving-myself-one-minute-per-day-netlify-functions-custom-search-engine/</id>
+		<content type="html">&lt;p&gt;I visit the &lt;a href=&quot;https://github.com/artsy/reaction&quot;&gt;artsy/reaction&lt;/a&gt; repository in GitHub about 15 times a day. It&#39;s the repo I most contribute to at Artsy, and I spend a lot of time working with PRs there.&lt;/p&gt;
+&lt;p&gt;You might think I&#39;ve bookmarked it in my browser, but I haven&#39;t. I don&#39;t really use bookmarks very much - I&#39;ve become one of those people who wants to type commands instead of looking for items in a UI list.&lt;/p&gt;
+&lt;p&gt;You also might think that I can easily find the URLs I frequently visit in my Chrome omnibar results. You&#39;re not totally wrong...the result I&#39;m looking for when I type &lt;code&gt;reaction&lt;/code&gt; is usually in the dropdown. But there&#39;s often a lot of noise in those results, and it takes me a few seconds to find the one I&#39;m looking for.&lt;/p&gt;
+&lt;p&gt;Here, take a look:&lt;/p&gt;
+&lt;img class=&quot;square-corners&quot; src=&quot;../search-for-reaction-before.gif&quot; alt=&quot;Me entering `reaction` into Chrome and having to scour half a dozen results to find the URL I want&quot; /&gt;
+&lt;p&gt;There&#39;s only about half a dozen results in the omnibox, but that&#39;s enough to confuse me. Some are general Google search terms - those are especially noisy. The others are all very similar and it&#39;s hard for me to pick out which one I&#39;m looking for. I &lt;em&gt;know&lt;/em&gt; this is not that big of a deal but it just bothered me.&lt;/p&gt;
+&lt;p&gt;It takes me a few seconds each time! 15 times a day! Do I look like I live in a cave? Each one of those few seconds is a tiny paper-cut. What I&#39;d &lt;em&gt;love&lt;/em&gt; to be able to do is open my browser, type some variation of &lt;code&gt;reaction&lt;/code&gt;, and magically end up at &lt;a href=&quot;https://github.com/artsy/reaction&quot;&gt;github.com/artsy/reaction&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You could solve this problem many ways, but I chose JavaScript. I &lt;strong&gt;always&lt;/strong&gt; choose JavaScript. JavaScript and I are like super best friends. In this case, I added a custom search engine to my browser...to send a query to a function I have running on Netlify...to interpret the text and redirect me somewhere. I already have several alternatives installed that could have solved the problem (including &lt;a href=&quot;https://www.alfredapp.com/&quot;&gt;Alfred&lt;/a&gt;) - but my approach fit best with my habits. If you&#39;re interested in just seeing the code, it lives at &lt;a href=&quot;https://github.com/pepopowitz/goto&quot;&gt;github.com/pepopowitz/goto&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Adding A Custom Search Engine&lt;/h2&gt;
+&lt;p&gt;You might not know this feature is there, but you can add custom search engines to your browser. Custom search engines enable you to search a specific URL by typing a specific word or phrase into your search bar, followed by the query.&lt;/p&gt;
+&lt;p&gt;In fact, your browser has probably added a bunch for you already. I use Chrome and this is what my custom search engines look like in my settings:&lt;/p&gt;
+&lt;img class=&quot;square-corners&quot; src=&quot;../custom-search-engines.jpg&quot; alt=&quot;Custom Search Engines in Chrome&quot; /&gt;
+&lt;p&gt;I didn&#39;t add any of those. I suspect Chrome added them for me whenever I visited a page that took a search argument in the URL.&lt;/p&gt;
+&lt;p&gt;At any rate, we can add one of these ourselves. It&#39;s not a complicated entry form. You specify a name, a shortcut (which you&#39;ll enter into your search bar when you want to use the custom search engine), and a URL pattern that will include your query. Here&#39;s the search engine I entered for my problem:&lt;/p&gt;
+&lt;img class=&quot;square-corners&quot; src=&quot;../goto-search-engine.jpg&quot; alt=&quot;GOTO search engine in Chrome&quot; /&gt;
+&lt;p&gt;I chose the shortcut &lt;code&gt;goto&lt;/code&gt;. Now when I type &lt;code&gt;goto&lt;/code&gt; into my search bar, Chrome will forward the text that follows to my custom URL.&lt;/p&gt;
+&lt;h2&gt;Building A URL Expander To Respond To The Custom Search Engine Requests&lt;/h2&gt;
+&lt;p&gt;Now that I&#39;ve got an entry point into my custom function, I needed to process a query. Effectively, I want a URL expander that that takes a code and redirects you to a URL.&lt;/p&gt;
+&lt;p&gt;My first attempt at building a URL expander was to write an Express app that I could run locally. The code was not difficult to write, and it worked! Keeping it running locally was a challenge, though. I figured there was a way to automate startup, but it seemed complicated, and I wasn&#39;t really excited to figure it out. In the meantime, every time I rebooted I opened a terminal and started the server. This wasn&#39;t a burden....at first. But then I had a week where my MacBook couldn&#39;t maintain a wifi connection, and I had to reboot at least once a day. Restarting my Express app became a burden and I started thinking about ways to keep my link expander always running.&lt;/p&gt;
+&lt;p&gt;From my personal website, I know that I can create a &lt;a href=&quot;https://github.com/pepopowitz/stevenhicks.me/blob/master/_redirects&quot;&gt;&lt;code&gt;_redirects.md&lt;/code&gt; file&lt;/a&gt; in any Netlify-hosted project and &lt;a href=&quot;https://docs.netlify.com/routing/redirects/&quot;&gt;Netlify will handle redirects for me&lt;/a&gt;. This is how I handle &amp;quot;link shortening&amp;quot; for slides when I give talks. But it&#39;s a static map of URLs, and I wanted something a little smarter.&lt;/p&gt;
+&lt;p&gt;I remembered reading &lt;a href=&quot;https://medium.com/netlify/creating-your-own-url-shortener-with-netlify-forms-and-functions-a4286f55ea6c&quot;&gt;Phil Hawksworth&#39;s article on building a link shortener&lt;/a&gt; so I looked at that. Unfortunately, this wasn&#39;t quite a match. In Phil&#39;s example, you shorten a link by submitting it through a form, and a corresponding redirect gets committed to a file. The redirects themselves are still statically defined.&lt;/p&gt;
+&lt;p&gt;I wanted my redirects to be evaluated &lt;em&gt;dynamically&lt;/em&gt;. There are a lot of URLs I visit within github.com, and I didn&#39;t want to have to add a new rule every time I started working on a different project. If I suddenly start working on the &lt;a href=&quot;https://github.com/artsy/eigen&quot;&gt;Artsy iOS app&lt;/a&gt;, I don&#39;t want to have to update my redirects. I want my link expander to understand that I&#39;m requesting a different Artsy repository and just redirect me there.&lt;/p&gt;
+&lt;p&gt;It struck me that this would be a good opportunity to play with Netlify functions. I&#39;m a massive Netlify fan, but haven&#39;t had a reason to take advantage of functions yet. I wanted a function that would take a query and redirect recognized queries to a mapped URL and unrecognized queries to Google. The logic of the function seemed straightforward.&lt;/p&gt;
+&lt;h2&gt;Netlify Functions&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.netlify.com/functions/overview&quot;&gt;Netlify functions&lt;/a&gt; are an abstraction around AWS Lambda functions. They&#39;re self-contained serverless functions that you include in the source of your Netlify-hosted site. Netlify takes care of a whole bunch of AWS infrastructural nonsense that you don&#39;t want to deal with. When Netlify deploys your site, it also deploys your Netlify functions to AWS, and makes them accessible at a path on your site. When you want to run a function, you request the endpoint that Netlify deployed for you.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.netlify.com/functions/build-with-javascript/&quot;&gt;The Netlify docs&lt;/a&gt; do a great job of describing how to write a Netlify function in JavaScript. Kent C. Dodds also wrote &lt;a href=&quot;https://kentcdodds.com/blog/super-simple-start-to-serverless&quot;&gt;a really great walkthrough of setting up your first Netlify function&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Implementing A URL Expander In A Netlify Function&lt;/h2&gt;
+&lt;p&gt;A crude implementation of a URL expander might look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;exports.handler = function(event, _context, callback) {
+  const query = event.queryStringParameters.query;
+  let redirectUrl = &#39;https://google.com?q=&#39; + query;
+  if (query.toUpperCase() === &#39;REACTION&#39;) {
+    redirectUrl = &#39;https://github.com/artsy/reaction&#39;;
+  }
+
+  callback(null, {
+    statusCode: 302,
+    headers: {
+      Location: redirectUrl,
+      &#39;Cache-Control&#39;: &#39;no-cache&#39;,
+    },
+    body: JSON.stringify({}),
+  });
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The interface to this function is &lt;a href=&quot;https://docs.aws.amazon.com/lambda/latest/dg/nodejs-handler.html&quot;&gt;described in the AWS docs&lt;/a&gt;. Here&#39;s a line-by-line recap of this implementation.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;exports.handler = function(event, _context, callback) {
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the line above, we&#39;re exporting a function named &lt;code&gt;handler&lt;/code&gt;. It must be named &lt;code&gt;handler&lt;/code&gt;, or AWS won&#39;t know how to run it.&lt;/p&gt;
+&lt;p&gt;There are three arguments into our handler: &lt;code&gt;event&lt;/code&gt;, &lt;code&gt;context&lt;/code&gt;, and &lt;code&gt;callback&lt;/code&gt;. &lt;code&gt;event&lt;/code&gt; gives us access to information about the request. &lt;code&gt;context&lt;/code&gt; gives us access to the execution environment in AWS. &lt;code&gt;callback&lt;/code&gt; is how we send a response from our function.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const query = event.queryStringParameters.query;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this line, we access the search term from the query string parameters on the &lt;code&gt;event&lt;/code&gt; argument.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let redirectUrl = &#39;https://google.com?q=&#39; + query;
+if (query.toUpperCase() === &#39;REACTION&#39;) {
+  redirectUrl = &#39;https://github.com/artsy/reaction&#39;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is the first bit of code that is unique to our implementation. We&#39;ll default our &lt;code&gt;redirectUrl&lt;/code&gt; to a google search for the term. If it&#39;s something we recognize, we&#39;ll override the &lt;code&gt;redirectUrl&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;callback(null, {
+  statusCode: 302,
+  headers: {
+    Location: redirectUrl,
+    &#39;Cache-Control&#39;: &#39;no-cache&#39;,
+  },
+  body: JSON.stringify({}),
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We&#39;re back to some Lambda paperwork. We call the &lt;code&gt;callback&lt;/code&gt; function that is passed into our function. The first argument is for an error, which we don&#39;t have, so we&#39;re passing &lt;code&gt;null&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The second argument is an object describing our response. In our case that includes a &lt;code&gt;statusCode&lt;/code&gt; of &lt;code&gt;302&lt;/code&gt;, which means the page has moved temporarily. I&#39;m scared of using the &lt;code&gt;301&lt;/code&gt; status, for permanent redirects, in a tool that I&#39;m actively developing. Maybe I&#39;m being silly.&lt;/p&gt;
+&lt;p&gt;We&#39;re specifying a couple headers, including the &lt;code&gt;Location&lt;/code&gt; to redirect to.&lt;/p&gt;
+&lt;p&gt;Finally, there is an empty &lt;code&gt;body&lt;/code&gt;. Even though the contents are empty, this property is required - otherwise you&#39;ll get an &lt;code&gt;Incorrect function response body&lt;/code&gt; error.&lt;/p&gt;
+&lt;h2&gt;A Better URL Expander In A Netlify Function&lt;/h2&gt;
+&lt;p&gt;The previous example shows the gist of how we&#39;ll translate search terms into URLs, but it isn&#39;t very future-proof. Every time we need to translate a new term, we&#39;d need to update the function. This sounds super not fun.&lt;/p&gt;
+&lt;p&gt;The implementation I ended up with lives at &lt;a href=&quot;https://github.com/pepopowitz/goto/blob/master/functions/goto/goto.js&quot;&gt;https://github.com/pepopowitz/goto&lt;/a&gt;. The code is interesting (and recursive so I&#39;m expecting a stack overflow any minute 😅), but the most exciting thing to me is the way I&#39;m able to manage rules with a single JSON object:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;exports.urlMap = {
+  staging: &#39;https://staging.artsy.net&#39;,
+  prod: &#39;https://artsy.net&#39;,
+  // ...
+  gh: {
+    &#39;&#39;: &#39;https://github.com&#39;,
+    &#39;*&#39;: &#39;https://github.com/artsy/{0}&#39;,
+    &#39;**&#39;: &#39;https://github.com/artsy/{0}/{1}&#39;,
+    prs: &#39;https://github.com/notifications/beta&#39;,
+    me: {
+      &#39;&#39;: &#39;https://github.com/pepopowitz&#39;,
+      &#39;*&#39;: `https://github.com/pepopowitz/{0}`,
+      &#39;**&#39;: &#39;https://github.com/pepopowitz/{0}/{1}&#39;,
+    },
+    // ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Explaining all of these rules could be its own blog post, but here&#39;s a high level overview:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The keys of any object indicate a search term. In other words, &lt;code&gt;production&lt;/code&gt; will take me to the Artsy production site.&lt;/li&gt;
+&lt;li&gt;Nested objects indicate sequential search terms. Example: &lt;code&gt;gh prs&lt;/code&gt; goes to the new GitHub notifications view (which is 🔥).&lt;/li&gt;
+&lt;li&gt;Rules with &lt;code&gt;*&lt;/code&gt; in them are wildcards. Words that follow the search term are used as arguments to format the URL. For example, &lt;code&gt;gh reaction pulls&lt;/code&gt; will go to &lt;code&gt;https://github.com/artsy/reaction/pulls&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The best part about these rules is that I don&#39;t need to change them when I need to start working on a new Artsy project. The second best part is that it&#39;s a single file that contains all the rules. The third best part is that since Netlify deploys this function, I can change my rules by pulling up the file on GitHub, editing it in the browser, and committing the changes. It&#39;s magical.&lt;/p&gt;
+&lt;h2&gt;The Result&lt;/h2&gt;
+&lt;p&gt;This is what it looks like when I want to visit the Artsy &lt;code&gt;reaction&lt;/code&gt; repository today:&lt;/p&gt;
+&lt;img class=&quot;square-corners&quot; src=&quot;../search-for-reaction-after.gif&quot; alt=&quot;Me entering `gh reaction` into Chrome and going directly to the repo I&#39;m looking for&quot; /&gt;
+&lt;p&gt;That&#39;s 15 fewer paper-cuts per day! Now I can spend them somewhere else.&lt;/p&gt;
+&lt;h2&gt;What&#39;s Next?&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;goto&lt;/code&gt; is pretty stable for my needs right now. I&#39;m mostly just adding static rules at this point. I might add a secret search term that lists out all known search terms, for when I forget about older rules.&lt;/p&gt;
+&lt;p&gt;But what&#39;s next could be something more. It might be completely unrelated to expanding URLs. This project illustrated to me that I&#39;ve found a powerful combination. Point a custom search engine at a Netlify function that can interpret commands, and you have all the power of a CLI right in your browser.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Working With Variables In Cypress Tests</title>
