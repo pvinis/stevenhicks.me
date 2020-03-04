@@ -3,8 +3,8 @@ title: Saving Myself One Minute Per Day With Netlify Functions And A Custom Sear
 date: 2020-03-04T12:00:00
 tags: post
 layout: blog
-snippet: I built a URL expander with Netlify functions, and connected my browser to it with a custom search engine. It saves about 1 minute per day and it was totally worth it.
-tagline: I built a URL expander with Netlify functions, and connected my browser to it with a custom search engine. It saves about 1 minute per day and it was totally worth it.
+snippet: I built a URL expander with Netlify functions, and connected my browser to it with a custom search engine. It saves about 1 minute per day and now it feels like my search bar is a CLI.
+tagline: I built a URL expander with Netlify functions, and connected my browser to it with a custom search engine. It saves about 1 minute per day and now it feels like my search bar is a CLI.
 ---
 
 I visit the [artsy/reaction](https://github.com/artsy/reaction) repository in GitHub about 15 times a day. It's the repo I most contribute to at Artsy, and I spend a lot of time working with PRs there.
