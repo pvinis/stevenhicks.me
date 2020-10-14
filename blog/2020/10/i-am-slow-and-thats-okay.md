@@ -27,7 +27,7 @@ It's like I'm building a super sweet Lego camper. I could follow the steps in or
 
 ---
 
-How do you approach problems? Do you save the hard stuff for the end, or do you eat the frog and tackle the difficult parts early in a project? [Share your strategy with me on Twitter](https://twitter.com/pepopowitz).
+How do you approach problems? Do you save the hard stuff for the end, or do you eat the frog and tackle the difficult parts early in a project? [Share your strategy with me on Twitter](https://twitter.com/pepopowitz/status/1316374951868260353).
 
 And if you're interested in learning more strategies for solving complex problems, check out [this talk I've given called Getting Unstuck](https://www.youtube.com/watch?v=3XscuivvUzI).
 
