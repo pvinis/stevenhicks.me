@@ -33,10 +33,10 @@ And if you're interested in learning more strategies for solving complex problem
 
 ---
 
-<div id="footnote-1"></div>
+<a name="footnote-1"></a>
 
 <sup>1</sup> Abraham Lincoln once tweeted that Darkwing Duck said that Mark Twain once wrote "eat a live frog first thing in the morning and nothing worse will happen to you the rest of the day." I would link you to a reliable source for this quotation, but there doesn't seem to be one. In fact, the most trustworthy information I've found on this quote [finds no proof Mark Twain said it](https://quoteinvestigator.com/2013/04/03/eat-frog/). But whatever — today thanks to the book [_Eat That Frog!_](https://www.goodreads.com/book/show/95887.Eat_That_Frog_) we interpret this (possibly made-up) Mark Twain quote to mean "do the thing you most want to procrastinate."
 
-<div id="footnote-2"></div>
+<a name="footnote-2"></a>
 
 <sup>2</sup> I know this isn't a watertight analogy. Even _I_ just follow the Lego instructions from step 1 to 527. But real life projects don't come with 527 sequential steps and beautiful illustrations so please just go with it.
