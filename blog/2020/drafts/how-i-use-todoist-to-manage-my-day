@@ -1,0 +1,41 @@
+---
+title: How I Manage My Day With Todoist
+date: 2020-05-15T12:00:00
+tags: post
+draft: true
+layout: blog
+snippet: yum yum yummmety yum yum a yummy yummy yum yum yummmety yum
+tagline: yum yum yummmety yum yum a yummy yummy yum yum yummmety yum
+---
+
+Start of day:
+
+1. Tick off anything I forgot to tick off yesterday. Sometimes I'll get in a zone and forget to mark things done, or sometimes my day ends abruptly and I just walk away.
+
+2. Reschedule things from yesterday. I do this from the "Today" view, because there's a button that says "Reschedule" that does all the work. I choose "Move to today".
+
+3. Add any scheduled meetings or events I have for the day. This includes workouts I want to get in, which are often dependent on (a) the rest of my schedule and (b) the weather.
+
+3b. I add my meetings/events manually. I tried the google calendar sync and it did too much; all I want is to see my meetings mixed in with the things I have to do. It helps me figure out how much I can get done.
+
+4a. Reprioritize all my items for today. I choose ~3 things I really want to get done, and mark them p1. Meetings don't usually count toward this; I can't say I prioritize meetings consistently. 
+
+4b. I try to keep no more than a few things in each priority level (todoist does p1-p3 for those unfamiliar). I'll bump tasks down in priority if they lose importance. I'm learning that p3 doesn't really mean anything to me; I never get to those.
+
+5. Real talk. What am I not going to get to today, or what do I just not care about today? Reschedule those for tomorrow, or "next week". If they keep getting bumped to "next week", delete them (they'll come back if they need to).
+
+At this point, I should _hopefully have a pretty focused list for the day. 
+
+Throughout the day:
+
+1. I use a label named (at-symbol)active to track what I'm working on *right now*. This helps me remember what to focus on when my brain transitions back into deep-focus mode. I almost always only have one item marked active.
+
+2. When creating new tasks, *estimate the level of focus required*. I use labels for shallow, medium, and deep. When I'm in between meetings and don't have time to get into deep focus, I can pick off shallow things and do them quickly.
+
+3. Use the global shortcut key to quickly add tasks when things come up throughout the day. I didn't know it existed at first, but it's really helpful to not have to switch to the Todoist app when you're in the middle of a conversation and someone reminded you to do something.
+
+4. I assign projects to tasks. I don't use that info often, but sometimes I like to see everything for a specific project. My main projects are: Artsy, personal, workouts, and retro (I often add things I want to talk about at our next retro, scheduled the day of it).
+
+4b. Before the pandemic I had multiple projects related to conferences (planning and/or speaking), but I've become so disinterested during this time that I can't remember the last time I used them. But they were useful when I was using them.
+
+5. I view all my tasks with a custom filter that sorts tasks for today in this order: (at-symbol)active, meetings/events with a scheduled time, then p1-p4.

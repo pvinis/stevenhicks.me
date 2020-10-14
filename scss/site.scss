@@ -3,7 +3,7 @@ $brand-dark: darken($brand, 20%);
 $brand-light: lighten($brand, 20%);
 $brand-alt: #ff7300;
 $brand-alt-medium: lighten(desaturate($brand-alt, 80%), 30%);
-$brand-alt-light: #ff920045;
+$brand-alt-light: #ffe2ba;
 $brand-highlight: lighten($brand-alt-light, 8%);
 
 $brand-white: #fef5ea;
@@ -96,6 +96,10 @@ a:hover,
 a:visited,
 a:active {
   color: $brand;
+}
+
+sup a {
+  text-decoration: none;
 }
 
 blockquote {
