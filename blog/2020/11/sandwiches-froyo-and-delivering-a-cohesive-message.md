@@ -46,10 +46,10 @@ Treat your communication and content the same way. Not every concept needs to be
 
 If you're drafting an email to your leader, they don't need to know _everything_ that happened in the latest incident. Tell them the most important facts.
 
-If you're writing a blog post, it doesn't have to be 5000 words long. Less is better — if you feel like you've got several stories to tell, tell them in multiple blog posts.
+If you're writing a blog post, it doesn't have to be 5000 words long. Less is better — if you feel like you've got several stories to tell, tell them in separate blog posts.
 
 If you're building a presentation, don't add slides just to fill time. Your listeners will learn a lot more from one cohesive story than three stories and 13 unrelated points.
 
-If you're building a workshop or course, you don't have to teach every feature. Focus on the features that most align with your learning objectives. Give them resources to learn more when there could be side quests, but your workshop doesn't have to include the entire universe.
+If you're building a workshop or course, you don't have to teach every feature. Focus on the features that most align with your learning objectives. Give them resources to learn more when there could be side quests, but your workshop doesn't need to include the entire universe.
 
 Cut out the Gummi Bears if you're going for a mint and white chocolate vibe. Skip the performance analysis if you're going for an intro to building an app. Be the Velvet Elvis. Be the Dennis. Be the Phoenix. Be cohesive. Cut out the noise that doesn't fit your narrative.
