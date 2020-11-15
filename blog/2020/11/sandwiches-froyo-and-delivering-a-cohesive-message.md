@@ -9,11 +9,11 @@ tagline: Mmmmmmmmmm, sandwiches. Mmmmmmmmmmm, froyo. Not only are they both deli
 
 ![Sandwiches, Froyo, and Delivering A Cohesive Message](../froyo-sandwiches.jpg)
 
-I love sandwiches. I **love** sandwiches. Yes -- I would marry them, if I could.
+I love sandwiches. I **love** sandwiches. Yes — I would marry them, if I could.
 
-This week my friend [Jon](https://twitter.com/jonallured) asked me what I ate for lunch one day. It was the right day to ask. I spent probably too much time describing to him my current favorite sandwich -- the amazing [Phoenix sub from local chain The Chocolate Factory](https://thechocolatefactorywi.com/menu/). It's not a complicated sandwich but it's got a specific vibe and it does it well. Jon was really impressed 🙄 and asked me if I was a professional sandwich-eater. I did not dispute.
+This week my friend [Jon](https://twitter.com/jonallured) asked me what I ate for lunch one day. It was the right day to ask. I spent probably too much time describing to him my current favorite sandwich — the amazing [Phoenix sub from local chain The Chocolate Factory](https://thechocolatefactorywi.com/menu/). It's not a complicated sandwich but it's got a specific vibe and it does it well. Jon was really impressed 🙄 and asked me if I was a professional sandwich-eater. I did not dispute.
 
-It got me thinking about other sandwiches because, well, yummmm. The "Velvet Elvis" - an absolute chef's kiss that a Milwaukee bar stopped selling years ago, but still makes an appearance in my kitchen -- peanut butter, banana, and bacon, "grilled" in a buttery frying pan. If you're a fan of salty & sweet it will make you cry. And a sandwich that I've only heard about -- [The Dennis](https://www.parisibakery.com/parisi-bakery-deli-sandwiches/) -- mentioned many times in our work Slack by my New York-based coworkers. It looks like a real monster.
+It got me thinking about other sandwiches because, well, yummmm. The "Velvet Elvis" - an absolute chef's kiss that a Milwaukee bar stopped selling years ago, but still makes an appearance in my kitchen — peanut butter, banana, and bacon, "grilled" in a buttery frying pan. If you're a fan of salty & sweet it will make you cry. And a sandwich that I've only heard about — [The Dennis](https://www.parisibakery.com/parisi-bakery-deli-sandwiches/) — mentioned many times in our work Slack by my New York-based coworkers. It looks like a real monster.
 
 Amazing sandwiches are amazing because they are cohesive. They push you to the edge of your comfort level but they show the restraint and respect to not push you over. They are adventurous...but _responsibly_ adventurous.
 
@@ -40,13 +40,13 @@ When you're communicating a complex idea to someone, it's tempting to tell them 
 
 But is all of it necessary? Is some of it noise? How much of it will distract someone from the main idea you're teaching them?
 
-Think of it like that trip to the frozen yogurt place. You're not my kids -- you know better than to mix _all_ the toppings you like in one dish. You'd rather craft something cohesive. Even though you _love_ toasted coconut _and_ Andes Candies _and_ raspberries, you wouldn't dare put them all in the same dish.
+Think of it like that trip to the frozen yogurt place. You're not my kids — you know better than to mix _all_ the toppings you like in one dish. You'd rather craft something cohesive. Even though you _love_ toasted coconut _and_ Andes Candies _and_ raspberries, you wouldn't dare put them all in the same dish.
 
 Treat your communication and content the same way. Not every concept needs to be shared. Find the ones that fit together and create a cohesive narrative.
 
 If you're drafting an email to your leader, they don't need to know _everything_ that happened in the latest incident. Tell them the most important facts.
 
-If you're writing a blog post, it doesn't have to be 5000 words long. Less is better -- if you feel like you've got several stories to tell, tell them in multiple blog posts.
+If you're writing a blog post, it doesn't have to be 5000 words long. Less is better — if you feel like you've got several stories to tell, tell them in multiple blog posts.
 
 If you're building a presentation, don't add slides just to fill time. Your listeners will learn a lot more from one cohesive story than three stories and 13 unrelated points.
 
