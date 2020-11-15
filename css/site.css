@@ -184,7 +184,8 @@ p code {
   background-color: white; }
 
 p strong {
-  color: #ad1700; }
+  color: #ad1700;
+  font-weight: bold; }
 
 .first {
   margin-top: 0; }
