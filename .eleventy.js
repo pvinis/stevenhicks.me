@@ -8,29 +8,28 @@ function dateToISO(str) {
 }
 
 // .eleventy.js
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addCollection('postsReversed', function(collection) {
+module.exports = function (eleventyConfig) {
+  eleventyConfig.setTemplateFormats([
+    'md',
+    'pug',
+    'njk',
+    'png',
+    'jpg',
+    'gif',
+    'css',
+    'ico',
+  ]);
+  eleventyConfig.addCollection('postsReversed', function (collection) {
     return collection
       .getFilteredByTag('post')
-      .filter(x => x.data.draft !== true)
-      .reverse()
-      .map(item => ({
-        ...item,
-        isoDate: dateToISO(item.date),
-      }));
+      .filter((x) => x.data.draft !== true)
+      .reverse();
   });
-  eleventyConfig.addCollection('engagementsReversed', function(collection) {
-    return collection
-      .getFilteredByTag('engagements')
-      .reverse()
-      .map(item => ({
-        ...item,
-        isoDate: dateToISO(item.date),
-      }));
+  eleventyConfig.addCollection('engagementsReversed', function (collection) {
+    return collection.getFilteredByTag('engagements').reverse();
   });
   eleventyConfig.addPassthroughCopy('_redirects');
   return {
-    templateFormats: ['md', 'pug', 'njk', 'png', 'jpg', 'gif', 'css', 'ico'],
     passthroughFileCopy: true,
     dir: {
       input: '.',
@@ -39,15 +38,36 @@ module.exports = function(eleventyConfig) {
       output: '_site',
     },
     nunjucksFilters: {
-      lastUpdatedDate: collection => {
+      formatDate: (dateString) => {
+        const date = new Date(dateString);
+        const d = date.getDate();
+        const monthNames = [
+          'January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+          'July',
+          'August',
+          'September',
+          'October',
+          'November',
+          'December',
+        ];
+        const m = monthNames[date.getMonth()];
+        const y = date.getFullYear();
+        return m + ' ' + d + ', ' + y;
+      },
+      lastUpdatedDate: (collection) => {
         // Newest date in the collection
         return dateToISO(collection[collection.length - 1].date);
       },
-      rssDate: dateObj => {
+      rssDate: (dateObj) => {
         return dateToISO(dateObj);
       },
 
-      url: url => {
+      url: (url) => {
         // If your blog lives in a subdirectory, change this:
         let rootDir = '/blog/';
         if (!url || url === '/') {

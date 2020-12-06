@@ -32,7 +32,7 @@ hr {
   margin: 3rem 0;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, transparent, #ad1700, transparent); }
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ad1700, rgba(0, 0, 0, 0)); }
 
 a,
 a:hover,

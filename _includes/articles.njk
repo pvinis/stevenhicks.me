@@ -1,0 +1,13 @@
+{% for article in collections.postsReversed %}
+  <article class="content-article">
+    <header>
+      <h2>
+        <a href="{{article.url}}">{{article.data.title}}</a>
+      </h2>
+      <h3 class="by-line">{{article.date | formatDate}}</h3>
+    </header>
+    <p>{{article.data.snippet}}</p>
+    <a href="{{article.url}}">Read about it!</a>
+    <hr/>
+  </article>
+{%endfor %}

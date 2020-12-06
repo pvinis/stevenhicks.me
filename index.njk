@@ -1,0 +1,41 @@
+---
+layout: layout
+title: Steven Hicks
+metaDescription: Ramblings on development, life, and the development life. By Milwaukee developer Steven Hicks.
+---
+
+<h1 class="sr-only">Steven Hicks</h1>
+
+<h3 class="first">Hello, friends!</h3>
+
+<p>I'm <strong>Steven Hicks</strong>. 
+    I am a <strong>web generalist</strong> with 20 years of experience. I'm currently focused on <strong>React</strong> development.</p>
+
+<p>I share my experience and perspective through <a href='/speaking'>speaking</a>, <a href='/articles'>writing</a>, and <a href='/workshops/building-your-first-react-app/'>teaching</a>.</p>
+
+<p>You can get in touch with me via <a href='https://twitter.com/pepopowitz'>Twitter</a> or <a href='mailto:steven.j.hicks@gmail.com'>email</a>.</p>
+
+<p>Thanks for stopping by!</p>
+
+<hr/>
+
+<h2>Recent Articles</h2>
+
+{% for i in range(0, 5) %}
+  {% set article = collections.postsReversed[i] %}
+  <article class="content-article">
+    <header>
+      <h3>
+        <a href="{{article.url}}">{{article.data.title}}</a>
+      </h3>
+      <h4 class="by-line">{{article.date | formatDate}}</h3>
+    </header>
+    <p>{{article.data.snippet}}</p>
+    <a href="{{article.url}}">Read about it!</a>
+    <hr/>
+  </article>
+{%endfor %}
+
+<h3>
+  <a href='/articles'>Read more articles</a>
+</h3>
