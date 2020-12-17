@@ -15,9 +15,9 @@ Sweet! I can't get enough of those 70s shag carpet vibes.
 
 ## Prior art
 
-Before I show you how _I_ hooked this up to my eleventy site, consider [this article by Stephanie Eckles about using puppeteer to generate social share images](https://dev.to/5t3ph/automated-social-sharing-images-with-puppeteer-11ty-and-netlify-22ln). If you want screenshots of the page as the social sharing image, this is probably what you're looking for!
+Before I show you how _I_ hooked this up to my eleventy site, consider [this article by Stephanie Eckles about using puppeteer to generate social share images](https://dev.to/5t3ph/automated-social-sharing-images-with-puppeteer-11ty-and-netlify-22ln). If you want to use HTML & CSS to create your social sharing images, that is probably what you're looking for!
 
-I wanted social sharing images that looked more like fancy marketing images<sup>[(1)](#footnote-1)</sup>.
+I decided on using [Cloudinary](https://cloudinary.com/) to overlay text on my social sharing images<sup>[(1)](#footnote-1)</sup>.
 
 Most of what I needed was covered by Jason in his articles on [adding text overlays in Cloudinary](https://www.learnwithjason.dev/blog/add-text-overlay-cloudinary/), [designing a social sharing card](https://www.learnwithjason.dev/blog/design-social-sharing-card/), and [auto-generating social share images with `get-share-image`](https://www.learnwithjason.dev/blog/auto-generate-social-image/). Thanks, Jason!
 
