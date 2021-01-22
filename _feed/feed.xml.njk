@@ -1,5 +1,5 @@
 ---
-permalink: atom.xml
+permalink: feed.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -11,12 +11,12 @@ permalink: atom.xml
 		<email>steven.j.hicks@gmail.com</email>
 	</author>
 	{% for post in collections.postsReversed %}
-	<entry>
-		<title>{{ post.data.title }}</title>
-		<link href="{{ metadata.url }}{{ post.url }}"/>
-		<updated>{{ post.date | rssDate }}</updated>
-		<id>{{ metadata.url }}{{ post.url }}</id>
-		<content type="html">{{ post.templateContent }}</content>
-	</entry>
+		<entry>
+			<title>{{ post.data.title }}</title>
+			<link href="{{ metadata.url }}{{ post.url }}"/>
+			<updated>{{ post.date | rssDate }}</updated>
+			<id>{{ metadata.url }}{{ post.url }}</id>
+			<content type="html">{{ post.templateContent }}</content>
+		</entry>
 	{% endfor %}
 </feed>
