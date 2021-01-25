@@ -1,8 +1,25 @@
-live-server ./\_site
-eleventy --watch
+# stevenhicks.me website
 
-todo: scss or postcss
+Built with Eleventy
 
-redirects:
+## Local dev
 
-/rss.xml -> /atom.xml
+`yarn start`
+
+## Build & run
+
+```
+yarn build
+http-server ./_site
+```
+
+## Generate content
+
+### Note
+
+```
+yarn new:note some-note-name
+```
+
+Generates it at notes/YYYY/MM/some-note-name.md
+
